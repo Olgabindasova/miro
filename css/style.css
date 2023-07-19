@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('https://cdn.anomiro.ru/fonts/TimesNewRomanPS-ItalicMT.woff2') format('woff2'),
+        url('https://cdn.anomiro.ru/fonts/TimesNewRomanPS-ItalicMT.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Roman Cyr';
+    src: url('https://cdn.anomiro.ru/fonts/TimesNRCyrMT-Bold.woff2') format('woff2'),
+        url('https://cdn.anomiro.ru/fonts/TimesNRCyrMT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Roman Cyr';
+    src: url('https://cdn.anomiro.ru/fonts/TimesNRCyrMT.woff2') format('woff2'),
+        url('https://cdn.anomiro.ru/fonts/TimesNRCyrMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times';
+    src: url('https://cdn.anomiro.ru/fonts/Times-BoldItalic.woff2') format('woff2'),
+        url('https://cdn.anomiro.ru/fonts/Times-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gotham XNarrow', sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+div,
+p,
+h3,
+h4,
+h5,
+h6,
+li,
+span {
+    font-family: 'Gotham XNarrow', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*------Хедер------*/
+.header-top {
+    padding: 0 15px;
+    background: var(--color-bg-2);
+    color: var(--color-text2);
+}
+
+.header-top a {
+    color: var(--color-text2);
+}
+
+.header-top-social>.uk-icon-button {
+    width: 30px;
+    height: 30px;
+    background: none;
+}
+
+.header-top-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-top-social {
+    padding: 20px 0;
+}
+
+.header-bottom {
+    color: var(--color-bg-1);
+    font-weight: 500;
+}
+
+.header-bottom>.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-bottom-logo {
+    padding: 30px 0;
+}
+
+.header-bottom-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-bottom>.container>.header-bottom-menu>div>ul {
+    display: flex;
+    padding: 35px 30px;
+}
+
+.header-bottom>.container>.header-bottom-menu>div>ul>li>a {
+    padding: 40px 15px;
+    font-family: 'Gotham XNarrow', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    text-transform: none;
+    color: var(--color-bg-1);
+}
+
+.header-bottom>.container>.header-bottom-menu>.search {
+    padding: 10px 0;
+}
+
+.header-bottom-menu>.uk-navbar-right>.uk-navbar-toggle {
+    color: var(--color-bg-1);
+}
+
+.header-bottom-menu>.uk-navbar-left>.uk-navbar-item>.uk-search {
+    width: 90% !important;
+}
+
+.search-close {
+    color: var(--color-bg-1) !important;
+}
+
+.header-bottom-menu>.uk-navbar-left>.uk-navbar-item>.uk-search>.uk-search-input {
+    font-size: 1rem;
+    font-family: 'Gotham XNarrow', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*------Футер------*/
+.footer {
+    color: var(--color-text2);
+}
+
+.footer-top {
+    background: var(--color-bg-3);
+    padding: 55px 0;
+}
+
+.footer-top-logo {
+    padding-bottom: 55px;
+}
+
+.footer-bottom {
+    background: var(--color-bg-31);
+    letter-spacing: 0.8px;
+    color: var(--color-text21);
+    border-top: 1px solid var(--color-text21);
+    padding: 40px 0;
+}

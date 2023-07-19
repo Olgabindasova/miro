@@ -1,0 +1,16 @@
+:root {
+    --color-bg-1: #4F6382;
+    --color-bg-1h: #455670;
+    --color-bg-2: #B3171A;
+    --color-bg-2h: #9B1214;
+    --color-bg-3: #181818;
+    --color-bg-31: #202020;
+    --color-bg-4: #F2F2F2;
+    --color-bg-5: #CAD8ED;
+    --color-bg-6: #98A1B0;
+    --color-text: #000;
+    --color-text2: #fff;
+    --color-text21: rgba(255, 255, 255, 0.50);
+    --color-text3: #555353;
+    --color-bg-7: linear-gradient(151deg, #F2F2F2 37.72%, rgba(242, 242, 242, 0.47) 98.94%);
+}
