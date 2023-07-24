@@ -268,6 +268,37 @@ a:hover {
     background: #24A1DE
 }
 
+.as-icon-telephone {
+    border: 1.85px solid var(--color-text2);
+    border-radius: 50%;
+    width: 23px !important;
+    height: 23px !important;
+}
+
+.as-icon-telephone:hover {
+    border-radius: 50%;
+}
+
+.as-icon-telephone,
+.as-icon-vlk,
+.as-icon-vihlk,
+.as-icon-lk,
+.as-icon-menu {
+    color: var(--color-text2);
+    transition: all 0.5s;
+}
+
+.as-icon-telephone:hover,
+.as-icon-vlk:hover,
+.as-icon-vihlk:hover,
+.as-icon-lk:hover,
+.as-icon-menu:hover {
+    color: var(--color-bg-2);
+    background: var(--color-text2) !important;
+    border-radius: 50%;
+    border: 3px solid var(--color-text2);
+}
+
 .header-top-social>.telephone {
     font-weight: 700;
     margin-left: 60px;
@@ -525,14 +556,24 @@ a:hover {
 
     .footer-top-menu_title {
         margin-left: 0px;
+        font-size: 15px;
     }
 
     .footer-top-menu_item>div>ul {
         margin-left: 0px;
     }
 
+    .footer-top-menu_item>div>ul>li>a {
+        line-height: 24px;
+        font-size: 14px;
+    }
+
     .telephone-footer {
         margin-bottom: 25px;
+    }
+
+    .footer-bottom-copywrite {
+        font-size: 14px;
     }
 
     .header-top,
@@ -548,5 +589,45 @@ a:hover {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .header-mobile>div>.uk-navbar-toggle {
+        fill: var(--color-text2);
+        min-height: 50px;
+    }
+
+    .search-close-mobile {
+        right: -90%;
+    }
+
+    .search-close-mobile.uk-close {
+        color: var(--color-bg-2);
+    }
+
+    .search-input-mobile {
+        font-size: 1.7rem !important;
+        font-family: 'Gotham XNarrow', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: var(--color-bg-2) !important;
+    }
+
+    .search-input-mobile::placeholder {
+        color: var(--color-bg-2) !important;
+    }
+
+    .header-top-mobile-buttons {
+        margin-left: 10px;
+    }
+
+    .header-top-mobile-buttons>.uk-icon-button {
+        width: 23px;
+        height: 23px;
+        background: none;
+    }
+
+    .logo768 {
+        max-width: 70px;
+        padding-top: 5px;
     }
 }
