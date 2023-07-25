@@ -2,27 +2,36 @@
 <html lang="ru">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/uikit-rtl.css">
     <link rel="stylesheet" href="css/uikit.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-lk.css">
-    <link rel="preload" href="https://cdn.anomiro.ru/fonts/GothamXNarrow-Medium.woff2" as="font" type="font/woff2"
-        crossorigin>
-    <link rel="preload" href="https://cdn.anomiro.ru/fonts/GothamXNarrow-Light.woff2" as="font" type="font/woff2"
-        crossorigin>
-    <link rel="preload" href="https://cdn.anomiro.ru/fonts/GothamCond-Book.woff2" as="font" type="font/woff2"
-        crossorigin>
-    <link rel="preload" href="https://cdn.anomiro.ru/fonts/GothamXNarrow-Bold.woff2" as="font" type="font/woff2"
-        crossorigin>
-
+    <link href="https://cdn.anomiro.ru/fonts/GothamXNarrow-Medium.woff2" as="style" rel="stylesheet preload prefetch"
+        type="text/css" crossorigin="anonymous">
+    <link href="https://cdn.anomiro.ru/fonts/GothamXNarrow-Medium.woff" as="style" rel="stylesheet preload prefetch"
+        type="text/css" crossorigin="anonymous">
+    <link href="https://cdn.anomiro.ru/fonts/GothamXNarrow-Light.woff2" as="style" rel="stylesheet preload prefetch"
+        type="text/css" crossorigin="anonymous">
+    <link href="https://cdn.anomiro.ru/fonts/GothamXNarrow-Light.woff" as="style" rel="stylesheet preload prefetch"
+        type="text/css" crossorigin="anonymous">
+    <link href="https://cdn.anomiro.ru/fonts/GothamCond-Book.woff2" as="style" rel="stylesheet preload prefetch"
+        type="text/css" crossorigin="anonymous">
+    <link href="https://cdn.anomiro.ru/fonts/GothamCond-Book.woff" as="style" rel="stylesheet preload prefetch"
+        type="text/css" crossorigin="anonymous">
+    <link href="https://cdn.anomiro.ru/fonts/GothamXNarrow-Bold.woff2" as="style" rel="stylesheet preload prefetch"
+        type="text/css" crossorigin="anonymous">
+    <link href="https://cdn.anomiro.ru/fonts/GothamXNarrow-Bold.woff" as="style" rel="stylesheet preload prefetch"
+        type="text/css" crossorigin="anonymous">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script src="js/uikit.js" type="text/javascript"></script>
     <script src="js/uikit-icons.js" type="text/javascript"></script>
-    <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
     <title>МИРО</title>
 </head>
 
@@ -141,10 +150,80 @@
 
                 <nav class="header-bottom-menu uk-width-expand" uk-navbar>
                     <div class="nav-overlay">
-                        <ul class="">
+                        <ul class="uk-navbar-nav">
                             <li><a href="#">О нас</a></li>
-                            <li><a href="#">Переподготовка</a></li>
-                            <li><a href="#">Курсы</a></li>
+                            <li><a href="#">Переподготовка</a>
+
+                                <div class="header-bottom-menu_one uk-navbar-dropdown uk-navbar-dropdown-width-4">
+                                    <div class="uk-drop-grid uk-child-width-1-4" uk-grid>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-nav-header">Заголовочек</li>
+                                                <li class="active"><a href="#">Активный пункт</a></li>
+                                                <li><a href="#">Пункт меню</a></li>
+                                                <li><a href="#">Пункт меню</a></li>
+                                                <li><a href="#">Следующий пункт</a></li>
+                                                <li><a href="#">Пункт меню</a></li>
+                                                <li><a href="#">Пункт меню</a></li>
+                                                <li><a href="#">Следующий пункт</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-nav-header">Заголовочек</li>
+                                                <li class="active"><a href="#">Активный пункт</a></li>
+                                                <li><a href="#">Пункт меню</a></li>
+                                                <li><a href="#">Пункт меню</a></li>
+                                                <li><a href="#">Следующий пункт</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-nav-header">Заголовочек</li>
+                                                <li class="active"><a href="#">Активный пункт</a></li>
+                                                <li><a href="#">Пункт меню</a></li>
+                                                <li><a href="#">Пункт меню</a></li>
+                                                <li><a href="#">Следующий пункт</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-nav-header"><a href="">
+                                                        <img class="" src="https://cdn.anomiro.ru/images/logo3.svg"
+                                                            alt="">
+                                                    </a></li>
+                                                <li class="active"><a href="#">Активный пункт</a></li>
+                                                <li><a href="#">Пункт меню</a></li>
+                                                <li><a href="#">Пункт меню</a></li>
+                                                <li><a href="#">Следующий пункт</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </li>
+                            <li><a href="#">Курсы</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav  uk-navbar-dropdown-nav">
+                                        <li class=""><a href="#">Активный пункт<span uk-navbar-parent-icon></span></a>
+                                            <div class="uk-navbar-dropdown">
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="uk-nav-header">Крутое название</li>
+                                                    <li><a href="#">Пункт меню</a></li>
+                                                    <li><a href="#">Продолжаем</a></li>
+                                                    <li class="uk-nav-divider"></li>
+                                                    <li><a href="#">Эксклюзивное меню</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </li>
+                                        <li><a href="#">Пункт меню</a></li>
+                                        <li><a href="#">Ещё один пункт</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li><a href="#">Практика</a></li>
                             <li><a href="#">Трудоустройство</a></li>
                             <li><a href="#">Контакты</a></li>
