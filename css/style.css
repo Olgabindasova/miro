@@ -432,6 +432,48 @@ a:hover {
     color: var(--color-bg-2);
 }
 
+.header-bottom-menu_two {
+    top: 92px !important;
+    background: var(--color-bg-4);
+    padding: 15px 10px 15px 20px;
+    width: 210px;
+    box-shadow: none;
+
+}
+
+.header-bottom-menu_two>.uk-navbar-dropdown-nav>li>a,
+.header-bottom-menu_two>.uk-navbar-dropdown-nav>li>div.uk-navbar-dropdown>ul>li>a {
+    color: var(--color-text3);
+    font-family: 'Gotham XNarrow', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: none;
+    transition: all 0.5ms;
+    cursor: pointer;
+    line-height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-bottom-menu_two>.uk-navbar-dropdown-nav>li>a:hover,
+.header-bottom-menu_two>.uk-navbar-dropdown-nav>li>div.uk-navbar-dropdown>ul>li>a:hover {
+    color: var(--color-bg-1);
+}
+
+.header-bottom-menu_two>.uk-navbar-dropdown-nav>li>a>span.uk-navbar-parent-icon {
+    transform: rotate(270deg);
+}
+
+.header-bottom-menu_two>.uk-navbar-dropdown-nav>li>.uk-navbar-dropdown {
+    top: 30px !important;
+    left: 210px !important;
+    background: var(--color-bg-4);
+    box-shadow: none;
+    border-left: 1px solid var(--color-bg-6);
+}
+
+
 /*------Футер------*/
 .footer {
     color: var(--color-text2);
@@ -607,7 +649,7 @@ a:hover {
     }
 
     .header-bottom-menu_one.uk-navbar-dropdown-width-4:not(.uk-navbar-dropdown-stack) {
-        top: 81px !important;
+        top: 95px !important;
         left: -100px !important;
         width: 113%;
         background-image: linear-gradient(123deg, #F2F2F2 68%, rgba(242, 242, 242, 0.47) 98.94%), url("https://cdn.anomiro.ru/images/fonmenu.png");
@@ -623,6 +665,10 @@ a:hover {
 
     .header-bottom-menu>div>.uk-navbar-nav {
         gap: 5px;
+    }
+
+    .header-bottom-menu_two {
+        top: 95px !important;
     }
 }
 
@@ -711,7 +757,38 @@ a:hover {
     }
 
     .logo768 {
-        max-width: 70px;
+        max-width: 65px;
         padding-top: 5px;
+    }
+
+    #header-mobile-nav>.uk-offcanvas-bar {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #header-mobile-nav>.uk-offcanvas-bar>div>.uk-offcanvas-close {
+        display: flex;
+        justify-content: flex-end;
+        position: inherit;
+        flex-direction: row;
+        background: none;
+        padding: 0px;
+        border: none;
+        box-shadow: none;
+        fill: var(--color-bg-2);
+        cursor: pointer;
+        margin-top: -10px;
+    }
+
+    .header-mobile-nav-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .header-mobile-nav_menu>li>a {
+        color: var(--color-text2) !important;
     }
 }
