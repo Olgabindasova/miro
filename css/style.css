@@ -273,8 +273,8 @@ a:hover {
 .as-icon-telephone {
     border: 1.85px solid var(--color-text2);
     border-radius: 50%;
-    width: 30px !important;
-    height: 30px !important;
+    width: 27px !important;
+    height: 27px !important;
 }
 
 .as-icon-telephone:hover {
@@ -704,10 +704,10 @@ a:hover {
     }
 
     .header-top-mobile-buttons>.uk-icon-button {
-        width: 30px;
-        height: 30px;
+        width: 27px;
+        height: 27px;
         background: none;
-        margin-right: 5px;
+        margin-right: 2px;
     }
 
     .logo768 {
