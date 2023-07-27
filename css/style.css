@@ -210,7 +210,6 @@ a:hover {
 
 .button-two:hover {
     background: var(--color-bg-1h);
-    border: 2px solid var(--color-bg-1h);
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2);
     color: var(--color-text2);
 }
