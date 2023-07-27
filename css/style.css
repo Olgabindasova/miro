@@ -180,33 +180,31 @@ a:hover {
 
 .button-one {
     background: var(--color-bg-2);
-    border: 2px solid var(--color-bg-2);
     font-family: 'Gotham XNarrow', sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
+    border-left: 3px solid var(--color-bg-2);
     transition: all 0.5s;
-    padding: 14px 40px;
+    padding: 16px 40px 15px 40px;
     color: var(--color-text2);
 }
 
 .button-one:hover {
     background: var(--color-text2);
-    border-left: 2px solid var(--color-bg-2);
-    border: 2px solid var(--color-text2);
+    border-left: 3px solid var(--color-bg-2);
     color: var(--color-bg-2);
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .button-two {
     background: var(--color-bg-1);
-    border: 2px solid var(--color-bg-1);
     font-family: 'Gotham XNarrow', sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
     transition: all 0.5s;
-    padding: 14px 40px;
+    padding: 16px 40px 15px 40px;
     color: var(--color-text2);
 }
 
@@ -214,8 +212,18 @@ a:hover {
     background: var(--color-bg-1h);
     border: 2px solid var(--color-bg-1h);
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2);
+    color: var(--color-text2);
 }
 
+/*------Заголовки------*/
+
+.h2-basic {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    margin-bottom: 30px;
+}
 
 /*------Хедер------*/
 .header-mobile {
@@ -595,7 +603,45 @@ a:hover {
     color: var(--color-text2);
 }
 
+/*------БЛОКИ------*/
 
+/*------Блок 1------*/
+
+
+
+/*------Блок 2------*/
+/*------Блок 3------*/
+/*------Блок 4------*/
+/*------Блок 5------*/
+/*------Блок 6------*/
+/*------Блок 7------*/
+
+.main_block7 {
+    background: var(--color-bg-4);
+    padding: 130px 0px;
+}
+
+.main_block7_text {
+    max-width: 1130px;
+    margin-bottom: 45px;
+    color: var(--color-text);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.main_block7_buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main_block7_buttons>a {
+    width: 49%;
+    text-align: center;
+}
 
 /*------Адаптив ------*/
 @media (max-width: 1350px) {
@@ -673,6 +719,15 @@ a:hover {
 
     .header-bottom-menu_two {
         top: 95px !important;
+    }
+
+    .main_block7>.container>.h2-basic,
+    .main_block7_text {
+        text-align: center;
+    }
+
+    .main_block7_buttons>a {
+        width: 100%;
     }
 }
 
@@ -896,5 +951,45 @@ a:hover {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .h2-basic {
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 25px;
+    }
+
+    .main_block7 {
+        padding: 100px 0px;
+    }
+
+    .main_block7_text {
+        margin-bottom: 35px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+}
+
+@media (max-width: 450px) {
+    .h2-basic {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .main_block7 {
+        padding: 60px 0px;
+    }
+
+    .main_block7_text {
+        margin-bottom: 25px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .button-one,
+    .button-two {
+        font-size: 14px;
     }
 }
