@@ -350,7 +350,7 @@ a:hover {
 
 .header-bottom>.container>.header-bottom-menu>div>ul>li>a:hover,
 .header-bottom>.container>.header-bottom-menu>div>ul>li:hover>a,
-.header-bottom>.container>.header-bottom-menu>div>ul>li>a.active {
+.header-bottom>.container>.header-bottom-menu>div>ul>li.active>a {
     color: var(--color-bg-2);
     border-bottom: 4px solid var(--color-bg-2);
 }
@@ -417,7 +417,8 @@ a:hover {
     color: var(--color-bg-2);
 }
 
-.header-bottom-menu_one>div>div>ul>li>a {
+.header-bottom-menu_one>div>div>ul>li>a,
+.header-bottom-menu_one>div>div>ul>li.active>a {
     color: var(--color-text3);
     font-family: 'Gotham XNarrow', sans-serif;
     font-size: 15px;
@@ -428,7 +429,8 @@ a:hover {
     line-height: 26px;
 }
 
-.header-bottom-menu_one>div>div>ul>li>a:hover {
+.header-bottom-menu_one>div>div>ul>li>a:hover,
+.header-bottom-menu_one>div>div>ul>li.active>a {
     color: var(--color-bg-2);
 }
 
@@ -457,8 +459,10 @@ a:hover {
 }
 
 .header-bottom-menu_two>.uk-navbar-dropdown-nav>li>a:hover,
-.header-bottom-menu_two>.uk-navbar-dropdown-nav>li>div.uk-navbar-dropdown>ul>li>a:hover {
-    color: var(--color-bg-1);
+.header-bottom-menu_two>.uk-navbar-dropdown-nav>li.active>a,
+.header-bottom-menu_two>.uk-navbar-dropdown-nav>li>div.uk-navbar-dropdown>ul>li>a:hover,
+.header-bottom-menu_two>.uk-navbar-dropdown-nav>li>div.uk-navbar-dropdown>ul>li.active>a {
+    color: var(--color-bg-2);
 }
 
 .header-bottom-menu_two>.uk-navbar-dropdown-nav>li>a>span.uk-navbar-parent-icon {
