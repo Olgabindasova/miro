@@ -188,6 +188,7 @@ a:hover {
     transition: all 0.5s;
     padding: 16px 40px 15px 40px;
     color: var(--color-text2);
+    text-align: center;
 }
 
 .button-one:hover {
@@ -206,11 +207,41 @@ a:hover {
     transition: all 0.5s;
     padding: 16px 40px 15px 40px;
     color: var(--color-text2);
+    text-align: center;
 }
 
 .button-two:hover {
     background: var(--color-bg-1h);
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2);
+    color: var(--color-text2);
+}
+
+/*------Управление слайдером кнопки------*/
+.slide-nav {
+    background: var(--color-bg-2);
+    fill: var(--color-text2);
+    width: 30px;
+    padding: 4px 9px 5px 9px;
+    transition: all 0.5s;
+}
+
+.slide-nav:hover {
+    background: var(--color-text2);
+    fill: var(--color-bg-2);
+}
+
+
+
+/*------Цвета текста------*/
+.color1 {
+    color: var(--color-bg-1);
+}
+
+.color2 {
+    color: var(--color-bg-2);
+}
+
+.color3 {
     color: var(--color-text2);
 }
 
@@ -613,6 +644,46 @@ a:hover {
 /*------Блок 4------*/
 /*------Блок 5------*/
 /*------Блок 6------*/
+.main_block6 {
+    background: var(--color-bg-1);
+    padding: 100px 0px;
+}
+
+.logo4 {
+    margin: 20px 0px;
+    width: 50%;
+}
+
+.main_block6_req {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.main_block6_text {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 70px;
+}
+
+.main_block6>div>div>.uk-slideshow-items {
+    min-height: 700px !important;
+    width: 480px;
+    margin: 0 auto;
+}
+
+.main_block6>div>div:nth-child(odd) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main_block6>div>div>.uk-slideshow-items>li>a>img {
+    width: 100%;
+    height: auto;
+}
+
 /*------Блок 7------*/
 
 .main_block7 {
@@ -663,6 +734,28 @@ a:hover {
 
     .header-bottom-menu_one>div>div {
         padding-left: 60px;
+    }
+
+    .main_block6>div>div>.uk-slideshow-items {
+        min-height: 555px !important;
+        width: 390px;
+    }
+
+    .main_block6_req {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .main_block6_text {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 60px;
+    }
+
+    .main_block6_text {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 28px;
     }
 }
 
@@ -727,6 +820,44 @@ a:hover {
 
     .main_block7_buttons>a {
         width: 100%;
+    }
+
+    .main_block6>div>div:nth-child(odd) {
+        width: 45%;
+        margin-left: 5%;
+    }
+
+    .logo4 {
+        width: 35%;
+    }
+
+    .main_block6_req {
+        font-size: 18px;
+        margin-bottom: 22px;
+    }
+
+    .main_block6>div>div>.uk-slideshow-items {
+        min-height: 510px !important;
+        width: 360px;
+    }
+}
+
+@media (max-width: 960px) {
+    .main_block6>div>div:nth-child(odd) {
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 40px;
+        align-items: center;
+    }
+
+    .main_block6_text {
+        text-align: center;
+        max-width: 65%;
+    }
+
+    .main_block6>div>div:nth-child(even) {
+        width: 65%;
+        margin-left: 6%;
     }
 }
 
@@ -968,7 +1099,24 @@ a:hover {
         line-height: 24px;
     }
 
+    .main_block6_text {
+        max-width: 100%;
+    }
 
+    .main_block6>div>div:nth-child(odd) {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .main_block6>div>div:nth-child(even) {
+        width: 90%;
+        margin-left: 0%;
+    }
+
+    .main_block6>div>div>.uk-slideshow-items {
+        min-height: 450px !important;
+        width: 310px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -990,5 +1138,45 @@ a:hover {
     .button-one,
     .button-two {
         font-size: 14px;
+    }
+
+    .main_block6 {
+        padding: 50px 0px;
+    }
+
+    .main_block6>div>div:nth-child(odd) {
+        width: 100%;
+        margin-left: 10%;
+        margin-bottom: 10px;
+    }
+
+    .main_block6>div>div:nth-child(even) {
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    .main_block6>div>div>.uk-slideshow-items {
+        min-height: 300px !important;
+        width: 210px;
+    }
+
+    .main_block6>div>div>h2 {
+        text-align: center;
+    }
+
+    .main_block6_req {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main_block6>div>div:nth-child(even) {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .main_block6>div>div>.uk-slideshow-items {
+        min-height: 245px !important;
+        width: 175px;
     }
 }
