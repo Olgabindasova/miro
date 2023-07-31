@@ -255,6 +255,14 @@ a:hover {
     margin-bottom: 30px;
 }
 
+.h3-basic {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
 /*------Хедер------*/
 .header-mobile {
     display: none;
@@ -641,8 +649,63 @@ a:hover {
 
 /*------Блок 2------*/
 /*------Блок 3------*/
+.main_block3 {
+    padding: 135px 0px;
+    background: var(--color-bg-1);
+}
+
+.main_block3>.container>div {
+    margin-bottom: 50px;
+}
+
+.main_block3>.container>a {
+    float: right;
+}
+
 /*------Блок 4------*/
+.main_block4 {
+    padding: 150px 0px;
+    background: var(--color-bg-2);
+}
+
 /*------Блок 5------*/
+.main_block5 {
+    padding: 150px 0px;
+}
+
+.main_block5>.container>a {
+    float: right;
+    margin-right: 10px;
+}
+
+.slide-nav_educator {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    height: 30px;
+    top: 12px;
+    position: relative;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.slide-nav_educator>.slide-nav {
+    height: 30px;
+    padding: 8px 7px 5px 10px;
+    top: 0px;
+    position: relative !important;
+    display: flex;
+}
+
+.slider-educator {
+    margin-bottom: 50px;
+}
+
+.slider-educator>ul>li>div {
+    box-shadow: none;
+    padding: 10px;
+}
+
 /*------Блок 6------*/
 .main_block6 {
     background: var(--color-bg-1);
