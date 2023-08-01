@@ -31,7 +31,8 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script src="js/uikit.js" type="text/javascript"></script>
     <script src="js/uikit-icons.js" type="text/javascript"></script>
-    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/jquery.maskedinput-1.4.1.js" type="text/javascript"></script>
+    <script src="js/jquery.spincrement.min.js" type="text/javascript"></script>
     <title>МИРО-Главная</title>
 </head>
 
@@ -343,14 +344,14 @@
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: scale">
                 <ul class="uk-slideshow-items">
                     <li>
-                        <img src="https://cdn.anomiro.ru/images/image2.jpg" alt="slideshow" uk-cover>
+                        <img src="https://cdn.anomiro.ru/images/image2.jpg" alt="slideshow">
                         <div class="uk-position-small uk-position-center  container">
                             <h3 class="uk-h1" uk-slideshow-parallax="x: 100,-100">Параллакс</h3>
                             <p uk-slideshow-parallax="x: 200,-200">Ничего не просит и вежливо отказывается.</p>
                         </div>
                     </li>
                     <li>
-                        <img src="https://cdn.anomiro.ru/images/image1.jpg" alt="slideshow" uk-cover>
+                        <img src="https://cdn.anomiro.ru/images/image1.jpg" alt="slideshow">
                         <div class="uk-position-small uk-position-center  container">
                             <h3 class="uk-h1" uk-slideshow-parallax="x: 100,-100">Параллакс</h3>
                             <p uk-slideshow-parallax="x: 200,-200">Ничего не просит и вежливо отказывается.</p>
@@ -384,12 +385,13 @@
                         <div class="uk-card-header">
                             <div class="uk-grid-small uk-flex-middle" uk-grid>
                                 <div class="uk-width-auto">
-                                    <img class="uk-border-circle" src="/demo/img/avatar.jpg" width="40" height="40"
-                                        alt="Аватарка" loading="lazy">
+                                    <img class="uk-border-circle" src="https://cdn.anomiro.ru/images/img1.png" alt=" "
+                                        loading="lazy">
                                 </div>
                                 <div class="uk-width-expand">
-                                    <h3 class="uk-card-title uk-margin-remove-bottom">Заголовок карты</h3>
-
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Профстандарт "Педагог-практик"
+                                    </h3>
+                                    <p>Право сертификации педагогов</p>
                                 </div>
                             </div>
                         </div>
@@ -401,12 +403,12 @@
                         <div class="uk-card-header">
                             <div class="uk-grid-small uk-flex-middle" uk-grid>
                                 <div class="uk-width-auto">
-                                    <img class="uk-border-circle" src="/demo/img/avatar.jpg" width="40" height="40"
-                                        alt="Аватарка" loading="lazy">
+                                    <img class="uk-border-circle" src="https://cdn.anomiro.ru/images/img2.png" alt=" "
+                                        loading="lazy">
                                 </div>
                                 <div class="uk-width-expand">
-                                    <h3 class="uk-card-title uk-margin-remove-bottom">Заголовок карты</h3>
-
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Международный стандарт</h3>
+                                    <p>Высокий уровень образования</p>
                                 </div>
                             </div>
                         </div>
@@ -418,12 +420,13 @@
                         <div class="uk-card-header">
                             <div class="uk-grid-small uk-flex-middle" uk-grid>
                                 <div class="uk-width-auto">
-                                    <img class="uk-border-circle" src="/demo/img/avatar.jpg" width="40" height="40"
-                                        alt="Аватарка" loading="lazy">
+                                    <img class="uk-border-circle" src="https://cdn.anomiro.ru/images/img3.png" alt=" "
+                                        loading="lazy">
                                 </div>
                                 <div class="uk-width-expand">
-                                    <h3 class="uk-card-title uk-margin-remove-bottom">Заголовок карты</h3>
-
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Профессиональная переподготовка
+                                    </h3>
+                                    <p>Диплом о переподготовке</p>
                                 </div>
                             </div>
                         </div>
@@ -435,40 +438,76 @@
                         <div class="uk-card-header">
                             <div class="uk-grid-small uk-flex-middle" uk-grid>
                                 <div class="uk-width-auto">
-                                    <img class="uk-border-circle" src="/demo/img/avatar.jpg" width="40" height="40"
-                                        alt="Аватарка" loading="lazy">
+                                    <img class="uk-border-circle" src="https://cdn.anomiro.ru/images/img4.png" alt=" "
+                                        loading="lazy">
                                 </div>
                                 <div class="uk-width-expand">
-                                    <h3 class="uk-card-title uk-margin-remove-bottom">Заголовок карты</h3>
-
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Курсы повышения квалификации</h3>
+                                    <p>Право сертификации педагогов</p>
                                 </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+                    uk-slideshow="animation: pull">
 
                     <ul class="uk-slideshow-items">
                         <li>
-                            <a class="uk-text-center" href="https://cdn.anomiro.ru/images/def_prof_license1.jpg"
-                                data-caption="">
-                                <img src="https://cdn.anomiro.ru/images/def_prof_license1.jpg" alt="slideshow"
-                                    uk-coverloading="lazy">
-                            </a>
+                            <div class="slider-standart">
+                                <div><img src="https://cdn.anomiro.ru/images/Герб-1.png" alt="slideshow"
+                                        uk-coverlo1ading="lazy">
+                                </div>
+                                <div>
+                                    <div class="slider-standart_title">
+                                        Профстандарт "Педагог-практик"
+                                    </div>
+                                    <div class="slider-standart_description">
+                                        Единственный универститет с правом сертификации педагогов по профстандарту
+                                        "Педагог-практик"
+                                    </div>
+                                    <div class="slider-standart_text">
+                                        Система добровольной сертификации<br>
+                                        “Профстандарт “Педагог-практик”<br>
+                                        Выдан: РОССТАНДАРТ<br>
+                                        Номер: РОСС RU.И2460.04ГОГ0<br>
+                                        Действителен: бессрочно<br>
+                                    </div>
+                                    <a class="button-one" href="">Посмотреть в Росстандарте</a>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <a class="uk-text-center" href="https://cdn.anomiro.ru/images/def_prof_license_2-min.jpeg"
-                                data-caption="">
-                                <img src="https://cdn.anomiro.ru/images/def_prof_license_2-min.jpeg" alt="slideshow"
-                                    uk-coverloading="lazy">
-                            </a>
+                            <div class="slider-standart">
+                                <div class="" uk-lightbox>
+                                    <a class="uk-inline" href="https://cdn.anomiro.ru/images/Сертификат-2.png">
+                                        <img src="https://cdn.anomiro.ru/images/Сертификат.png" loading="lazy">
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <div class="slider-standart_title">
+                                        Уровень образования соответствует международным стандартам
+                                    </div>
+                                    <div class="slider-standart_description">
+                                        Сертификат соответствия программ профессиональной переподготовки международным
+                                        стандартам
+                                    </div>
+                                    <div class="slider-standart_text">
+                                        Выдан: Федеральным агентством<br>
+                                        Номер: 01805<br>
+                                        Статус: действующий<br>
+                                        Действителен: бессрочно<br>
+                                    </div>
+
+                                </div>
+                            </div>
                         </li>
 
                     </ul>
                     <div>
-                        <a class="slide-nav next uk-position-small  uk-position-center-right" href="#"
-                            uk-slideshow-item="next">
+                        <a class="slide-nav slider-standart_slide-nav next uk-position-small  uk-position-center-right"
+                            href="#" uk-slideshow-item="next">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 29">
                                 <path
                                     d="M3.53137 28.5714L18.6665 14.2857L3.53137 0L-0.000162125 3.33333L11.6034 14.2857L-0.000162125 25.2381L3.53137 28.5714Z" />
@@ -575,15 +614,16 @@
                                     <img src="https://cdn.anomiro.ru/images/authors/Визель.jpg" width="900" height="600"
                                         alt="Слайдер" loading="lazy">
                                 </div>
-                                <div class="uk-card-body">
-
-
+                                <div class="card-educator">
                                     <details>
                                         <summary>
-                                            <h3 class="uk-card-title">Cлайдер</h3>
+                                            <div class="card-educator_title">Визель Татьяна Григорьевна</div>
+                                            <p>Доктор психологических наук</p>
                                         </summary>
-                                        <p>Теория конечных целей идет далеко, когда она ограничивается, будущее
-                                            предсуществует.</p>
+                                        <p>профессор кафедры специального дефектологического образования Московского
+                                            института психоанализа (МИП). Нейропсихолог. Активный участник создания в
+                                            Москве Центра патологии речи и нейрореабилитации (ЦПРиН). Многолетний
+                                            научный руководитель Центра. Автор более 200 научных публикаций</p>
                                     </details>
                                 </div>
                             </div>
@@ -594,10 +634,17 @@
                                     <img src="https://cdn.anomiro.ru/images/authors/Визель.jpg" width="900" height="600"
                                         alt="Слайдер" loading="lazy">
                                 </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title">Cлайдер</h3>
-                                    <p>Теория конечных целей идет далеко, когда она ограничивается, будущее
-                                        предсуществует.</p>
+                                <div class="card-educator">
+                                    <details>
+                                        <summary>
+                                            <div class="card-educator_title">Визель Татьяна Григорьевна</div>
+                                            <p>Доктор психологических наук</p>
+                                        </summary>
+                                        <p>профессор кафедры специального дефектологического образования Московского
+                                            института психоанализа (МИП). Нейропсихолог. Активный участник создания в
+                                            Москве Центра патологии речи и нейрореабилитации (ЦПРиН). Многолетний
+                                            научный руководитель Центра. Автор более 200 научных публикаций</p>
+                                    </details>
                                 </div>
                             </div>
                         </li>
@@ -607,10 +654,17 @@
                                     <img src="https://cdn.anomiro.ru/images/authors/Визель.jpg" width="900" height="600"
                                         alt="Слайдер" loading="lazy">
                                 </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title">Cлайдер</h3>
-                                    <p>Теория конечных целей идет далеко, когда она ограничивается, будущее
-                                        предсуществует.</p>
+                                <div class="card-educator">
+                                    <details>
+                                        <summary>
+                                            <div class="card-educator_title">Визель Татьяна Григорьевна</div>
+                                            <p>Доктор психологических наук</p>
+                                        </summary>
+                                        <p>профессор кафедры специального дефектологического образования Московского
+                                            института психоанализа (МИП). Нейропсихолог. Активный участник создания в
+                                            Москве Центра патологии речи и нейрореабилитации (ЦПРиН). Многолетний
+                                            научный руководитель Центра. Автор более 200 научных публикаций</p>
+                                    </details>
                                 </div>
                             </div>
                         </li>
@@ -620,10 +674,17 @@
                                     <img src="https://cdn.anomiro.ru/images/authors/Визель.jpg" width="900" height="600"
                                         alt="Слайдер" loading="lazy">
                                 </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title">Cлайдер</h3>
-                                    <p>Теория конечных целей идет далеко, когда она ограничивается, будущее
-                                        предсуществует.</p>
+                                <div class="card-educator">
+                                    <details>
+                                        <summary>
+                                            <div class="card-educator_title">Визель Татьяна Григорьевна</div>
+                                            <p>Доктор психологических наук</p>
+                                        </summary>
+                                        <p>профессор кафедры специального дефектологического образования Московского
+                                            института психоанализа (МИП). Нейропсихолог. Активный участник создания в
+                                            Москве Центра патологии речи и нейрореабилитации (ЦПРиН). Многолетний
+                                            научный руководитель Центра. Автор более 200 научных публикаций</p>
+                                    </details>
                                 </div>
                             </div>
                         </li>
@@ -633,26 +694,21 @@
                                     <img src="https://cdn.anomiro.ru/images/authors/Визель.jpg" width="900" height="600"
                                         alt="Слайдер" loading="lazy">
                                 </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title">Cлайдер</h3>
-                                    <p>Теория конечных целей идет далеко, когда она ограничивается, будущее
-                                        предсуществует.</p>
+                                <div class="card-educator">
+                                    <details>
+                                        <summary>
+                                            <div class="card-educator_title">Визель Татьяна Григорьевна</div>
+                                            <p>Доктор психологических наук</p>
+                                        </summary>
+                                        <p>профессор кафедры специального дефектологического образования Московского
+                                            института психоанализа (МИП). Нейропсихолог. Активный участник создания в
+                                            Москве Центра патологии речи и нейрореабилитации (ЦПРиН). Многолетний
+                                            научный руководитель Центра. Автор более 200 научных публикаций</p>
+                                    </details>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="uk-card uk-card-default">
-                                <div class="uk-card-media-top">
-                                    <img src="https://cdn.anomiro.ru/images/authors/Визель.jpg" width="900" height="600"
-                                        alt="Слайдер" loading="lazy">
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title">Cлайдер</h3>
-                                    <p>Теория конечных целей идет далеко, когда она ограничивается, будущее
-                                        предсуществует.</p>
-                                </div>
-                            </div>
-                        </li>
+
 
                     </ul>
 
@@ -830,7 +886,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="js/script.js" type="text/javascript"></script>
 </body>
 
 </html>

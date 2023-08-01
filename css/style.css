@@ -433,7 +433,7 @@ a:hover {
     left: -400px;
     width: 1320px;
     padding: 25px 60px;
-    background-image: linear-gradient(123deg, #F2F2F2 72%, rgba(242, 242, 242, 0.47) 98.94%), url("https://cdn.anomiro.ru/images/fonmenu.png");
+    background-image: linear-gradient(123deg, #F2F2F2 72%, rgba(242, 242, 242, 0.47) 98.94%), url('https://cdn.anomiro.ru/images/fonmenu.png');
     background-size: 100% 100%, contain;
     background-repeat: repeat, no-repeat;
     background-position: 100% 100%, 100% 100%;
@@ -648,10 +648,96 @@ a:hover {
 
 
 /*------Блок 2------*/
+.main_block2 {
+    display: block;
+    position: relative;
+    top: -370px;
+    margin-bottom: -530px;
+}
+
+.main_block2>div>div>div {
+    box-shadow: none;
+}
+
+.main_block2>div>div>div>div>div>div>img {
+    width: 50px;
+    border-radius: 0px;
+}
+
+.main_block2>div>div>div>div>div>div>h3.uk-card-title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.9px;
+    color: var(--color-bg-1);
+    margin-bottom: 10px !important;
+}
+
+.slider-standart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.slider-standart_slide-nav {
+    left: 47.5%;
+    top: 32%;
+}
+
+.slider-standart>div {
+    width: 50%;
+}
+
+.slider-standart>div:nth-child(odd) {
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg-4);
+    height: 500px;
+}
+
+.slider-standart>div:nth-child(even) {
+    padding: 5% 5%;
+    background: var(--color-bg-1);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.slider-standart_title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--color-text2);
+}
+
+.slider-standart_description {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--color-text4);
+}
+
+.slider-standart_text {
+    .slider-standart_text {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        color: var(--color-text4);
+    }
+}
+
 /*------Блок 3------*/
 .main_block3 {
-    padding: 135px 0px;
-    background: var(--color-bg-1);
+    padding: 150px 0px;
+    background-image: linear-gradient(90deg, rgba(69, 86, 112, 0.80) 0%, rgba(69, 86, 112, 0.70) 50%, rgba(0, 0, 0, 0.00) 100%), url('https://cdn.anomiro.ru/images/переподготовка.jpg');
+    background-size: 100% 100%, cover;
+    background-repeat: repeat, no-repeat;
+    background-position: 100% 100%, 100% 100%;
 }
 
 .main_block3>.container>div {
@@ -704,6 +790,66 @@ a:hover {
 .slider-educator>ul>li>div {
     box-shadow: none;
     padding: 10px;
+}
+
+.card-educator_title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    color: var(--color-bg-1);
+    padding-bottom: 5px;
+}
+
+.card-educator>details>summary {
+    padding: 20px 10px 0px 0px;
+}
+
+.card-educator>details>p {
+    animation: spoiler 1s;
+}
+
+/*.card-educator>details[open]>p {
+    animation: spoiler 1s;
+}
+
+@keyframes spoiler {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+*/
+
+details[open] summary~* {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-left: -10px
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0px
+    }
+}
+
+.card-educator::after {
+    content: "";
+    display: block;
+    position: relative;
+    height: 4px;
+    background: var(--color-bg-2);
+    width: 70%;
+    left: 0;
+    top: 0;
+    margin-top: 10px;
 }
 
 /*------Блок 6------*/
