@@ -645,7 +645,70 @@ a:hover {
 
 /*------Блок 1------*/
 
+.main_block1>div>ul>li>img {
+    width: 100%;
+}
 
+.main_block1>div>div>a[class*='uk-position-center-left'],
+.main_block1>div>div>a[class*='uk-position-center-right'] {
+    top: calc(35% - var(--uk-position-margin-offset));
+
+}
+
+.main_block1>div>ul>li>div {
+    z-index: 1;
+}
+
+.h1-slider {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    width: 70%;
+}
+
+.description-slider {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 30px;
+    color: var(--color-text2);
+    width: 65%;
+}
+
+.text-slider {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--color-text2);
+    width: 65%;
+    padding-top: 30px;
+}
+
+.main_block1_gradient {
+    display: inline-block;
+    position: relative;
+    line-height: 0;
+}
+
+.main_block1_gradient:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    background-image: linear-gradient(90deg, rgba(42, 66, 102, 0.80) 0%, rgba(42, 66, 102, 0.7) 50%, rgba(79, 99, 130, 0.00) 100%);
+    opacity: 0.8;
+}
+
+.main_block1>div>ul>li>div.uk-position-center {
+    top: calc(35% - var(--uk-position-margin-offset));
+}
 
 /*------Блок 2------*/
 .main_block2 {
@@ -655,8 +718,17 @@ a:hover {
     margin-bottom: -530px;
 }
 
+.main_block2>.container>div.uk-flex.uk-flex-between {
+    background: var(--color-text2);
+}
+
+.main_block2>.container>div>div>.uk-card-header {
+    border: none;
+}
+
 .main_block2>div>div>div {
     box-shadow: none;
+    padding: 15px 0px
 }
 
 .main_block2>div>div>div>div>div>div>img {
@@ -733,7 +805,7 @@ a:hover {
 
 /*------Блок 3------*/
 .main_block3 {
-    padding: 150px 0px;
+    padding: 180px 0px;
     background-image: linear-gradient(90deg, rgba(69, 86, 112, 0.80) 0%, rgba(69, 86, 112, 0.70) 50%, rgba(0, 0, 0, 0.00) 100%), url('https://cdn.anomiro.ru/images/переподготовка.jpg');
     background-size: 100% 100%, cover;
     background-repeat: repeat, no-repeat;
@@ -746,6 +818,62 @@ a:hover {
 
 .main_block3>.container>a {
     float: right;
+}
+
+.main_block3_nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.main_block3_nav>nav.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: var(--color-bg-1);
+    width: 24%;
+}
+
+.main_block3_nav>nav.uk-navbar-container>div>.uk-navbar-nav>li,
+.main_block3_nav>nav.uk-navbar-container>div>.uk-navbar-nav,
+.main_block3_nav>nav.uk-navbar-container>div {
+    width: 100%;
+}
+
+.main_block3_nav>nav.uk-navbar-container>div>.uk-navbar-nav>li>a {
+    color: var(--color-text2);
+    text-transform: none;
+    min-height: 10px;
+    padding: 15px 15px 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    font-family: 'Gotham XNarrow', sans-serif;
+}
+
+.main_block3_nav>nav.uk-navbar-container>div>.uk-navbar-nav>li>.uk-navbar-dropdown {
+    width: 100%;
+    top: 45px !important;
+    box-shadow: none;
+    padding: 0px;
+    background: var(--color-bg-4);
+}
+
+.main_block3_nav>nav.uk-navbar-container>div>.uk-navbar-nav>li>.uk-navbar-dropdown>ul>li>a {
+    padding: 15px 25px;
+    background: var(--color-bg-4);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    color: var(--color-text3);
+}
+
+.main_block3_nav>nav.uk-navbar-container>div>.uk-navbar-nav>li>.uk-navbar-dropdown>ul>li:hover>a {
+    background: var(--color-bg-5);
+    color: var(--color-bg-1);
 }
 
 /*------Блок 4------*/
@@ -792,7 +920,22 @@ a:hover {
     padding: 10px;
 }
 
-.card-educator_title {
+.slider-educator>ul>li>div>.uk-card-media-top {
+    background: var(--color-text4);
+}
+
+.slider-educator>ul>li>div>.uk-card-media-top>a>img {
+    width: 100%;
+    display: block;
+}
+
+.slider-educator>ul>li>div>.uk-card-media-top:hover {
+    background: var(--color-bg-5);
+}
+
+
+
+.card-educator_title>a {
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
@@ -801,8 +944,16 @@ a:hover {
     padding-bottom: 5px;
 }
 
+.card-educator_title>a:hover {
+    color: var(--color-bg-2);
+}
+
 .card-educator>details>summary {
     padding: 20px 10px 0px 0px;
+}
+
+.card-educator>details>summary>p {
+    cursor: pointer;
 }
 
 .card-educator>details>p {

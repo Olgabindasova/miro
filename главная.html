@@ -338,23 +338,69 @@
     </header>
     <main class="main">
         <div class="main_block1">
-
-
-
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: scale">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
                 <ul class="uk-slideshow-items">
-                    <li>
-                        <img src="https://cdn.anomiro.ru/images/image2.jpg" alt="slideshow">
-                        <div class="uk-position-small uk-position-center  container">
-                            <h3 class="uk-h1" uk-slideshow-parallax="x: 100,-100">Параллакс</h3>
-                            <p uk-slideshow-parallax="x: 200,-200">Ничего не просит и вежливо отказывается.</p>
+                    <li class=" ">
+                        <div class="main_block1_gradient">
+                            <img class="main_block1_gradient" src="https://cdn.anomiro.ru/images/image2.jpg"
+                                alt="slideshow">
+                        </div>
+                        <div class="uk-position-center  container">
+                            <div class="description-slider" uk-slideshow-parallax="x: 100,-100">Повышение квалификации и
+                                профессиональная переподготовка</div>
+                            <h1 class="h1-slider" uk-slideshow-parallax="x: 200,-200">МЕЖДУНАРОДНЫЙ ИНСТИТУТ
+                                РАЗВИТИЯ ОБРАЗОВАНИЯ</h1>
+                            <p class="text-slider" uk-slideshow-parallax="x: 200,-200">Настоящая практика и
+                                трудоустройство</p>
+                            <form class="uk-grid-small" uk-grid>
+                                <div class="uk-width-1-3@s">
+                                    <input class="uk-input" type="text" placeholder="Имя">
+                                </div>
+                                <div class="uk-width-1-3@s">
+                                    <input class="phone uk-input form-control phone" name="phone" id="" maxlength="16"
+                                        minlength="9" placeholder="Номер телефона" required="" type="text">
+                                </div>
+                                <div class="uk-width-1-3@s">
+                                    <button class="uk-button uk-button-primary button-two uk-width-expand" type="button"
+                                        tabindex="-1">Запросить</button>
+                                </div>
+                                <input class="uk-checkbox uk-disabled" type="checkbox" checked id=" " name=" "
+                                    value="да">
+                                <label class="uk-form-label" for="form_agree">Я даю согласие на обработку персональных
+                                    данных и
+                                    согласен на получение информационных рассылок от МИРО</label>
+                            </form>
                         </div>
                     </li>
-                    <li>
-                        <img src="https://cdn.anomiro.ru/images/image1.jpg" alt="slideshow">
-                        <div class="uk-position-small uk-position-center  container">
-                            <h3 class="uk-h1" uk-slideshow-parallax="x: 100,-100">Параллакс</h3>
-                            <p uk-slideshow-parallax="x: 200,-200">Ничего не просит и вежливо отказывается.</p>
+                    <li class=" ">
+                        <div class="main_block1_gradient">
+                            <img src="https://cdn.anomiro.ru/images/image1.jpg" alt="slideshow">
+                        </div>
+
+                        <div class="uk-position-center container">
+                            <div class="description-slider" uk-slideshow-parallax="x: 100,-100">Повышение квалификации и
+                                профессиональная переподготовка</div>
+                            <h1 class="h1-slider" uk-slideshow-parallax="x: 200,-200">МЕЖДУНАРОДНЫЙ ИНСТИТУТ
+                                РАЗВИТИЯ ОБРАЗОВАНИЯ</h1>
+                            <p class="text-slider" uk-slideshow-parallax="x: 200,-200">Настоящая практика и
+                                трудоустройство</p>
+                            <form class="uk-grid-small" uk-grid>
+                                <div class="uk-width-1-3@s">
+                                    <input class="uk-input" type="text" placeholder="Имя">
+                                </div>
+                                <div class="uk-width-1-3@s">
+                                    <input class="phone uk-input form-control phone" name="phone" id="" maxlength="16"
+                                        minlength="9" placeholder="Номер телефона" required="" type="text">
+                                </div>
+                                <div class="uk-width-1-3@s">
+                                    <button class="uk-button uk-button-primary button-two uk-width-expand" type="button"
+                                        tabindex="-1">Запросить</button>
+                                </div>
+                                <input class="uk-checkbox uk-disabled" type="checkbox" checked name=" " value="да">
+                                <label class="uk-form-label" for=" ">Я даю согласие на обработку персональных
+                                    данных и
+                                    согласен на получение информационных рассылок от МИРО</label>
+                            </form>
                         </div>
                     </li>
 
@@ -521,44 +567,147 @@
         <div class="main_block3">
             <div class="container">
                 <h2 class="h2-basic color3">Профессиональная переподготовка</h2>
-                <div class="uk-flex">
-                    <ul class="uk-nav-default uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l " uk-nav="multiple: true">
-                        <li class="uk-parent">
-                            <a href="#">Родительский пункт<span uk-nav-parent-icon></span></a>
-                            <ul class="uk-nav-sub">
-                                <li><a href="#">Подпункт</a></li>
-                                <li><a href="#">Подпункт</a></li>
+                <div class="main_block3_nav uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l">
+                    <nav class="uk-navbar-container" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a href="#">Родительский пункт<span uk-nav-parent-icon></span></a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="#">Активный пункт</a></li>
+                                            <li><a href="#">Пункт навигации</a></li>
+                                            <li><a href="#">Элемент списка</a></li>
+                                            <li><a href="#">Ссылка навигации</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
-                        </li>
-                    </ul>
-                    <ul class="uk-nav-default uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l " uk-nav="multiple: true">
-                        <li class="uk-parent">
-                            <a href="#">Родительский пункт<span uk-nav-parent-icon></span></a>
-                            <ul class="uk-nav-sub">
-                                <li><a href="#">Подпункт</a></li>
-                                <li><a href="#">Подпункт</a></li>
+                        </div>
+                    </nav>
+                    <nav class="uk-navbar-container" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a href="#">Родительский пункт<span uk-nav-parent-icon></span></a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="#">Активный пункт</a></li>
+                                            <li><a href="#">Пункт навигации</a></li>
+                                            <li><a href="#">Элемент списка</a></li>
+                                            <li><a href="#">Ссылка навигации</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
-                        </li>
-                    </ul>
-                    <ul class="uk-nav-default uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l " uk-nav="multiple: true">
-                        <li class="uk-parent">
-                            <a href="#">Родительский пункт<span uk-nav-parent-icon></span></a>
-                            <ul class="uk-nav-sub">
-                                <li><a href="#">Подпункт</a></li>
-                                <li><a href="#">Подпункт</a></li>
+                        </div>
+                    </nav>
+                    <nav class="uk-navbar-container" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a href="#">Родительский пункт<span uk-nav-parent-icon></span></a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="#">Активный пункт</a></li>
+                                            <li><a href="#">Пункт навигации</a></li>
+                                            <li><a href="#">Элемент списка</a></li>
+                                            <li><a href="#">Ссылка навигации</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
-                        </li>
-                    </ul>
-                    <ul class="uk-nav-default uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l " uk-nav="multiple: true">
-                        <li class="uk-parent">
-                            <a href="#">Родительский пункт<span uk-nav-parent-icon></span></a>
-                            <ul class="uk-nav-sub">
-                                <li><a href="#">Подпункт</a></li>
-                                <li><a href="#">Подпункт</a></li>
+                        </div>
+                    </nav>
+                    <nav class="uk-navbar-container" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a href="#">Родительский пункт<span uk-nav-parent-icon></span></a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="#">Активный пункт</a></li>
+                                            <li><a href="#">Пункт навигации</a></li>
+                                            <li><a href="#">Элемент списка</a></li>
+                                            <li><a href="#">Ссылка навигации</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                    </nav>
+                    <nav class="uk-navbar-container" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a href="#">Родительский пункт<span uk-nav-parent-icon></span></a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="#">Активный пункт</a></li>
+                                            <li><a href="#">Пункт навигации</a></li>
+                                            <li><a href="#">Элемент списка</a></li>
+                                            <li><a href="#">Ссылка навигации</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <nav class="uk-navbar-container" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a href="#">Родительский пункт<span uk-nav-parent-icon></span></a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="#">Активный пункт</a></li>
+                                            <li><a href="#">Пункт навигации</a></li>
+                                            <li><a href="#">Элемент списка</a></li>
+                                            <li><a href="#">Ссылка навигации</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <nav class="uk-navbar-container" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a href="#">Родительский пункт<span uk-nav-parent-icon></span></a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="#">Активный пункт</a></li>
+                                            <li><a href="#">Пункт навигации</a></li>
+                                            <li><a href="#">Элемент списка</a></li>
+                                            <li><a href="#">Ссылка навигации</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <nav class="uk-navbar-container" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a href="#">Родительский пункт<span uk-nav-parent-icon></span></a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="#">Активный пункт</a></li>
+                                            <li><a href="#">Пункт навигации</a></li>
+                                            <li><a href="#">Элемент списка</a></li>
+                                            <li><a href="#">Ссылка навигации</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
+
+
+
                 <a class="button-one" href="">Смотреть все</a>
             </div>
 
@@ -577,10 +726,10 @@
                             placeholder="Номер телефона" required="" type="text">
                     </div>
                     <div class="uk-width-1-3@s">
-                        <button class="uk-button uk-button-primary" type="button" tabindex="-1">Запросить</button>
+                        <button class="uk-button uk-button-primary button-two uk-width-expand" type="button"
+                            tabindex="-1">Запросить</button>
                     </div>
-                    <input class="uk-checkbox uk-disabled" type="checkbox" checked id="form_agree" name="f_agree"
-                        value="да">
+                    <input class="uk-checkbox uk-disabled" type="checkbox" checked name="f_agree" value="да">
                     <label class="uk-form-label" for="form_agree">Я даю согласие на обработку персональных данных и
                         согласен на получение информационных рассылок от МИРО</label>
                 </form>
@@ -588,7 +737,7 @@
         </div>
         <div class="main_block5">
             <div class="container">
-                <h2 class="h2-basic">Педагогиеский состав</h2>
+                <h2 class="h2-basic">Педагогический состав</h2>
                 <h3 class="h3-basic">Вы будете учиться у действительно известных преподавателей</h3>
 
                 <div class="uk-position-relative uk-visible-toggle uk-light slider-educator" tabindex="-1" uk-slider>
@@ -611,13 +760,18 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <img src="https://cdn.anomiro.ru/images/authors/Визель.jpg" width="900" height="600"
-                                        alt="Слайдер" loading="lazy">
+                                    <a href=""><img src="https://cdn.anomiro.ru/images/authors/Визель2.png"
+                                            alt="Слайдер" loading="lazy"></a>
                                 </div>
                                 <div class="card-educator">
+                                    <div
+                                        class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+
+                                    </div>
                                     <details>
                                         <summary>
-                                            <div class="card-educator_title">Визель Татьяна Григорьевна</div>
+                                            <div class="card-educator_title"><a href="">Визель Татьяна Григорьевна</a>
+                                            </div>
                                             <p>Доктор психологических наук</p>
                                         </summary>
                                         <p>профессор кафедры специального дефектологического образования Московского
@@ -631,13 +785,18 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <img src="https://cdn.anomiro.ru/images/authors/Визель.jpg" width="900" height="600"
-                                        alt="Слайдер" loading="lazy">
+                                    <a href=""><img src="https://cdn.anomiro.ru/images/authors/Визель2.png"
+                                            alt="Слайдер" loading="lazy"></a>
                                 </div>
                                 <div class="card-educator">
+                                    <div
+                                        class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+
+                                    </div>
                                     <details>
                                         <summary>
-                                            <div class="card-educator_title">Визель Татьяна Григорьевна</div>
+                                            <div class="card-educator_title"><a href="">Визель Татьяна Григорьевна</a>
+                                            </div>
                                             <p>Доктор психологических наук</p>
                                         </summary>
                                         <p>профессор кафедры специального дефектологического образования Московского
@@ -651,13 +810,18 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <img src="https://cdn.anomiro.ru/images/authors/Визель.jpg" width="900" height="600"
-                                        alt="Слайдер" loading="lazy">
+                                    <a href=""><img src="https://cdn.anomiro.ru/images/authors/Визель2.png"
+                                            alt="Слайдер" loading="lazy"></a>
                                 </div>
                                 <div class="card-educator">
+                                    <div
+                                        class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+
+                                    </div>
                                     <details>
                                         <summary>
-                                            <div class="card-educator_title">Визель Татьяна Григорьевна</div>
+                                            <div class="card-educator_title"><a href="">Визель Татьяна Григорьевна</a>
+                                            </div>
                                             <p>Доктор психологических наук</p>
                                         </summary>
                                         <p>профессор кафедры специального дефектологического образования Московского
@@ -671,13 +835,18 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <img src="https://cdn.anomiro.ru/images/authors/Визель.jpg" width="900" height="600"
-                                        alt="Слайдер" loading="lazy">
+                                    <a href=""><img src="https://cdn.anomiro.ru/images/authors/Визель2.png"
+                                            alt="Слайдер" loading="lazy"></a>
                                 </div>
                                 <div class="card-educator">
+                                    <div
+                                        class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+
+                                    </div>
                                     <details>
                                         <summary>
-                                            <div class="card-educator_title">Визель Татьяна Григорьевна</div>
+                                            <div class="card-educator_title"><a href="">Визель Татьяна Григорьевна</a>
+                                            </div>
                                             <p>Доктор психологических наук</p>
                                         </summary>
                                         <p>профессор кафедры специального дефектологического образования Московского
@@ -691,13 +860,18 @@
                         <li>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <img src="https://cdn.anomiro.ru/images/authors/Визель.jpg" width="900" height="600"
-                                        alt="Слайдер" loading="lazy">
+                                    <a href=""><img src="https://cdn.anomiro.ru/images/authors/Визель2.png"
+                                            alt="Слайдер" loading="lazy"></a>
                                 </div>
                                 <div class="card-educator">
+                                    <div
+                                        class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+
+                                    </div>
                                     <details>
                                         <summary>
-                                            <div class="card-educator_title">Визель Татьяна Григорьевна</div>
+                                            <div class="card-educator_title"><a href="">Визель Татьяна Григорьевна</a>
+                                            </div>
                                             <p>Доктор психологических наук</p>
                                         </summary>
                                         <p>профессор кафедры специального дефектологического образования Московского
