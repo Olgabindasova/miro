@@ -1304,6 +1304,10 @@ details[open] summary~* {
         width: 65%;
         margin-left: 6%;
     }
+
+    .main_block3_nav>nav.uk-navbar-container:not(.uk-navbar-transparent) {
+        width: 49%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1562,6 +1566,46 @@ details[open] summary~* {
         min-height: 450px !important;
         width: 310px;
     }
+
+    .main_block5 {
+        padding: 100px 0px;
+    }
+
+    .main_block4 {
+        padding: 80px 0px;
+    }
+
+    .main_block4_title {
+        font-size: 24px;
+    }
+
+    .form-slider>label {
+        line-height: 18px;
+    }
+
+    .main_block3_nav>nav.uk-navbar-container:not(.uk-navbar-transparent) {
+        width: 100%;
+    }
+
+    .main_block3>.container>a {
+        float: none;
+        width: 100%;
+        display: block;
+    }
+
+    .main_block3 {
+        padding: 100px 0px;
+    }
+
+    .form-slider>div>input {
+        height: 45px !important;
+    }
+
+    .form-slider>div>button {
+        line-height: 14px;
+        font-size: 14px;
+        height: 45px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1611,6 +1655,31 @@ details[open] summary~* {
 
     .main_block6_req {
         font-size: 14px;
+    }
+
+    .card-educator_title>a {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .h3-basic {
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+
+    .slider-educator {
+        margin-bottom: 20px;
+    }
+
+    .main_block5>.container>a {
+        float: none;
+        width: 100%;
+        display: block;
+    }
+
+    .slider-educator>ul>li {
+        width: 100%;
     }
 }
 
