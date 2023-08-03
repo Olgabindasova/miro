@@ -1005,12 +1005,13 @@ a:hover {
 }
 
 .slider-educator>ul>li>div>.uk-card-media-top {
-    background-color: var(--color-text4);
+    background-color: var(--color-text4) !important;
 }
 
 .slider-educator>ul>li>div>.uk-card-media-top>a>img {
     width: 100%;
     display: block;
+    background-color: var(--color-text4) !important;
 }
 
 .slider-educator>ul>li>div>.uk-card-media-top:hover {
