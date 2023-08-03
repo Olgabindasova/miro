@@ -1005,7 +1005,7 @@ a:hover {
 }
 
 .slider-educator>ul>li>div>.uk-card-media-top {
-    background: var(--color-text4);
+    background-color: var(--color-text4);
 }
 
 .slider-educator>ul>li>div>.uk-card-media-top>a>img {
@@ -1014,7 +1014,7 @@ a:hover {
 }
 
 .slider-educator>ul>li>div>.uk-card-media-top:hover {
-    background: var(--color-bg-5);
+    background-color: var(--color-bg-5);
 }
 
 
