@@ -2097,7 +2097,7 @@ details[open] summary~* {
     }
 
     .main_block1 {
-        height: 630px;
+        height: 590px;
     }
 
     .description-slider {
@@ -2117,6 +2117,12 @@ details[open] summary~* {
 
     .slider-standart_slide-nav {
         left: 40.5%;
+    }
+}
+
+@media (max-width: 375px) {
+    .main_block1 {
+        height: 600px;
     }
 }
 
