@@ -2122,7 +2122,16 @@ details[open] summary~* {
 
 @media (max-width: 375px) {
     .main_block1 {
-        height: 600px;
+        height: 640px;
+    }
+
+    .form-slider>label {
+        line-height: 12px;
+        font-size: 12px;
+    }
+
+    .main_block6_req {
+        text-align: center;
     }
 }
 
