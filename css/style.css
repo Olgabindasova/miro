@@ -34,6 +34,42 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Gotham XNarrow';
+    src: url('https://cdn.anomiro.ru/fonts/GothamCond-Book.woff2') format('woff2'),
+        url('https://cdn.anomiro.ru/fonts/GothamCond-Book.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Gotham XNarrow';
+    src: url('https://cdn.anomiro.ru/fonts/GothamXNarrow-Light.woff2') format('woff2'),
+        url('https://cdn.anomiro.ru/fonts/GothamXNarrow-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Gotham XNarrow';
+    src: url('https://cdn.anomiro.ru/fonts/GothamXNarrow-Medium.woff2') format('woff2'),
+        url('https://cdn.anomiro.ru/fonts/GothamXNarrow-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Gotham XNarrow';
+    src: url('https://cdn.anomiro.ru/fonts/GothamXNarrow-Bold.woff2') format('woff2'),
+        url('https://cdn.anomiro.ru/fonts/GothamXNarrow-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -247,12 +283,29 @@ a:hover {
 
 /*------Заголовки------*/
 
+.h1-basic {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-bg-1);
+    margin: 20px 0;
+}
+
 .h2-basic {
     font-size: 48px;
     font-style: normal;
     font-weight: 500;
     line-height: 48px;
     margin-bottom: 30px;
+}
+
+.h2-pages {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 20x;
 }
 
 .h3-basic {
@@ -1159,6 +1212,29 @@ details[open] summary~* {
 .main_block7_buttons>a {
     width: 49%;
     text-align: center;
+}
+
+/*------Крошки ------*/
+
+.main>.container>nav>.uk-breadcrumb> :nth-child(n+2):not(.uk-first-column)::before {
+    content: ">";
+    margin: 0 10px 0 calc(10px - 4px);
+    color: var(--color-bg-6) !important;
+}
+
+.main>.container>nav>.uk-breadcrumb {
+    margin: 20px 0;
+}
+
+.main>.container>nav>.uk-breadcrumb>*>* {
+    color: var(--color-bg-6);
+    font-size: 15px;
+
+}
+
+.main>.container>nav>.uk-breadcrumb> :last-child>span,
+.main>.container>nav>.uk-breadcrumb> :last-child>a:not([href]) {
+    color: var(--color-bg-2);
 }
 
 /*------Адаптив ------*/
