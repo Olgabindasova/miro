@@ -2100,6 +2100,10 @@ details[open] summary~* {
         padding-top: 5px;
     }
 
+    #header-mobile-nav {
+        overflow-y: scroll;
+    }
+
     #header-mobile-nav>.uk-offcanvas-bar {
         width: 100%;
         max-width: 768px;
