@@ -1641,6 +1641,241 @@ details[open] summary~* {
     opacity: 0;
 }
 
+/*------Страница переподготовок детальная ------*/
+/*------Страница переподготовок детальная  Блок 1------*/
+.heading-retraining {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 5%, rgba(79, 99, 130, 1) 5%, rgba(79, 99, 130, 1) 95%, rgba(255, 255, 255, 1) 95%);
+    color: var(--color-text2);
+    margin: 50px 0 100px;
+    height: fit-content;
+}
+
+.heading-retraining>.container {
+    display: flex;
+}
+
+.heading-retraining_geyrns {
+    background: var(--color-bg-2);
+    width: fit-content;
+    display: block;
+    position: relative;
+    padding: 70px 50px;
+    min-width: 33%;
+}
+
+.uniqueness-course {
+    padding: 80px 80px;
+}
+
+.heading-retraining_title {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 40px;
+    color: inherit;
+}
+
+.heading-retraining_profile {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: normal;
+    display: block;
+    color: inherit;
+}
+
+.heading-retraining_points {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.heading-retraining_points>li {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.heading-retraining_request {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    padding-bottom: 10px;
+}
+
+.heading-retraining_requirements {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.uniqueness-course_all {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -60px;
+    left: 80px
+}
+
+.uniqueness-course>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.uniqueness-course>ul>li>div:nth-child(odd) {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    padding-bottom: 15px;
+}
+
+.uniqueness-course>ul>li>div:nth-child(even) {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+/*------Страница переподготовок детальная  Блок 2------*/
+.h3-retraining {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 25px;
+    color: var(--color-bg-1);
+}
+
+.educators {
+    margin: 0;
+    gap: 17px;
+    margin-bottom: 80px;
+}
+
+.educators>div {
+    padding: 0;
+    width: 24%;
+}
+
+.educators>div>.uk-card-media-top {
+    background: var(--color-text4);
+}
+
+.educators>div>.uk-card-media-top:hover {
+    background: var(--color-bg-5);
+}
+
+.educators>div>.uk-card-media-top>a>img {
+    display: block;
+    width: 100%;
+}
+
+/*------Страница переподготовок детальная  Блок 3------*/
+/*------Страница переподготовок детальная  Блок 4------*/
+
+/*------Страница входа и регистрации------*/
+
+.entry-reg {
+    background: var(--color-bg-1);
+    padding: 80px 0;
+    margin: 80px 0;
+}
+
+.h1-entry-reg {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-text2);
+    margin-bottom: 30px;
+}
+
+.form-entry-reg {
+    color: var(--color-text2);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.form-entry-reg>fieldset>div {
+    margin-bottom: 10px;
+}
+
+.form-entry-reg>fieldset>div>input {
+    padding: 0;
+    height: 50px;
+    color: var(--color-text) !important;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 1;
+}
+
+.form-entry-reg>fieldset>div>.uk-form-icon:not(.uk-form-icon-flip)~.uk-input {
+    padding-left: 25% !important;
+}
+
+.form-entry-reg>fieldset>div>input::placeholder {
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-entry-reg>fieldset>div>input::-webkit-input-placeholder {
+    color: var(--color-text);
+}
+
+.form-entry-reg>fieldset>div>input::-moz-placeholder {
+    color: var(--color-text);
+}
+
+/* Firefox 19+ */
+.form-entry-reg>fieldset>div>input:-moz-placeholder {
+    color: var(--color-text);
+}
+
+/* Firefox 18- */
+.form-entry-reg>fieldset>div>input:-ms-input-placeholder {
+    color: var(--color-text);
+}
+
+.form-entry-reg>fieldset>div>span.uk-form-icon {
+    fill: var(--color-bg-2);
+    margin-left: 50px;
+}
+
+.form-entry-reg>fieldset>div>button {
+    border: 0px;
+    border-left: 3px solid var(--color-bg-2);
+    width: 100%;
+    cursor: pointer;
+}
+
+.form-entry-reg>fieldset>div.checkbox-entry-reg>input {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.form-entry-reg>fieldset>div.checkbox-entry-reg>.uk-checkbox:checked {
+    background-color: transparent;
+    border: 1px solid var(--color-text2);
+
+}
+
+.form-entry-reg>fieldset>div.checkbox-entry-reg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 /*------Адаптив ------*/
 @media (max-width: 1450px) {
     .container {
@@ -2619,6 +2854,27 @@ details[open] summary~* {
     .retraining-educator {
         padding: 20px 0px;
     }
+
+    .form-entry-reg {
+        max-width: 350px;
+    }
+
+    .form-entry-reg>fieldset>div>.uk-form-icon:not(.uk-form-icon-flip)~.uk-input {
+        padding-left: 15% !important;
+    }
+
+    .form-entry-reg>fieldset>div>span.uk-form-icon {
+        margin-left: 10px;
+    }
+
+    .h1-entry-reg {
+        font-size: 34px;
+    }
+
+    .entry-reg {
+        padding: 40px 0;
+        margin: 40px 0;
+    }
 }
 
 @media (max-width: 450px) {
@@ -2821,6 +3077,14 @@ details[open] summary~* {
     .content-block-sections>section {
         margin: 0 0 100px 0;
     }
+
+    .form-entry-reg {
+        max-width: 250px;
+    }
+
+    .form-entry-reg>fieldset>div>.uk-form-icon:not(.uk-form-icon-flip)~.uk-input {
+        padding-left: 20% !important;
+    }
 }
 
 @media (max-width: 375px) {
@@ -2835,6 +3099,19 @@ details[open] summary~* {
 
     .main_block6_req {
         text-align: center;
+    }
+
+    .form-entry-reg {
+        max-width: 215px;
+    }
+
+    .form-entry-reg>fieldset>div>.uk-form-icon:not(.uk-form-icon-flip)~.uk-input {
+        padding-left: 17% !important;
+    }
+
+    .form-entry-reg>fieldset>div>span.uk-form-icon {
+        margin-left: 10px;
+        width: 17px;
     }
 }
 
