@@ -1803,6 +1803,7 @@ details[open] summary~* {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    max-width: 580px;
 }
 
 .form-entry-reg>fieldset>div {
@@ -1874,6 +1875,10 @@ details[open] summary~* {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.checkbox-entry-reg_consent {
+    font-size: 13px;
 }
 
 /*------Адаптив ------*/
@@ -2736,6 +2741,10 @@ details[open] summary~* {
     .ad-block>li {
         width: 50%;
         padding: 5px;
+    }
+
+    .form-entry-reg {
+        max-width: 450px;
     }
 }
 
