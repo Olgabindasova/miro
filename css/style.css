@@ -416,6 +416,7 @@ a:hover {
 .as-icon-menu {
     color: var(--color-text2);
     transition: all 0.5s;
+    background: var(--color-bg-2)
 }
 
 .as-icon-telephone:hover,
@@ -427,6 +428,12 @@ a:hover {
     background: var(--color-text2) !important;
     border-radius: 50%;
     border: 3px solid var(--color-text2);
+}
+
+.as-icon-vihlk,
+.as-icon-vihlk:hover {
+    width: 30px;
+    height: 30px;
 }
 
 .header-top-social>.telephone {
@@ -2548,6 +2555,8 @@ details[open] summary~* {
 
     .header-top-mobile-buttons {
         margin-left: 10px;
+        display: flex;
+        align-items: center;
     }
 
     .header-top-mobile-buttons>.uk-icon-button {
