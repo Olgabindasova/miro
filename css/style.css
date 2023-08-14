@@ -1834,30 +1834,65 @@ details[open] summary~* {
 }
 
 .card-retraining_header_time {
-    padding: 20px 10% 20px 0px;
+    padding: 20px 5% 20px 0px;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
     border-right: 1px solid;
 }
 
+.card-retraining_header_time::after {
+    content: "ч.";
+    display: block;
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    top: 17px;
+    float: right;
+    padding-left: 5px;
+}
+
 .card-retraining_header_name {
     font-size: 24px;
     font-weight: 300;
     border-right: 1px solid;
-    padding: 20px 10% 20px 0px;
+    padding: 20px 5% 20px 0px;
 }
 
 .card-retraining_header_price_new {
     font-size: 24px;
     font-weight: 500;
     letter-spacing: -0.1px;
+    text-align: right;
+}
+
+.card-retraining_header_price_new::after {
+    content: '\20BD';
+    display: block;
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    top: 8px;
+    float: right;
+    padding-left: 5px;
 }
 
 .card-retraining_header_price_old {
     font-size: 18px;
     font-weight: 400;
     text-decoration-line: line-through;
+    text-align: right;
+}
+
+.card-retraining_header_price_old::after {
+    content: '\20BD';
+    display: block;
+    position: relative;
+    font-size: 13px;
+    font-weight: 400;
+    top: 4px;
+    float: right;
+    padding-left: 5px;
 }
 
 .card-retraining_header_dicription {
@@ -1873,19 +1908,31 @@ details[open] summary~* {
     font-weight: 300;
 }
 
+.card-retraining_body {
+    padding: 0 40px;
+}
+
 .card-retraining_body-title {
     letter-spacing: -0.2px;
     font-size: 22px;
     font-weight: 500;
     color: var(--color-bg-1);
+    padding-top: 40px;
+}
+
+.card-retraining-divider {
+    width: 100%;
+    height: 1px;
+    background: var(--color-bg-1);
 }
 
 .card-retraining-list-group {
     gap: 13px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 30px 20px;
 }
+
 
 .card-retraining-list-group>li>div>div,
 .card-retraining-list-group>li>div>div>span {
@@ -1893,6 +1940,32 @@ details[open] summary~* {
     color: var(--color-bg-1) !important;
     font-weight: 400;
     fill: var(--color-bg-1) !important;
+    cursor: default;
+}
+
+.card-retraining-list-group>li>div:hover>div,
+.card-retraining-list-group>li>div:hover>div>span {
+    font-size: 16px;
+    color: var(--color-bg-2) !important;
+    font-weight: 400;
+    fill: var(--color-bg-2) !important;
+
+}
+
+.list1>li>div::before {
+    content: url("https://cdn.anomiro.ru/icons/list1.svg");
+}
+
+.list1>li>div:hover::before {
+    content: url("https://cdn.anomiro.ru/icons/list1h.svg");
+}
+
+.list2>li>div::before {
+    content: url("https://cdn.anomiro.ru/icons/list2.svg");
+}
+
+.list2>li>div:hover::before {
+    content: url("https://cdn.anomiro.ru/icons/list2h.svg");
 }
 
 /*------Страница переподготовок детальная  Блок 4------*/
