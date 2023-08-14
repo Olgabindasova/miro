@@ -247,6 +247,7 @@ a:hover {
     color: var(--color-text2);
     text-align: center;
     cursor: pointer;
+    border: 0;
 }
 
 .button-two:hover {
@@ -352,6 +353,11 @@ a:hover {
 
 .header-top a {
     color: var(--color-text2);
+}
+
+.header-top-buttons {
+    display: flex;
+    align-items: center;
 }
 
 .header-top-social>.uk-icon-button {
