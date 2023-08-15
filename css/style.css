@@ -1968,7 +1968,156 @@ details[open] summary~* {
     content: url("https://cdn.anomiro.ru/icons/list2h.svg");
 }
 
+
+.tooltip-container {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    opacity: 0;
+    z-index: 99;
+    color: var(--color-text2) !important;
+    width: 190px;
+    display: block;
+    font-size: 10px !important;
+    padding: 20px;
+    border-radius: 3px;
+    background: var(--color-bg-2);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    position: absolute;
+    right: -93px;
+    bottom: 40px;
+}
+
+.tooltip:before,
+.tooltip:after {
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--color-bg-2);
+    position: absolute;
+    bottom: -10px;
+    left: 43%;
+}
+
+.tooltip-container:hover .tooltip,
+a:hover .tooltip {
+    font-weight: 500;
+    font-size: 13px !important;
+    line-height: 13px;
+    text-align: left;
+    color: var(--color-text2) !important;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.tooltip-container {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 10 10' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10 5C10 7.7615 7.7615 10 5 10C2.2385 10 0 7.7615 0 5C0 2.2385 2.2385 0 5 0C7.7615 0 10 2.2385 10 5ZM5 2.875C4.6895 2.875 4.4375 3.127 4.4375 3.4375C4.4375 3.53696 4.39799 3.63234 4.32766 3.70266C4.25734 3.77299 4.16196 3.8125 4.0625 3.8125C3.96304 3.8125 3.86766 3.77299 3.79734 3.70266C3.72701 3.63234 3.6875 3.53696 3.6875 3.4375C3.68751 3.22247 3.74035 3.01073 3.84137 2.82091C3.9424 2.63109 4.08851 2.46899 4.26687 2.34888C4.44523 2.22877 4.65037 2.15432 4.86424 2.13208C5.07812 2.10984 5.29419 2.14049 5.49344 2.22133C5.6927 2.30217 5.86904 2.43073 6.00696 2.59571C6.14488 2.76068 6.24016 2.95702 6.28441 3.16745C6.32866 3.37787 6.32053 3.59595 6.26074 3.8025C6.20094 4.00905 6.09132 4.19775 5.9415 4.352C5.8955 4.3995 5.8515 4.4435 5.8095 4.4855C5.70794 4.58222 5.61258 4.68526 5.524 4.794C5.414 4.935 5.375 5.0385 5.375 5.125V5.5C5.375 5.59946 5.33549 5.69484 5.26516 5.76516C5.19484 5.83549 5.09946 5.875 5 5.875C4.90054 5.875 4.80516 5.83549 4.73484 5.76516C4.66451 5.69484 4.625 5.59946 4.625 5.5V5.125C4.625 4.7975 4.7775 4.532 4.932 4.3335C5.0465 4.1865 5.19 4.0435 5.307 3.9265C5.342 3.8915 5.375 3.859 5.4035 3.8295C5.48056 3.7502 5.53253 3.64995 5.55293 3.54127C5.57333 3.4326 5.56125 3.32032 5.51819 3.21848C5.47514 3.11663 5.40303 3.02973 5.31086 2.96864C5.2187 2.90755 5.11057 2.87498 5 2.875ZM5 7.5C5.13261 7.5 5.25979 7.44732 5.35355 7.35355C5.44732 7.25979 5.5 7.13261 5.5 7C5.5 6.86739 5.44732 6.74021 5.35355 6.64645C5.25979 6.55268 5.13261 6.5 5 6.5C4.86739 6.5 4.74021 6.55268 4.64645 6.64645C4.55268 6.74021 4.5 6.86739 4.5 7C4.5 7.13261 4.55268 7.25979 4.64645 7.35355C4.74021 7.44732 4.86739 7.5 5 7.5Z' fill='%234F6382'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 96%;
+}
+
+.card-retraining-list-group>li>div:hover>.tooltip-container,
+.tooltip-container:hover {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 10 10' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10 5C10 7.7615 7.7615 10 5 10C2.2385 10 0 7.7615 0 5C0 2.2385 2.2385 0 5 0C7.7615 0 10 2.2385 10 5ZM5 2.875C4.6895 2.875 4.4375 3.127 4.4375 3.4375C4.4375 3.53696 4.39799 3.63234 4.32766 3.70266C4.25734 3.77299 4.16196 3.8125 4.0625 3.8125C3.96304 3.8125 3.86766 3.77299 3.79734 3.70266C3.72701 3.63234 3.6875 3.53696 3.6875 3.4375C3.68751 3.22247 3.74035 3.01073 3.84137 2.82091C3.9424 2.63109 4.08851 2.46899 4.26687 2.34888C4.44523 2.22877 4.65037 2.15432 4.86424 2.13208C5.07812 2.10984 5.29419 2.14049 5.49344 2.22133C5.6927 2.30217 5.86904 2.43073 6.00696 2.59571C6.14488 2.76068 6.24016 2.95702 6.28441 3.16745C6.32866 3.37787 6.32053 3.59595 6.26074 3.8025C6.20094 4.00905 6.09132 4.19775 5.9415 4.352C5.8955 4.3995 5.8515 4.4435 5.8095 4.4855C5.70794 4.58222 5.61258 4.68526 5.524 4.794C5.414 4.935 5.375 5.0385 5.375 5.125V5.5C5.375 5.59946 5.33549 5.69484 5.26516 5.76516C5.19484 5.83549 5.09946 5.875 5 5.875C4.90054 5.875 4.80516 5.83549 4.73484 5.76516C4.66451 5.69484 4.625 5.59946 4.625 5.5V5.125C4.625 4.7975 4.7775 4.532 4.932 4.3335C5.0465 4.1865 5.19 4.0435 5.307 3.9265C5.342 3.8915 5.375 3.859 5.4035 3.8295C5.48056 3.7502 5.53253 3.64995 5.55293 3.54127C5.57333 3.4326 5.56125 3.32032 5.51819 3.21848C5.47514 3.11663 5.40303 3.02973 5.31086 2.96864C5.2187 2.90755 5.11057 2.87498 5 2.875ZM5 7.5C5.13261 7.5 5.25979 7.44732 5.35355 7.35355C5.44732 7.25979 5.5 7.13261 5.5 7C5.5 6.86739 5.44732 6.74021 5.35355 6.64645C5.25979 6.55268 5.13261 6.5 5 6.5C4.86739 6.5 4.74021 6.55268 4.64645 6.64645C4.55268 6.74021 4.5 6.86739 4.5 7C4.5 7.13261 4.55268 7.25979 4.64645 7.35355C4.74021 7.44732 4.86739 7.5 5 7.5Z' fill='%23B3171A'/%3E%3C/svg%3E");
+}
+
 /*------Страница переподготовок детальная  Блок 4------*/
+.retraining-programs_nav {
+    gap: 15px;
+}
+
+.retraining-programs_nav>li {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.retraining-programs_nav>li>a {
+    padding: 18px 25px !important;
+    background: var(--color-bg-1);
+    font-size: 32px !important;
+    font-weight: 400;
+    background: var(--color-bg-1) !important;
+    color: var(--color-text2) !important;
+}
+
+.retraining-programs_nav>li>a:hover,
+.retraining-programs_nav>li.uk-active>a {
+    background: var(--color-bg-2) !important;
+}
+
+.retraining-programs_list {
+    width: 100%;
+    background-color: var(--color-bg-1);
+    color: var(--color-text2);
+    margin-bottom: 0;
+    padding: 40px 0;
+}
+
+.retraining-programs_nav-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.retraining-programs_list>li>div>div.uk-first-column>ul>li>a {
+    color: var(--color-text2);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 22px;
+}
+
+.retraining-programs_list>li>div>div.uk-first-column>ul>li:hover>a {
+    background: var(--color-text2);
+    color: var(--color-bg-2);
+
+}
+
+.retraining-programs_list>li>div>div.uk-first-column>ul>li>a>span {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+}
+
+.retraining-programs_title {
+    font-size: 28px;
+    font-weight: 400;
+    padding: 25px 35px;
+}
+
+.retraining-programs_title>span {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    padding-left: 10px;
+}
+
+.retraining-programs_title>span::after {
+    content: "ч.";
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 5px;
+}
 
 /*------Страница входа и регистрации------*/
 
