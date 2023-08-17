@@ -2134,8 +2134,6 @@ a:hover .tooltip {
     text-transform: uppercase;
 }
 
-
-
 .retraining-programs_list-two>ul>li>ul>li {
     margin: 0 0 2px 0 !important;
 }
@@ -2245,6 +2243,99 @@ a:hover .tooltip {
     font-size: 15px;
     font-weight: 400;
     padding-left: 5px;
+}
+
+.retraining-programs_list-two-items {
+    margin-top: 0 !important;
+    transition: all 0.5s;
+}
+
+.retraining-programs_list-two_item {
+    background: var(--color-bg-7);
+    padding: 20px 25px;
+    color: var(--color-text3);
+    border-top: 1px solid var(--color-bg-6);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    align-content: center;
+}
+
+.retraining-programs_list-two_item>div:nth-child(1) {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    min-width: 150px;
+}
+
+.retraining-programs_list-two_item>div:nth-child(1)::before {
+    content: url('https://cdn.anomiro.ru/icons/lekzii.svg');
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    padding-right: 15px;
+}
+
+.retraining-programs_list-two_item>div:nth-child(2) {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+}
+
+.retraining-programs_list-two_item>div:nth-child(3) {
+    display: flex;
+    gap: 10px;
+}
+
+.retraining-programs_list-two_item>div:nth-child(3)>a {
+    background: var(--color-bg-1);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 5px 12px;
+    color: var(--color-text2);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.retraining-programs_list-two_item>div:nth-child(3)>a:hover {
+    background: var(--color-bg-1h);
+}
+
+.retraining-programs_list-two_item>div:nth-child(3)>div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.retraining-programs-access {
+    width: 17px;
+    height: 20px;
+    display: block;
+    background-image: url('https://cdn.anomiro.ru/icons/access.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.retraining-programs-access.none {
+    background-image: url('https://cdn.anomiro.ru/icons/access.none.svg');
+    width: 15px;
+    height: 20px
+}
+
+.retraining-programs-time {
+    background-image: url('https://cdn.anomiro.ru/icons/time.svg');
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /*------Страница входа и регистрации------*/
