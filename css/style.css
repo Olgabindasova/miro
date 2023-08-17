@@ -2092,10 +2092,14 @@ a:hover .tooltip {
 }
 
 .retraining-programs_list-one>ul>li:hover>a {
-    background: var(--color-text2);
+    background: var(--color-bg-4);
     color: var(--color-bg-2);
     text-transform: uppercase;
+}
 
+.retraining-programs_list-one>ul>li>a[aria-expanded="true"] {
+    background: var(--color-text2);
+    color: var(--color-bg-2);
 }
 
 .retraining-programs_list-one>ul>li>a>span {
