@@ -2635,6 +2635,10 @@ a:hover .tooltip {
         top: 40%;
     }
 
+    .card-retraining {
+        justify-content: center;
+    }
+
     .retraining-item {
         width: 49%;
     }
@@ -2668,6 +2672,147 @@ a:hover .tooltip {
         border-right: 15px solid var(--color-bg-2);
         top: 40px;
         left: 180px;
+    }
+
+    .heading-retraining_geyrns {
+        padding: 70px 50px;
+        min-width: 35%;
+    }
+
+    .heading-retraining_title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .heading-retraining_profile {
+        font-size: 38px;
+        padding-top: 20px;
+    }
+
+    .heading-retraining_points>li {
+        font-size: 26px;
+        gap: 20px;
+    }
+
+    .heading-retraining_points>li>img {
+        width: 30px;
+    }
+
+    .heading-retraining_points {
+        margin: 25px;
+        gap: 40px;
+    }
+
+    .heading-retraining_request {
+        padding-top: 25px;
+    }
+
+    .uniqueness-course {
+        padding: 80px 65px;
+        margin-bottom: 25px;
+    }
+
+    .uniqueness-course>ul {
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .uniqueness-course>ul>li>div:nth-child(even) {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .uniqueness-course>ul>li>div:nth-child(odd) {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .educators>div {
+        width: 23%;
+    }
+
+    .card-retraining-item {
+        width: 48%;
+    }
+
+    .retraining-programs_modul-header_title {
+        padding: 0px 30px 10px 0;
+    }
+
+    .retraining-programs_title {
+        font-size: 24px;
+        padding: 25px 0px;
+    }
+
+    .retraining-programs_title>span {
+        font-size: 30px;
+        padding-left: 5px;
+    }
+
+    .retraining-programs_list-one>ul>li>a {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+
+    .retraining-programs_list-one>ul>li>a>span {
+        font-size: 18px;
+    }
+
+    .retraining-programs_modul-title {
+        font-size: 32px;
+        padding: 20px 0 25px;
+    }
+
+    .retraining-programs_modul-header_content>div:nth-child(even) {
+        gap: 10px;
+    }
+
+    .academic-hour {
+        font-size: 30px !important;
+        line-height: 22px;
+    }
+
+    .retraining-programs_modul-header_content {
+        gap: 10px;
+    }
+
+    .retraining-programs_modul-header_educator {
+        min-width: 25%;
+    }
+
+    .retraining-programs_modul-header_content>div:nth-child(even)>div {
+        padding: 5px 10px 0;
+    }
+
+    .retraining-programs_list-two>ul>li>ul>li>a[aria-expanded="true"]>.retraining-programs_modul-header::after {
+        bottom: -20px;
+        left: -90px;
+    }
+
+    .retraining-programs_list-two_item>div:nth-child(1) {
+        font-size: 18px;
+        min-width: 100px;
+    }
+
+    .retraining-programs_list-two_item>div:nth-child(2) {
+        font-size: 16px;
+    }
+
+    .retraining-programs_list-two_item>div:nth-child(3) {
+        flex-direction: column-reverse;
+        min-width: 150px;
+        align-items: center;
+    }
+
+    .retraining-programs_list-two_item>div:nth-child(3)>a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .retraining-programs_list-two_item>div:nth-child(3)>div {
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
     }
 }
 
