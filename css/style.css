@@ -2051,16 +2051,41 @@ a:hover .tooltip {
 
 .retraining-programs_nav>li>a {
     padding: 18px 25px !important;
-    background: var(--color-bg-1);
     font-size: 32px !important;
     font-weight: 400;
     background: var(--color-bg-1) !important;
     color: var(--color-text2) !important;
 }
 
+.retraining-programs_nav>li>a::after {
+    content: "ч.";
+    display: block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    top: 7px;
+
+}
+
 .retraining-programs_nav>li>a:hover,
 .retraining-programs_nav>li.uk-active>a {
     background: var(--color-bg-2) !important;
+}
+
+.free-period {
+    font-size: 20px !important;
+    font-weight: 500;
+    padding: 12px !important;
+    text-transform: none !important;
+    letter-spacing: -0.2px;
+    color: var(--color-bg-1) !important;
+}
+
+.free-period::before {
+    content: url('https://cdn.anomiro.ru/icons/time.svg');
+    display: block;
+    position: relative;
+    top: 3px;
 }
 
 .retraining-programs_list {
@@ -2074,6 +2099,7 @@ a:hover .tooltip {
 .retraining-programs_nav-button {
     display: flex;
     justify-content: flex-end;
+    gap: 12px;
 }
 
 .retraining-programs_list-one {
