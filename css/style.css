@@ -1622,7 +1622,7 @@ details[open] summary~* {
     color: var(--color-bg-2);
     text-align: center;
     cursor: pointer;
-    z-index: 999;
+    z-index: 1001;
 }
 
 .nav-button:hover {
@@ -3040,6 +3040,27 @@ a:hover .tooltip {
         width: 48.5%;
     }
 
+    .educators>div {
+        width: 32%;
+    }
+
+    .free-period {
+        font-size: 17px !important;
+    }
+
+    .retraining-programs_nav>li>a {
+        padding: 12px 20px !important;
+        font-size: 30px !important;
+    }
+
+    .retraining-programs_modul-header_content>div:nth-child(even) {
+        flex-wrap: wrap;
+    }
+
+    .retraining-programs_modul-header_content>div:nth-child(even)>div {
+        width: 45%;
+    }
+
 }
 
 @media (max-width: 960px) {
@@ -3129,6 +3150,57 @@ a:hover .tooltip {
     .retraining-modul_old-price::after {
         font-size: 13px;
         top: 4px;
+    }
+
+    .educators>div {
+        width: 49%;
+    }
+
+    .card-retraining-item {
+        width: 100%;
+    }
+
+    .uniqueness-course_all {
+        top: -32px;
+        left: 0px;
+    }
+
+    .retraining-programs_nav-button {
+        min-width: 100% !important;
+        justify-content: space-between;
+        padding: 0;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .retraining-programs_nav {
+        justify-content: space-between;
+    }
+
+    .retraining-programs_modul-header>img {
+        width: 170px;
+    }
+
+    .retraining-programs_list {
+        display: block;
+        position: relative;
+        top: -70px;
+        padding: 60px 0 40px;
+    }
+
+    .free-period {
+        color: var(--color-text2) !important;
+    }
+
+    .free-period::before {
+        content: url('https://cdn.anomiro.ru/icons/time2.svg');
+    }
+
+    .retraining-programs_list-one {
+        border-right: 0px solid;
+        width: 100%;
+        border-bottom: 1px solid;
+        padding-bottom: 30px;
     }
 }
 
