@@ -2506,6 +2506,21 @@ a:hover .tooltip {
     font-size: 13px;
 }
 
+.retraining-programs_modul-hour {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.retraining-programs_modul-hour>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*------Адаптив ------*/
 @media (max-width: 1450px) {
     .container {
@@ -3153,7 +3168,7 @@ a:hover .tooltip {
     }
 
     .educators>div {
-        width: 49%;
+        width: 48%;
     }
 
     .card-retraining-item {
@@ -3171,6 +3186,7 @@ a:hover .tooltip {
         padding: 0;
         position: relative;
         z-index: 1000;
+        margin-top: 10px !important;
     }
 
     .retraining-programs_nav {
