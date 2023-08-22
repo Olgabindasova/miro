@@ -2206,7 +2206,7 @@ a:hover .tooltip {
     border: 25px solid transparent;
     border-bottom: 25px solid var(--color-bg-2);
     bottom: -20px;
-    left: 0;
+    left: -10px;
 }
 
 .retraining-programs_modul-header {
@@ -2801,7 +2801,7 @@ a:hover .tooltip {
 
     .retraining-programs_list-two>ul>li>ul>li>a[aria-expanded="true"]>.retraining-programs_modul-header::after {
         bottom: -20px;
-        left: -90px;
+
     }
 
     .retraining-programs_list-two_item>div:nth-child(1) {
@@ -3182,7 +3182,7 @@ a:hover .tooltip {
 
     .retraining-programs_nav-button {
         min-width: 100% !important;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 0;
         position: relative;
         z-index: 1000;
@@ -3190,7 +3190,7 @@ a:hover .tooltip {
     }
 
     .retraining-programs_nav {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .retraining-programs_modul-header>img {
@@ -3202,14 +3202,17 @@ a:hover .tooltip {
         position: relative;
         top: -70px;
         padding: 60px 0 40px;
+        margin-bottom: -70px;
     }
 
     .free-period {
         color: var(--color-text2) !important;
+        padding: 0px !important;
     }
 
     .free-period::before {
-        content: url('https://cdn.anomiro.ru/icons/time2.svg');
+        content: url('https://cdn.anomiro.ru/icons/time3.svg');
+        left: -20px;
     }
 
     .retraining-programs_list-one {
@@ -3217,6 +3220,51 @@ a:hover .tooltip {
         width: 100%;
         border-bottom: 1px solid;
         padding-bottom: 30px;
+    }
+
+    .retraining-programs_nav-button>a.button-one {
+        margin-right: -20px;
+    }
+
+    .retraining-programs_list>li>div {
+        margin: 0;
+    }
+
+    .retraining-programs_list-one>ul.uk-nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .retraining-programs_list-one>ul.uk-nav>li {
+        width: 49%;
+    }
+
+    .retraining-programs_list-one>ul.uk-nav>li>a {
+        background: var(--color-bg-1h);
+        min-height: 120px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .retraining-programs_list-one>ul.uk-nav>li.uk-active>a {
+        background: var(--color-text2);
+    }
+
+    .card-retraining_header_dicription {
+        margin-right: 70px;
+    }
+}
+
+@media (max-width: 850px) {
+    .retraining-programs_list-one>ul.uk-nav>li {
+        width: 48.5%;
+    }
+
+    .retraining-programs_list-one>ul.uk-nav {
+        gap: 20px;
     }
 }
 
@@ -3606,6 +3654,29 @@ a:hover .tooltip {
     .form-entry-reg {
         max-width: 450px;
     }
+
+    .retraining-programs_list-one>ul.uk-nav>li {
+        width: 100%;
+    }
+
+    .card-retraining_header_dicription {
+        margin-right: 50px;
+    }
+
+    .retraining-programs_modul-hour>div {
+        width: 45% !important;
+        flex-wrap: wrap;
+    }
+
+    .retraining-programs_modul-hour {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .retraining-programs_modul-header_title {
+        padding: 0px 0px 10px 0;
+    }
 }
 
 @media (max-width: 600px) {
@@ -3743,6 +3814,39 @@ a:hover .tooltip {
     .entry-reg {
         padding: 40px 0;
         margin: 40px 0;
+    }
+
+    .retraining-programs_modul-header>img {
+        width: 110px;
+    }
+
+    .retraining-programs_modul-header_title {
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .card-retraining_header_dicription {
+        margin-right: 30px;
+    }
+
+    .retraining-programs_list-two>ul>li>ul>li>a::before {
+        border: 15px solid transparent;
+        border-top: 15px solid var(--color-bg-2);
+    }
+
+    .retraining-programs_list-two>ul>li>ul>li>a[aria-expanded="true"]>.retraining-programs_modul-header::after {
+        border: 15px solid transparent;
+        border-bottom: 15px solid var(--color-bg-2);
+    }
+
+    .free-period::before {
+        left: 0;
+    }
+
+    .retraining-programs_nav-button {
+        justify-content: flex-start;
+        padding: 0 0 0 35px;
+        gap: 15px;
     }
 }
 
