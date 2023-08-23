@@ -2118,7 +2118,7 @@ a:hover .tooltip {
 }
 
 .retraining-programs_list-one>ul>li:hover>a {
-    background: var(--color-bg-4);
+    background: var(--color-bg-4) !important;
     color: var(--color-bg-2);
     text-transform: uppercase;
 }
@@ -2518,7 +2518,7 @@ a:hover .tooltip {
 .retraining-programs_modul-hour>div {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 /*------Адаптив ------*/
@@ -3176,7 +3176,7 @@ a:hover .tooltip {
     }
 
     .uniqueness-course_all {
-        top: -32px;
+        top: -39px;
         left: 0px;
     }
 
@@ -3256,6 +3256,51 @@ a:hover .tooltip {
     .card-retraining_header_dicription {
         margin-right: 70px;
     }
+
+    .heading-retraining_geyrns {
+        padding: 70px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .heading-retraining_points>li {
+        font-size: 22px;
+        gap: 15px;
+    }
+
+    .heading-retraining_points>li>img {
+        width: 25px;
+    }
+
+    .heading-retraining_title {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .heading-retraining_profile {
+        font-size: 32px;
+        padding-top: 15px;
+    }
+
+    .heading-retraining_points {
+        margin: 25px 5px;
+        gap: 30px;
+    }
+
+    .uniqueness-course>ul {
+        gap: 20px;
+    }
+
+    .uniqueness-course>ul>li>div:nth-child(odd) {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .uniqueness-course>ul>li>div:nth-child(even) {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -3264,11 +3309,53 @@ a:hover .tooltip {
     }
 
     .retraining-programs_list-one>ul.uk-nav {
-        gap: 20px;
+        gap: 10px;
+    }
+
+    .heading-retraining>.container {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
+    .heading-retraining>.container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading-retraining_geyrns {
+        align-items: center;
+    }
+
+    .heading-retraining_title {
+        text-align: center;
+        max-width: 420px;
+    }
+
+    .uniqueness-course {
+        padding: 50px 15%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .uniqueness-course_all {
+        justify-content: center;
+        top: 0;
+        margin: 50px 0;
+    }
+
+    .heading-retraining {
+        margin: 50px 0 0px;
+    }
+
+    .h3-retraining {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 769px) {
     .footer-bottom>.container {
         flex-direction: column;
         align-items: flex-start;
@@ -3677,6 +3764,36 @@ a:hover .tooltip {
     .retraining-programs_modul-header_title {
         padding: 0px 0px 10px 0;
     }
+
+    .nav-button {
+        top: 150px;
+    }
+
+    .educators {
+        margin: 0;
+        gap: 10px;
+        margin-bottom: 80px;
+    }
+
+    .retraining-programs_nav-button>a.button-one {
+        margin-right: 0;
+        font-size: 15px;
+        padding: 15px 20px 15px 20px;
+        position: relative;
+        top: -2px;
+    }
+
+    .free-period {
+        font-size: 15px !important;
+    }
+
+    .free-period::before {
+        content: url('https://cdn.anomiro.ru/icons/time4.svg');
+        left: 0;
+        width: 20px;
+        top: 2px;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -3844,9 +3961,26 @@ a:hover .tooltip {
     }
 
     .retraining-programs_nav-button {
-        justify-content: flex-start;
-        padding: 0 0 0 35px;
-        gap: 15px;
+        justify-content: center;
+        padding: 0 0 0 0;
+        gap: 20px;
+    }
+
+    .card-retraining_body {
+        padding: 0 10px 0 20px;
+    }
+
+    .card-retraining-list-group {
+        padding: 30px 10px;
+    }
+
+    .card-retraining-list-group>li>div>div {
+        padding-left: 8px;
+        padding-right: 15px;
+    }
+
+    .card-retraining-item {
+        margin: 0 !important;
     }
 }
 
@@ -4058,9 +4192,143 @@ a:hover .tooltip {
     .form-entry-reg>fieldset>div>.uk-form-icon:not(.uk-form-icon-flip)~.uk-input {
         padding-left: 20% !important;
     }
+
+    .educators {
+        gap: 20px;
+    }
+
+    .educators>div {
+        width: 100%;
+    }
+
+    .card-retraining {
+        margin: 25px 0 50px;
+        gap: 10px;
+    }
+
+    .card-retraining_header_dicription {
+        margin: auto;
+    }
+
+    .card-retraining_header_dicription {
+        align-items: center;
+    }
+
+    .card-retraining_header_label {
+        padding: 10px 30px;
+    }
+
+    .card-retraining_header_price {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        padding-bottom: 10px;
+    }
+
+    .card-retraining_header_time {
+        border-right: 0px solid;
+        border-bottom: 1px solid;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0px 5% 20px 0px;
+    }
+
+    .card-retraining_header_time::after {
+        left: 10px;
+        float: none;
+        padding-left: 0px;
+    }
+
+    .card-retraining_header_name {
+        border-right: 0px solid;
+        font-size: 18px;
+    }
+
+    .card-retraining_header_price_new {
+        padding-top: 10px;
+    }
+
+    .card-retraining-list-group>li>div>div>span,
+    .card-retraining-list-group>li>div:hover>div>span {
+        font-size: 14px;
+    }
+
+    .card-retraining-list-group {
+        padding: 20px 0px 20px 10px;
+    }
+
+    .card-retraining-list-group {
+        gap: 7px;
+    }
+
+    .retraining-programs_nav {
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .retraining-programs_nav-button {
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+        flex-direction: column-reverse;
+    }
+
+    .free-period {
+        display: flex;
+        justify-content: center;
+    }
+
+    .retraining-programs_nav>li {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 !important;
+    }
+
+    .retraining-programs_nav>li>a {
+        padding: 12px 15px !important;
+        font-size: 22px !important;
+    }
+
+    .h3-retraining {
+        font-size: 17px;
+        line-height: 17px;
+    }
+
+    .retraining-programs_modul-title {
+        font-size: 25px;
+    }
+
+    .retraining-programs_modul-header {
+        display: grid;
+        gap: 15px;
+        justify-items: center;
+        min-width: 100%;
+    }
+
+    .retraining-programs_modul-header>div {
+        padding: 0 5%;
+    }
+
+    .retraining-programs_modul-header>img {
+        width: 90%;
+    }
+
+    .retraining-programs_modul-hour>div {
+        width: 40% !important;
+        flex-wrap: wrap;
+    }
+
+    .retraining-programs_list>li {
+        padding: 0;
+    }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
     .main_block1 {
         height: 640px;
     }
@@ -4086,9 +4354,19 @@ a:hover .tooltip {
         margin-left: 10px;
         width: 17px;
     }
+
+    .card-retraining_header_name {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-retraining_header_price_new {
+        padding-top: 0;
+    }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 321px) {
     .main_block6>div>div:nth-child(even) {
         width: 100%;
         margin-left: 0%;
