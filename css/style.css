@@ -3301,6 +3301,16 @@ a:hover .tooltip {
         font-size: 16px;
         line-height: 20px;
     }
+
+    .tooltip {
+        right: -15px;
+        padding: 15px;
+    }
+
+    .tooltip:before,
+    .tooltip:after {
+        left: 84%;
+    }
 }
 
 @media (max-width: 850px) {
@@ -4312,6 +4322,9 @@ a:hover .tooltip {
 
     .retraining-programs_modul-header>div {
         padding: 0 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .retraining-programs_modul-header>img {
@@ -4325,6 +4338,25 @@ a:hover .tooltip {
 
     .retraining-programs_list>li {
         padding: 0;
+    }
+
+    .retraining-programs_list-two>ul>li>ul>li>a[aria-expanded="true"]>.retraining-programs_modul-header::after {
+        left: 45%;
+    }
+
+    .retraining-programs_list-two_item {
+        padding: 15px;
+        gap: 5px;
+    }
+
+    .retraining-programs_list-two_item>div:nth-child(1) {
+        font-size: 16px;
+        min-width: 90px;
+    }
+
+    .retraining-programs_list-two_item>div:nth-child(2) {
+        font-size: 15px;
+        line-height: 15px;
     }
 }
 
@@ -4435,5 +4467,11 @@ a:hover .tooltip {
     .main_block1>div>div>a[class*='uk-position-center-left'],
     .main_block1>div>div>a[class*='uk-position-center-right'] {
         display: none;
+    }
+
+    .retraining-programs_list-two_item {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
     }
 }
