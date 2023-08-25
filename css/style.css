@@ -2521,6 +2521,36 @@ a:hover .tooltip {
     align-items: flex-start;
 }
 
+.more-button {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.more-pagination {
+    margin-bottom: 80px;
+    gap: 5px;
+}
+
+.more-pagination>*>* {
+    color: var(--color-text2);
+    background: var(--color-bg-2);
+}
+
+.more-pagination>*>*:hover {
+    color: var(--color-text2);
+    background: var(--color-bg-2h);
+}
+
+.more-pagination>*>*>.uk-icon {
+    position: relative;
+    top: -3px;
+}
+
+.more-pagination>.uk-disabled>* {
+    color: var(--color-text2);
+}
+
 /*------Адаптив ------*/
 @media (max-width: 1450px) {
     .container {
