@@ -2551,6 +2551,95 @@ a:hover .tooltip {
     color: var(--color-text2);
 }
 
+.educator-card-header {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    margin-bottom: 70px;
+}
+
+.educator-card-header_img>a>img {
+    background: var(--color-bg-7);
+    width: 450px;
+}
+
+.educator-card-header_img:hover>a>img {
+    background: var(--color-bg-5);
+}
+
+.educator-card-header_content {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-text3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.educator-card-header_description {
+    max-width: 500px;
+}
+
+.educator-card-header_career {
+    max-width: 600px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--color-bg-2);
+}
+
+.educator-card-header_content>a {
+    width: fit-content;
+}
+
+.educator-card-describe {
+    margin: 30px 0 90px;
+}
+
+.educator-card-describe_title {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: var(--color-bg-1);
+    padding-top: 50px;
+}
+
+.educator-card-describe_detail {
+    padding-top: 50px;
+    border-top: 1px solid var(--color-bg-2);
+}
+
+.educator-card-describe>section {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    padding: 25px 0;
+}
+
+.educator-card-describe_detail>p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-text3);
+    padding-bottom: 25px;
+}
+
+.educator-card-describe>section::before {
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    border: 25px solid transparent;
+    border-top: 25px solid var(--color-bg-2);
+    top: 0;
+    left: 90%;
+    background-image: none;
+    content: '';
+}
+
 /*------Адаптив ------*/
 @media (max-width: 1450px) {
     .container {
