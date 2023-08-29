@@ -2551,6 +2551,15 @@ a:hover .tooltip {
     color: var(--color-text2);
 }
 
+.h1-basic-educator {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-bg-1);
+
+}
+
 .educator-card-header {
     display: flex;
     flex-direction: row;
@@ -2598,6 +2607,7 @@ a:hover .tooltip {
 
 .educator-card-describe_title {
     width: 25%;
+    min-width: 100px;
     display: flex;
     justify-content: flex-end;
     font-size: 24px;
@@ -2606,6 +2616,7 @@ a:hover .tooltip {
     letter-spacing: -0.2px;
     color: var(--color-bg-1);
     padding-top: 50px;
+    text-align: right;
 }
 
 .educator-card-describe_detail {
@@ -2638,6 +2649,14 @@ a:hover .tooltip {
     left: 90%;
     background-image: none;
     content: '';
+}
+
+.educator-classes {
+    margin-bottom: 100px;
+}
+
+.educator-classes>.uk-tab::before {
+    border-bottom: 0px;
 }
 
 /*------Адаптив ------*/
@@ -3430,6 +3449,77 @@ a:hover .tooltip {
     .tooltip:after {
         left: 84%;
     }
+
+    .educator-card-header_content {
+        width: 45%;
+        justify-content: flex-start;
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .educator-card-header_img>a>img {
+        width: 100%;
+    }
+
+    .educator-card-header_img {
+        width: 45%;
+    }
+
+    .educator-card-header {
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    .educator-card-header_career {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.2px;
+    }
+
+    .h1-basic-educator {
+        font-size: 40px;
+        line-height: 40px;
+
+    }
+
+    .educator-card-describe>section {
+        gap: 30px;
+        padding: 10px 0;
+    }
+
+    .educator-card-describe_title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .educator-card-describe_detail>p {
+        font-size: 18px;
+        padding-bottom: 16px;
+        width: 85%;
+    }
+
+    .educator-card-describe>section::before {
+        left: 80%;
+    }
+
+    .educator-card-describe_detail {
+        border-top: 0px;
+        position: relative;
+    }
+
+    .educator-card-describe_detail::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 85%;
+        border-top: 1px solid var(--color-bg-2);
+        content: "";
+    }
+
+    .educator-card-describe {
+        margin: 20px 0 50px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -3923,6 +4013,82 @@ a:hover .tooltip {
         top: 2px;
     }
 
+    .educator-card-header {
+        margin-top: 30px;
+    }
+
+    .educator-card-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .educator-card-header_img {
+        width: 60%;
+    }
+
+    .educator-card-header_content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .educator-card-header_description {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .educator-title {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .educator-card-describe>section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .educator-card-describe_title {
+        width: 100%;
+        justify-content: center;
+        padding-top: 0px;
+    }
+
+    .educator-card-describe>section::before {
+        border: 0px solid transparent;
+        border-top: 0px solid var(--color-bg-2);
+    }
+
+    .educator-card-describe_detail::before {
+        width: 100%;
+    }
+
+    .educator-card-describe {
+        margin: 0px 0 50px;
+    }
+
+    .educator-card-describe_detail>p {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        padding: 0 30px 15px;
+    }
+
+    .educator-card-describe_detail {
+        padding-top: 0px;
+        border-top: 1px solid var(--color-bg-2);
+    }
+
+    .educator-card-describe_detail::before {
+        width: 0;
+        height: 0;
+        display: block;
+        position: relative;
+        border: 25px solid transparent;
+        border-top: 25px solid var(--color-bg-2);
+        top: 0;
+        left: 50px;
+        background-image: none;
+        content: '';
+    }
 }
 
 @media (max-width: 600px) {
@@ -4110,6 +4276,23 @@ a:hover .tooltip {
 
     .card-retraining-item {
         margin: 0 !important;
+    }
+
+    .h1-basic-educator {
+        font-size: 36px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .educator-card-header_career {
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .educator-card-describe_title {
+        font-size: 18px;
+        line-height: 18px;
     }
 }
 
@@ -4476,6 +4659,20 @@ a:hover .tooltip {
     .retraining-programs_list-two_item>div:nth-child(2) {
         font-size: 15px;
         line-height: 15px;
+    }
+
+    .h1-basic-educator {
+        font-size: 26px;
+        line-height: 26px;
+
+    }
+
+    .educator-card-describe_detail>p {
+        padding: 0 10px 15px;
+    }
+
+    .educator-card-header_img {
+        width: 90%;
     }
 }
 
