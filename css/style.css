@@ -2692,6 +2692,80 @@ a:hover .tooltip {
     border-color: transparent;
 }
 
+.educator-classes>.uk-tab {
+    margin-left: 0;
+}
+
+.lectures-educator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.lectures-educator-card {
+    width: 33%;
+    background: var(--color-bg-7);
+}
+
+.lectures-educator-card_header {}
+
+.lectures-educator-card_content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lectures-educator-card_title {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--color-bg-1);
+    letter-spacing: -0.2px;
+    padding: 0 0 17px 0;
+}
+
+.lectures-educator-card_description {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-bg-1);
+    letter-spacing: -0.2px;
+    padding: 0 0 10px 0;
+}
+
+.lectures-educator-card_data {
+    color: var(--color-bg-2);
+}
+
+.lectures-educator-card_data {
+    color: var(--color-bg-2);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lectures-educator-card_name {
+    background: var(--color-bg-1);
+    color: var(--color-text2);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    padding: 15px 35px;
+    text-align: right;
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.lectures-educator-card_img {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.lectures-educator-card_info {
+    padding: 10px 0;
+}
+
 /*------Адаптив ------*/
 @media (max-width: 1450px) {
     .container {
