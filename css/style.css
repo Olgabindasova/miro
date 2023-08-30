@@ -4281,6 +4281,11 @@ a:hover .tooltip {
         background-image: none;
         content: '';
     }
+
+    .educator-classes>.uk-tab>li>a {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -4906,6 +4911,17 @@ a:hover .tooltip {
 
     .lectures-educator-card_content {
         padding: 20px;
+    }
+
+    .educator-classes>.uk-tab>li>a {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 5px 5px;
+    }
+
+    .educator-classes>.uk-tab>li {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
