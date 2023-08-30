@@ -2708,7 +2708,7 @@ a:hover .tooltip {
     background: var(--color-bg-7);
 }
 
-.lectures-educator-card_header {}
+
 
 .lectures-educator-card_content {
     padding: 40px;
@@ -2782,6 +2782,60 @@ a:hover .tooltip {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+.lectures-educator-card_data-item>div:nth-child(odd) {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.lectures-educator-card_data-item>div:nth-child(odd)>span {
+    font-size: 16px;
+    position: relative;
+    top: -16px;
+}
+
+.lectures-educator-card_describe {
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--color-bg-1);
+}
+
+.lectures-educator-card_icons {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.lectures-educator-card_icons>a>svg {
+    fill: var(--color-bg-1);
+    height: 14px;
+}
+
+.lectures-educator-card_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lectures-educator-card_lable {
+    padding: 5px 30px;
+    font-size: 14px;
+    font-weight: 400;
+    background: var(--color-bg-2);
+    color: var(--color-text2);
+}
+
+.educator-record {
+    background: var(--color-bg-8);
+}
+
+.lectures-educator-card_flag>svg {
+    width: 28px;
+    height: 28px;
+    display: block;
+    fill: var(--color-bg-2);
+    left: 40px;
+    position: relative;
 }
 
 /*------Адаптив ------*/
