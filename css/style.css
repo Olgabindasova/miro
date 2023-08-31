@@ -2708,13 +2708,16 @@ a:hover .tooltip {
     background: var(--color-bg-7);
 }
 
-
+.educator-card-video>.lectures-educator-card_content>.lectures-educator-card_describe {
+    border-bottom: 0px;
+}
 
 .lectures-educator-card_content {
     padding: 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    height: 100%;
 }
 
 .lectures-educator-card_title {
@@ -2798,6 +2801,7 @@ a:hover .tooltip {
 .lectures-educator-card_describe {
     padding-bottom: 22px;
     border-bottom: 1px solid var(--color-bg-1);
+    height: 100%;
 }
 
 .lectures-educator-card_icons {
@@ -2863,7 +2867,97 @@ a:hover .tooltip {
     width: 100%;
 }
 
+.educator-card-programms {
+    padding: 0;
+}
 
+.educator-card-programm-item,
+.educator-card-programm-item>div {
+    margin: 0 !important;
+}
+
+.educator-card-programm-item>a,
+.educator-card-programm-item>a[aria-expanded="false"] {
+    background: var(--color-bg-5);
+    padding: 25px 25px 25px 50px;
+    color: var(--color-bg-1);
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    border-bottom: 2px solid var(--color-text2);
+}
+
+.educator-card-programm-item>a::before,
+.educator-card-programm-item>a[aria-expanded="false"]::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='16' viewBox='0 0 28 16' fill='none'%3E%3Cpath d='M27.627 2.27715L14.9004 15.609C14.7822 15.733 14.6419 15.8313 14.4874 15.8984C14.3329 15.9655 14.1672 16 14 16C13.8328 16 13.6671 15.9655 13.5126 15.8984C13.3581 15.8313 13.2178 15.733 13.0996 15.609L0.372962 2.27715C0.134158 2.02699 -2.5162e-09 1.6877 0 1.33393C2.5162e-09 0.980146 0.134158 0.640857 0.372962 0.390697C0.611765 0.140537 0.935652 2.63586e-09 1.27337 0C1.61109 -2.63586e-09 1.93498 0.140537 2.17378 0.390697L14 12.781L25.8262 0.390697C25.9445 0.266831 26.0848 0.168574 26.2393 0.101538C26.3938 0.0345024 26.5594 0 26.7266 0C26.8939 0 27.0594 0.0345024 27.2139 0.101538C27.3684 0.168574 27.5088 0.266831 27.627 0.390697C27.7453 0.514563 27.8391 0.661615 27.9031 0.823454C27.9671 0.985293 28 1.15875 28 1.33393C28 1.5091 27.9671 1.68256 27.9031 1.8444C27.8391 2.00624 27.7453 2.15329 27.627 2.27715Z' fill='%234F6382'/%3E%3C/svg%3E");
+}
+
+.educator-card-programm-item.uk-open>a[aria-expanded="true"] {
+    background: var(--color-bg-2);
+    color: var(--color-text2);
+}
+
+.educator-card-programm-item.uk-open>a[aria-expanded="true"]::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='16' viewBox='0 0 28 16' fill='none'%3E%3Cpath d='M0.372963 13.7228L13.0996 0.391004C13.2178 0.267049 13.3581 0.168714 13.5126 0.101623C13.6671 0.0345306 13.8328 0 14 0C14.1672 0 14.3329 0.0345306 14.4874 0.101623C14.6419 0.168714 14.7822 0.267049 14.9004 0.391004L27.627 13.7228C27.8658 13.973 28 14.3123 28 14.6661C28 15.0199 27.8658 15.3591 27.627 15.6093C27.3882 15.8595 27.0643 16 26.7266 16C26.3889 16 26.065 15.8595 25.8262 15.6093L14 3.21902L2.17378 15.6093C2.05554 15.7332 1.91516 15.8314 1.76067 15.8985C1.60618 15.9655 1.44059 16 1.27337 16C1.10615 16 0.940565 15.9655 0.786072 15.8985C0.63158 15.8314 0.491205 15.7332 0.372963 15.6093C0.254719 15.4854 0.160923 15.3384 0.0969296 15.1765C0.032938 15.0147 0 14.8412 0 14.6661C0 14.4909 0.032938 14.3174 0.0969296 14.1556C0.160923 13.9938 0.254719 13.8467 0.372963 13.7228Z' fill='white'/%3E%3C/svg%3E");
+}
+
+.educator-card-programm-item>a>div {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    gap: 20px;
+}
+
+.educator-card-programm-item>div>div>div:nth-child(1) {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    min-width: 150px;
+    padding-left: 25px;
+}
+
+.educator-card-programm-item>div>div>div:nth-child(1)::before {
+    content: url('https://cdn.anomiro.ru/icons/lekzii.svg');
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    padding-right: 15px;
+}
+
+.educator-card-programm-item>div>div>div:nth-child(2) {
+    padding-right: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+}
+
+.educator-card-programm-item>div>div {
+    background: var(--color-bg-7);
+    padding: 25px;
+    color: var(--color-text3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+.educator-card-programm-item>div>div::before {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    border-top: 1px solid var(--color-bg-1);
+    content: "";
+}
+
+.educator-card-programm-item>div>div:nth-child(1)::before {
+    border-top: 0px;
+}
 
 /*------Адаптив ------*/
 @media (max-width: 1450px) {
@@ -4337,6 +4431,21 @@ a:hover .tooltip {
         font-size: 18px;
         padding: 10px 15px;
     }
+
+    .educator-card-programm-item>a,
+    .educator-card-programm-item>a[aria-expanded="false"] {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .educator-card-programm-item>div>div>div:nth-child(1) {
+        font-size: 18px;
+        min-width: 120px;
+    }
+
+    .educator-card-programm-item>div>div>div:nth-child(2) {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -4553,6 +4662,8 @@ a:hover .tooltip {
         text-align: center;
         margin-top: 30px;
     }
+
+
 }
 
 @media (max-width: 450px) {
@@ -4973,6 +5084,21 @@ a:hover .tooltip {
     .educator-classes>.uk-tab>li {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .educator-card-programm-item>a>div {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .educator-card-programm-item>a::before {
+        width: 1em;
+        height: 1em;
+    }
+
+    .educator-card-programm-item>a,
+    .educator-card-programm-item>a[aria-expanded="false"] {
+        padding: 25px 25px 25px 20px;
     }
 }
 
