@@ -1626,8 +1626,10 @@ details[open] summary~* {
 }
 
 .nav-button:hover {
-    box-shadow: -3px -3px 7px 0px rgba(0, 0, 0, 0.15);
+    background: var(--color-text2);
+    color: var(--color-bg-2);
 }
+
 
 .nav-button>svg {
     transform: rotate(90deg);
@@ -1639,20 +1641,27 @@ details[open] summary~* {
 
 #nav-button>.uk-offcanvas-bar {
     background: var(--color-text2);
-    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.15);
-    top: 145px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.10);
+    top: 190px;
+    padding: 15px 0 0 0;
     height: fit-content;
-    padding: 0;
 }
+
 
 #nav-button>.uk-offcanvas-bar>ul>li>a {
     font-size: 18px;
     font-weight: 500;
     color: var(--color-bg-1);
-    padding: 20px 35px;
+    padding: 20px 40px;
     border-bottom: 1px solid;
     letter-spacing: -0.2px;
     line-height: 18px;
+    transition: all 0.5s;
+}
+
+#nav-button>.uk-offcanvas-bar>ul>li:hover>a {
+    color: var(--color-bg-2);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.10);
 }
 
 #nav-button.uk-offcanvas-overlay.uk-open::before {
@@ -2959,6 +2968,32 @@ a:hover .tooltip {
     border-top: 0px;
 }
 
+.nav-button[aria-expanded="true"] {
+    top: 155px;
+    right: 0px;
+    margin-right: 0;
+    background: var(--color-text2);
+    color: var(--color-bg-2);
+    transform: rotate(0deg);
+    padding: 10px 25px 10px 25px;
+    border-bottom: 2px solid var(--color-bg-2);
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.nav-button[aria-expanded="true"]>svg {
+    transform: rotate(270deg);
+    top: 25px;
+    left: 14px;
+}
+
+
+
+
+
 /*------Адаптив ------*/
 @media (max-width: 1450px) {
     .container {
@@ -3837,6 +3872,16 @@ a:hover .tooltip {
     .educator-card-describe {
         margin: 20px 0 50px;
     }
+
+    .nav-button {
+        margin-right: -60px;
+        background: transparent;
+        color: transparent;
+    }
+
+    .nav-button:hover {
+        margin-right: -32px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -4445,6 +4490,16 @@ a:hover .tooltip {
 
     .educator-card-programm-item>div>div>div:nth-child(2) {
         font-size: 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    .nav-button[aria-expanded="true"] {
+        max-width: 260px;
+    }
+
+    #nav-button>.uk-offcanvas-bar {
+        max-width: 260px !important;
     }
 }
 
