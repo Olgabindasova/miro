@@ -3882,6 +3882,10 @@ a:hover .tooltip {
     .nav-button:hover {
         margin-right: -32px;
     }
+
+    .nav-button[aria-expanded="true"] {
+        margin-right: 0 !important;
+    }
 }
 
 @media (max-width: 850px) {
