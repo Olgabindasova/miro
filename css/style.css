@@ -1668,6 +1668,10 @@ details[open] summary~* {
     opacity: 0;
 }
 
+.menu-button-hide-open {
+    display: none;
+}
+
 /*------Страница переподготовок детальная ------*/
 /*------Страница переподготовок детальная  Блок 1------*/
 .heading-retraining {
@@ -3564,6 +3568,10 @@ a:hover .tooltip {
 
     .retraining-programs_modul-header_content>div:nth-child(even)>div {
         width: 45%;
+    }
+
+    .menu-button-hide-open {
+        display: block;
     }
 
 }
