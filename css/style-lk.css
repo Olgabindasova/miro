@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    min-height: 80vh;
+    flex: 1 0 auto;
 }
 
 .lk-miro-content {
@@ -129,7 +129,11 @@
 }
 
 .lk-aside_menu {
-    padding: 20px 0;
+    padding: 20px 0 0;
+}
+
+.lk-aside_menu>ul {
+    background: var(--color-text4);
 }
 
 .lk-aside_menu>ul>li {
@@ -138,21 +142,52 @@
 }
 
 .lk-aside_menu>ul>li>a {
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 500;
     color: var(--color-text2);
     border-left: 4px solid var(--color-bg-1);
     padding: 15px 40px;
+    background: var(--color-bg-1);
+    transition: all 0.5s;
+    letter-spacing: -0.2px;
 }
 
-.lk-aside_menu>ul>li:hover>a {
+.lk-aside_menu>ul>li:hover>a,
+.lk-aside_menu>ul>li>a[aria-expanded="true"] {
     color: var(--color-bg-2);
     background: var(--color-text2);
     border-left: 4px solid var(--color-bg-2);
 }
 
-.lk-aside_menu>ul>li.uk-parent.uk-open>ul.uk-nav-sub>li>a {
-    background: var(-color-text4) !important;
+.lk-aside_menu>ul>li.uk-parent.uk-open>ul.uk-nav-sub {
+    background: var(--color-text4) !important;
+    padding: 0;
+}
+
+.lk-aside_menu>ul>li.uk-parent.uk-open>ul.uk-nav-sub>li {
+    border-top: 1px solid var(--color-bg-1);
+    border-bottom: 1px solid var(--color-bg-4);
+    border-left: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+.lk-aside_menu>ul>li.uk-parent.uk-open>ul.uk-nav-sub>li:hover {
+    border-top: 1px solid var(--color-bg-2);
+    border-bottom: 1px solid var(--color-bg-2);
+    border-left: 2px solid var(--color-bg-2);
+    background: var(--color-text2);
+}
+
+.lk-aside_menu>ul>li>ul.uk-nav-sub>li>a {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-bg-1);
+    padding: 10px 40px;
+    transition: all 0.5s;
+}
+
+.lk-aside_menu>ul>li.uk-parent.uk-open>ul.uk-nav-sub>li:hover>a {
+    color: var(--color-bg-2);
 }
 
 .h1-lk-content {
@@ -160,4 +195,19 @@
     font-weight: 400;
     color: var(--color-bg-1);
     padding: 60px 40px 20px;
+}
+
+.container-lk {
+    padding: 55px 40px;
+}
+
+.footer-bottom.container-lk {
+    padding: 20px 40px;
+}
+
+.footer-bottom.container-lk>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
