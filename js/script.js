@@ -31,4 +31,26 @@
     $(".phone").mask("+7 (999) 999-99-99");
   });
 
-  
+  // добавляет класс active
+
+document.querySelector('.menu_one').addEventListener('click', () => {
+  document.querySelector('.lk-miro_menu').classList.add('active');
+  document.querySelector('.menu_one').classList.add('active'); 
+  document.querySelector('.logo_lk-img').classList.add('active');
+  document.querySelector('.logo_lk-img-2').classList.add('active');
+  document.querySelector('.lk-aside_menu').classList.add('active');
+  document.querySelector('.close-menu').classList.add('close-menu-active');
+  document.querySelector('.button-one_lk-header_text').classList.add('active');
+})
+
+// удаляет  класс  active
+
+document.querySelector('.close-menu').addEventListener('click', () => {
+  document.querySelector('.lk-miro_menu').classList.remove('active');
+  document.querySelector('.menu_one').classList.remove('active'); 
+  document.querySelector('.logo_lk-img').classList.remove('active');
+  document.querySelector('.logo_lk-img-2').classList.remove('active');
+  document.querySelector('.lk-aside_menu').classList.remove('active');
+  document.querySelector('.close-menu').classList.remove('close-menu-active');
+  document.querySelector('.button-one_lk-header_text').classList.remove('active');
+})
