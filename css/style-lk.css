@@ -68,7 +68,7 @@
 .lk-miro_menu {
     background: var(--color-bg-1);
     color: var(--color-text2);
-
+    min-width: 410px;
 }
 
 .logo_lk::after {
@@ -167,14 +167,14 @@
 .lk-aside_menu>ul>li.uk-parent.uk-open>ul.uk-nav-sub>li {
     border-top: 1px solid var(--color-bg-1);
     border-bottom: 1px solid var(--color-bg-4);
-    border-left: 2px solid transparent;
+    border-left: 4px solid transparent;
     transition: all 0.5s;
 }
 
 .lk-aside_menu>ul>li.uk-parent.uk-open>ul.uk-nav-sub>li:hover {
     border-top: 1px solid var(--color-bg-2);
     border-bottom: 1px solid var(--color-bg-2);
-    border-left: 2px solid var(--color-bg-2);
+    border-left: 4px solid var(--color-bg-2);
     background: var(--color-text2);
 }
 
@@ -210,4 +210,65 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.lk-miro-content>header>.header-mobile {
+    height: 50px;
+    padding: 0;
+}
+
+.lk-miro-content>header>.header-mobile>.header-top-mobile-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.lk-miro-content>header>.header-mobile>.header-top-mobile-buttons>.header-top-buttons>.button-two {
+    padding: 8px 15px 8px 15px;
+}
+
+.lk-miro-content>header>.header-mobile>.header-top-mobile-buttons>.header-top-buttons {
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lk-miro-content>header>.header-mobile>.header-top-mobile-buttons>div>.uk-icon-button {
+    background: transparent;
+    color: var(--color-text2);
+}
+
+.lk-miro-content>header>.header-mobile>.header-top-mobile-buttons>div {
+    gap: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/*------Адаптив---------*/
+
+@media (max-width: 1200px) {
+    .header-top-content_lk>.header-top-buttons {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 940px) {
+    .header-top-content_lk>.header-top-buttons {
+        min-width: 100px;
+    }
+
+    .header-top-content_lk>.header-top-buttons>a {
+        padding: 16px 15px 15px 15px;
+    }
+
+    .header-top-social_lk>.telephone {
+        margin: 0 10px;
+    }
+
+    .header-top-social_lk {
+        gap: 5px;
+        padding-right: 10px;
+    }
 }
