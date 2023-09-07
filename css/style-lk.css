@@ -341,11 +341,12 @@
     background: none;
     box-shadow: none;
     border: none;
+    cursor: pointer;
 }
 
 .close-menu-active::after {
     content: "Свернуть панель";
-    color: rgb(255, 255, 255);
+    color: var(--color-text2);
     position: relative;
     width: 130px;
     display: inline-block;
@@ -359,8 +360,18 @@
     content: "←";
     transform: rotate(180deg);
     font-size: 30px;
-    color: rgb(255, 255, 255);
+    color: var(--color-text2);
     position: relative;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 0 7px 5px;
+    transition: 0.5s;
+}
+
+.close-menu-active:hover:before {
+    border: 1px solid var(--color-text2);
+    border-radius: 50%;
+    padding: 0 7px 5px;
 }
 
 .menu_one {
@@ -369,7 +380,7 @@
     height: 40px;
     transform: scale(1);
     transition: transform .5s;
-    left: 65px;
+    left: 60px;
     position: relative;
     background: none;
     border: none;
@@ -391,11 +402,21 @@
 .menu_one::after {
     content: "→";
     font-size: 30px;
-    color: rgb(255, 255, 255);
+    color: var(--color-text2);
     position: relative;
     left: -20px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 0 7px 5px;
 }
 
+.menu_one:hover:after {
+    border: 1px solid var(--color-text2);
+    padding: 0 7px 5px;
+    border-radius: 50%;
+}
 
 
 /*------Адаптив---------*/
