@@ -19,7 +19,6 @@
     border-left: 3px solid var(--color-bg-2);
     border-right: 3px solid var(--color-text2);
     width: 100%;
-    min-width: 380px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -34,6 +33,7 @@
     padding: 16px 40px 15px 40px;
     text-align: center;
     cursor: pointer;
+    height: 50px;
 }
 
 .button-one_lk-header:hover {
@@ -65,13 +65,26 @@
     background-size: 100%;
 }
 
+.button-one_lk-header_text {
+    display: none;
+}
+
+.button-one_lk-header_text.active {
+    display: block;
+}
+
 .lk-miro_menu {
     background: var(--color-bg-1);
     color: var(--color-text2);
+    width: 125px;
+    transition: .5s .5s;
+}
+
+.lk-miro_menu.active {
     min-width: 410px;
 }
 
-.logo_lk::after {
+.active.logo_lk::after {
     content: '';
     display: block;
     position: relative;
@@ -84,10 +97,74 @@
     float: right;
 }
 
+.logo_lk::after {
+    content: '';
+    display: block;
+    position: relative;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='199' height='9' viewBox='0 0 199 9' fill='none'%3E%3Cpath d='M0 0H199V9H4.98747L0 0Z' fill='%23B3171A'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 10px;
+    width: 75%;
+    float: right;
+    top: -8px;
+}
 
 .logo_lk-img {
     width: 100%;
     padding: 20px 40px;
+    display: none;
+
+}
+
+.logo_lk-img-2 {
+    width: 100%;
+    padding: 15px 20px;
+    display: block;
+    transform: scale(1);
+    cursor: pointer;
+    transition: 1s linear;
+}
+
+.logo_lk-img.active {
+    display: block;
+}
+
+.logo_lk-img-2.active {
+    display: none;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+@keyframes example {
+    0% {
+        opacity: 0;
+        transform: scale(0)
+    }
+
+    25% {
+        opacity: 0;
+        transform: scale(1)
+    }
+
+    50% {
+        opacity: .5;
+        transform: scale(1)
+    }
+
+    75% {
+        opacity: .75;
+        transform: scale(1)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
 }
 
 .h2-lk-aside {
@@ -245,6 +322,81 @@
     display: flex;
     justify-content: center;
 }
+
+.close-menu {
+    display: none;
+}
+
+.close-menu.close-menu-active {
+    display: block;
+}
+
+.close-menu-active {
+    width: 40px;
+    height: 40px;
+    transform: scale(1);
+    margin-left: 45%;
+    border-image: initial;
+    transition: transform 0.5s ease 0.5s;
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
+.close-menu-active::after {
+    content: "Свернуть панель";
+    color: rgb(255, 255, 255);
+    position: relative;
+    width: 130px;
+    display: inline-block;
+    right: -45px;
+    top: -25px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.close-menu-active::before {
+    content: "←";
+    transform: rotate(180deg);
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.menu_one {
+    display: block;
+    width: 40px;
+    height: 40px;
+    transform: scale(1);
+    transition: transform .5s;
+    left: 65px;
+    position: relative;
+    background: none;
+    border: none;
+}
+
+.menu_one.active {
+    display: none;
+}
+
+/*.menu_one::before {
+    left: -20px;
+    content: "Развернуть";
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 30px;
+}*/
+
+.menu_one::after {
+    content: "→";
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: -20px;
+}
+
+
 
 /*------Адаптив---------*/
 
