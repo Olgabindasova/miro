@@ -226,10 +226,11 @@ body {
     font-weight: 500;
     color: var(--color-text2);
     border-left: 4px solid var(--color-bg-1);
-    padding: 15px 40px;
+    padding: 25px 40px;
     background: var(--color-bg-1);
     transition: all 0.5s;
     letter-spacing: -0.2px;
+    min-height: 75px;
 }
 
 .lk-aside_menu>ul>li:hover>a,
@@ -457,8 +458,8 @@ body {
 .lk-aside_menu>ul>li>a>svg {
     display: block;
     fill: var(--color-text2);
-    min-width: 43px;
-    height: 43px;
+    min-width: 35px;
+    height: 35px;
 }
 
 .lk-aside_menu>ul>li:hover>a>svg {
