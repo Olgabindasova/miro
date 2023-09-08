@@ -1,3 +1,7 @@
+body {
+    counter-reset: section;
+}
+
 .lk-miro {
     display: flex;
     flex-wrap: nowrap;
@@ -170,7 +174,6 @@
 .h2-lk-aside {
     font-size: 36px;
     font-weight: 700;
-    padding: 20px 40px;
     color: var(--color-text2);
 }
 
@@ -236,6 +239,11 @@
     border-left: 4px solid var(--color-bg-2);
 }
 
+.lk-aside_menu>ul>li:hover>a>h2 {
+    color: var(--color-bg-2);
+}
+
+
 .lk-aside_menu>ul>li.uk-parent.uk-open>ul.uk-nav-sub {
     background: var(--color-text4) !important;
     padding: 0;
@@ -256,11 +264,29 @@
 }
 
 .lk-aside_menu>ul>li>ul.uk-nav-sub>li>a {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     color: var(--color-bg-1);
     padding: 10px 40px;
     transition: all 0.5s;
+    line-height: 20px;
+
+}
+
+.lk-aside_menu>ul>li>ul.uk-nav-sub>li::before {
+    counter-increment: section;
+    content: "" counter(section) ". ";
+    display: block;
+    position: relative;
+    height: 0;
+    top: 10px;
+    left: 25px;
+    color: var(--color-bg-1);
+    font-size: 15px;
+}
+
+.lk-aside_menu>ul>li>ul.uk-nav-sub>li:hover::before {
+    color: var(--color-bg-2);
 }
 
 .lk-aside_menu>ul>li.uk-parent.uk-open>ul.uk-nav-sub>li:hover>a {
@@ -390,14 +416,6 @@
     display: none;
 }
 
-/*.menu_one::before {
-    left: -20px;
-    content: "Развернуть";
-    font-size: 12px;
-    color: rgb(255, 255, 255);
-    position: relative;
-    top: 30px;
-}*/
 
 .menu_one::after {
     content: "→";
@@ -418,6 +436,34 @@
     border-radius: 50%;
 }
 
+.lk-aside_menu.active>ul>li>a>.h2-lk-aside,
+.lk-aside_menu.active>ul>li>a>span {
+    display: block;
+}
+
+.lk-aside_menu>ul>li>a>.h2-lk-aside,
+.lk-aside_menu>ul>li>a>span {
+    display: none;
+}
+
+.lk-aside_menu>ul>li>a>span.uk-icon.uk-nav-parent-icon {
+    display: block !important;
+}
+
+.lk-aside_menu.active>ul>li>a>svg {
+    display: none;
+}
+
+.lk-aside_menu>ul>li>a>svg {
+    display: block;
+    fill: var(--color-text2);
+    min-width: 43px;
+    height: 43px;
+}
+
+.lk-aside_menu>ul>li:hover>a>svg {
+    fill: var(--color-bg-2);
+}
 
 /*------Адаптив---------*/
 

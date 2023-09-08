@@ -56,4 +56,3 @@ document.querySelector('.close-menu').addEventListener('click', () => {
   document.querySelector('.close-menu').classList.remove('close-menu-active');
   document.querySelector('.button-one_lk-header_text').classList.remove('active');
 })
-
