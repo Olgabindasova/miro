@@ -80,8 +80,9 @@ body {
 .lk-miro_menu {
     background: var(--color-bg-1);
     color: var(--color-text2);
+    min-width: 125px;
     width: 125px;
-    transition: .5s .5s;
+    transition: .1s .1s;
 }
 
 .lk-miro_menu.active {
@@ -268,7 +269,6 @@ body {
 }
 
 .lk-aside_menu>ul>li>ul.uk-nav-sub>li:hover>a {
-    padding: 10px 10px;
     background: var(--color-text4) !important;
     z-index: 1000;
     position: relative;
@@ -569,6 +569,7 @@ body {
 
     .lk-miro_menu {
         width: 110px;
+        min-width: 110px;
     }
 
     .button-one_lk-header::after {
@@ -632,6 +633,7 @@ body {
 @media (max-width: 370px) {
     .lk-miro_menu {
         width: 55px;
+        min-width: 55px;
     }
 
     .button-one_lk-header {
@@ -672,9 +674,28 @@ body {
         min-width: 12px;
     }
 
-    .lk-aside_menu>ul>li:hover>a>span.uk-icon.uk-nav-parent-icon>svg,
+
     .lk-aside_menu>ul>li>a[aria-expanded="true"]>span.uk-icon.uk-nav-parent-icon>svg {
         top: -20px;
+        right: -23px;
+        display: block;
+        position: relative;
+        width: 12px;
+        min-width: 12px;
+    }
+
+    .lk-aside_menu>ul>li:hover>a[aria-expanded="true"]:hover>span.uk-icon.uk-nav-parent-icon>svg,
+    .lk-aside_menu>ul>li:hover>a>span.uk-icon.uk-nav-parent-icon>svg {
+        top: 17px;
+        right: 23px;
+        display: block;
+        position: relative;
+        width: 12px;
+        min-width: 12px;
+    }
+
+    .lk-aside_menu>ul>li:hover>a[aria-expanded="true"]:hover>span.uk-icon.uk-nav-parent-icon>svg {
+        top: -17px;
         right: -23px;
         display: block;
         position: relative;
