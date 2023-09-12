@@ -537,6 +537,24 @@ body {
     fill: var(--color-bg-2);
 }
 
+
+.container-lk-block {
+    padding: 20px 40px;
+}
+
+.backet-text {
+    color: var(--color-bg-1);
+    font-size: 34px;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+    padding-bottom: 50px;
+}
+
+.container-lk-block>.button-one {
+    display: block;
+    width: fit-content;
+}
+
 /*------Адаптив---------*/
 
 @media (max-width: 1200px) {
@@ -628,6 +646,10 @@ body {
         font-size: 14px;
         line-height: 16px;
     }
+
+    .backet-text {
+        font-size: 34px;
+    }
 }
 
 @media (max-width: 370px) {
@@ -718,5 +740,9 @@ body {
         height: 20px;
         top: 0px;
         left: 25px;
+    }
+
+    .backet-text {
+        font-size: 22px;
     }
 }
