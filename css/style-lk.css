@@ -537,6 +537,9 @@ body {
     fill: var(--color-bg-2);
 }
 
+main.lk-page {
+    height: 100%;
+}
 
 .container-lk-block {
     padding: 20px 40px;
@@ -553,6 +556,95 @@ body {
 .container-lk-block>.button-one {
     display: block;
     width: fit-content;
+}
+
+.lk-basket-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.lk-basket-page_metod {
+    min-width: 375px;
+    padding: 70px;
+    background: var(--color-bg-1);
+    color: var(--color-text2);
+    border-top: 1px solid var(--color-bg-6);
+}
+
+.lk-basket-page_spisok {
+    width: 100%;
+}
+
+.lk-basket-page_dannie {
+    padding: 25px 0 15px;
+    border-top: 1px solid var(--color-bg-1);
+    width: 100%;
+    color: var(--color-bg-1);
+}
+
+.lk-basket-page_dannie-title {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+}
+
+.lk-basket-page_dannie-text {
+    padding: 20px 0 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.lk-basket-page_dannie-text>div {
+    font-size: 20px;
+    font-weight: 400;
+    width: 50%;
+}
+
+.lk-basket-page_dannie-after {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.lk-basket-page_operation-backet {
+    padding-bottom: 30px;
+}
+
+.lk-basket-page_operation-backet-header {
+    padding: 10px 50px;
+    display: flex;
+    color: var(--color-bg-1);
+    flex-direction: row;
+    gap: 20px;
+    border-top: 1px solid var(--color-bg-1);
+    border-bottom: 1px solid var(--color-bg-1);
+}
+
+.lk-basket-page_operation-backet-header>div {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+}
+
+.lk-basket-page_operation-backet-card {
+    color: var(--color-bg-1);
+}
+
+.lk-basket-page_operation-backet-card>li {
+    padding: 25px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-bg-1);
+}
+
+.lk-basket-page_operation-backet-itog {
+    color: var(--color-bg-1);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 15px 50px;
 }
 
 /*------Адаптив---------*/
