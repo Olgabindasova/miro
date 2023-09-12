@@ -627,25 +627,18 @@ main.lk-page {
     letter-spacing: -0.2px;
 }
 
-.lk-basket-page_operation-backet-card {
-    color: var(--color-bg-1);
-}
 
-.lk-basket-page_operation-backet-card>li {
+
+.lk-basket-page_operation-backet-card {
     padding: 25px 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid var(--color-bg-1);
+    color: var(--color-bg-1);
 }
 
-.lk-basket-page_operation-backet-itog {
-    color: var(--color-bg-1);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 15px 50px;
-}
+
 
 /*------Адаптив---------*/
 
