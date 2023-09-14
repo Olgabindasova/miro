@@ -11,6 +11,9 @@ body {
 
 .lk-miro-content {
     width: 100%;
+    height: fit-content;
+    container-type: inline-size;
+    container-name: lkcontent;
 }
 
 .header-top-lk {
@@ -571,6 +574,7 @@ main.lk-page {
     background: var(--color-bg-1);
     color: var(--color-text2);
     border-top: 1px solid var(--color-bg-6);
+    transition: all 0.5s;
 }
 
 .lk-basket-page_spisok {
@@ -761,7 +765,83 @@ main.lk-page {
     width: 100%;
 }
 
+
+
 /*------Адаптив---------*/
+
+@container lkcontent (max-width: 1200px) {
+    .lk-basket-page_metod {
+        min-width: 270px;
+        padding: 70px 50px;
+        min-height: 600px;
+    }
+
+    .lk-basket-page_metod_blok1>p:nth-child(1),
+    .lk-basket-page_metod_blok2>p:nth-child(1) {
+        font-size: 26px;
+        padding-bottom: 30px;
+    }
+
+    .lk-basket-page_metod_blok1>p:nth-child(2) {
+        font-size: 32px;
+        padding-bottom: 25px;
+    }
+
+    .header-top-content_lk>.header-top-buttons {
+        min-width: 270px;
+    }
+
+    .lk-basket-metod>.uk-fieldset>div:nth-child(1)>label>img {
+        width: 100px;
+    }
+
+    .lk-basket-page_operation-backet-card>div:nth-child(1) {
+        font-size: 28px;
+    }
+
+    .lk-basket-page_operation-backet-card>div:nth-child(2) {
+        font-size: 18px;
+    }
+
+    .lk-basket-page_operation-backet-card>div:nth-child(3) {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .lk-basket-page_operation-backet-card>div:nth-child(4) {
+        font-size: 28px;
+        min-width: 130px;
+    }
+
+    .lk-basket-page_operation-backet-header>div:nth-child(4) {
+        min-width: 130px;
+    }
+
+    .lk-basket-page_operation-backet-header {
+        gap: 15px;
+    }
+
+    .lk-basket-page_operation-backet-card {
+        gap: 15px;
+    }
+}
+
+@container lkcontent (max-width: 960px) {
+    .lk-basket-page {
+        flex-direction: column;
+    }
+
+    .lk-basket-page_metod {
+        margin: 0px 40px 40px;
+        min-height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 40px;
+        gap: 20px;
+    }
+}
 
 @media (max-width: 1200px) {
     .header-top-content_lk>.header-top-buttons {
