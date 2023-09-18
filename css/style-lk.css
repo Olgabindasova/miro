@@ -792,7 +792,82 @@ main.lk-page {
     width: 100%;
 }
 
+/*------Страница Мои заказы---------*/
 
+.zakaz-card {
+    padding: 15px 40px;
+}
+
+.zakaz-card_info {
+    border-bottom: 1px solid var(--color-bg-1);
+    padding: 30px 50px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.zakaz-card_header {
+    padding: 10px 50px;
+    background: var(--color-bg-1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+
+.zakaz-card_header>div {
+    color: var(--color-text2);
+}
+
+.zakaz-card_header>div:nth-child(1) {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.zakaz-card_header>div:nth-child(2) {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.zakaz-card_info>div:nth-child(1) {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    color: var(--color-bg-1);
+}
+
+.zakaz-card_info>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    min-width: 200px;
+}
+
+.zakaz-card_info>div:nth-child(2)>div:nth-child(1) {
+    color: var(--color-bg-1);
+    font-size: 22px;
+    letter-spacing: -0.2px;
+    font-weight: 400;
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.zakaz-card_info>div:nth-child(2)>div:nth-child(1)>span {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.zakaz-card_info>div:nth-child(2)>div:nth-child(2) {
+    background: var(--color-bg-8);
+    color: var(--color-text2);
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
 
 /*------Адаптив---------*/
 
@@ -962,6 +1037,22 @@ main.lk-page {
         flex-direction: column;
         row-gap: 20px;
     }
+
+    .zakaz-card_info {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 30px 30px 20px 30px;
+    }
+
+    .zakaz-card_info>div:nth-child(2) {
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .zakaz-card_header {
+        padding: 10px 30px;
+        gap: 30px;
+    }
 }
 
 @container lkcontent (max-width: 540px) {
@@ -1014,9 +1105,24 @@ main.lk-page {
     .lk-basket-page_metod_blok2>div:nth-child(2) {
         gap: 35px;
     }
+
+    .zakaz-card_header {
+        gap: 10px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
 }
 
 @container lkcontent (max-width: 375px) {
+    .container-lk-block {
+        padding: 20px;
+    }
+
+    .h1-lk-content {
+        padding: 30px 20px 20px !important;
+    }
+
     .lk-basket-page_metod_blok2>div:nth-child(2)>label>div {
         flex-direction: row;
         gap: 60px;
@@ -1034,7 +1140,7 @@ main.lk-page {
     }
 
     .lk-basket-page_metod {
-        margin: 0px 10px 40px;
+        margin: 0px 10px 10px;
     }
 
     .lk-basket-page_operation-backet-card>div:nth-child(1),
@@ -1073,6 +1179,49 @@ main.lk-page {
         display: flex;
         flex-direction: column;
     }
+
+    .zakaz-card_header>div:nth-child(1) {
+        font-size: 26px;
+    }
+
+    .zakaz-card_header>div:nth-child(2) {
+        font-size: 18px;
+    }
+
+    .zakaz-card_info {
+        padding: 30px 0px 20px 0px;
+    }
+
+    .zakaz-card_info>div:nth-child(1) {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .zakaz-card_info>div:nth-child(2)>div:nth-child(1) {
+        font-size: 18px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .zakaz-card_info>div:nth-child(2)>div:nth-child(1)>span {
+        font-size: 24px;
+    }
+
+    .zakaz-card_info>div:nth-child(2) {
+        min-width: 150px;
+    }
+
+    .zakaz-card {
+        padding: 15px 20px;
+    }
+
+    .zakaz-card_header {
+        padding: 10px 15px;
+    }
+
 }
 
 @media (max-width: 1200px) {
