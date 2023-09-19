@@ -869,6 +869,169 @@ main.lk-page {
     text-align: center;
 }
 
+/*------Страница Мои переподготовки---------*/
+
+.retraining-card {
+    padding: 15px 40px;
+}
+
+.retraining-card_header {
+
+    background: var(--color-bg-1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.retraining-card_header>div {
+    color: var(--color-text2);
+}
+
+.retraining-card_header>div:nth-child(1) {
+    font-size: 28px;
+    font-weight: 400;
+    padding: 10px 0px 10px 50px;
+}
+
+.retraining-card_header>div:nth-child(2) {
+    font-size: 22px;
+    font-weight: 500;
+    background: var(--color-bg-8);
+    letter-spacing: -0.1px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+
+.retraining-card_header>div:nth-child(2).wait {
+    background: var(--color-bg-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.retraining-card_header>div:nth-child(2).wait::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 26px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 25 25' fill='none'%3E%3Cpath d='M18.75 12.5C19.6126 12.5 20.4224 12.6628 21.1792 12.9883C21.936 13.3138 22.5993 13.7573 23.1689 14.3188C23.7386 14.8804 24.1862 15.5436 24.5117 16.3086C24.8372 17.0736 25 17.8874 25 18.75C25 19.6126 24.8372 20.4224 24.5117 21.1792C24.1862 21.936 23.7427 22.5993 23.1812 23.1689C22.6196 23.7386 21.9564 24.1862 21.1914 24.5117C20.4264 24.8372 19.6126 25 18.75 25C17.8874 25 17.0776 24.8372 16.3208 24.5117C15.564 24.1862 14.9007 23.7427 14.3311 23.1812C13.7614 22.6196 13.3138 21.9564 12.9883 21.1914C12.6628 20.4264 12.5 19.6126 12.5 18.75C12.5 17.8874 12.6628 17.0776 12.9883 16.3208C13.3138 15.564 13.7573 14.9007 14.3188 14.3311C14.8804 13.7614 15.5436 13.3138 16.3086 12.9883C17.0736 12.6628 17.8874 12.5 18.75 12.5ZM18.75 23.4375C19.3929 23.4375 19.9992 23.3154 20.5688 23.0713C21.1385 22.8271 21.6349 22.4935 22.0581 22.0703C22.4813 21.6471 22.819 21.1507 23.0713 20.5811C23.3236 20.0114 23.4456 19.401 23.4375 18.75C23.4375 18.1071 23.3154 17.5008 23.0713 16.9312C22.8271 16.3615 22.4935 15.8651 22.0703 15.4419C21.6471 15.0187 21.1466 14.681 20.5688 14.4287C19.991 14.1764 19.3848 14.0544 18.75 14.0625C18.099 14.0625 17.4927 14.1846 16.9312 14.4287C16.3696 14.6729 15.8732 15.0065 15.4419 15.4297C15.0106 15.8529 14.6729 16.3534 14.4287 16.9312C14.1846 17.509 14.0625 18.1152 14.0625 18.75C14.0625 19.401 14.1846 20.0073 14.4287 20.5688C14.6729 21.1304 15.0065 21.6268 15.4297 22.0581C15.8529 22.4894 16.3493 22.8271 16.9189 23.0713C17.4886 23.3154 18.099 23.4375 18.75 23.4375ZM18.75 18.75H21.0938V20.3125H17.1875V15.625H18.75V18.75ZM14.2822 12.3535C14.0544 12.5163 13.8387 12.6872 13.6353 12.8662C13.4318 13.0452 13.2365 13.2365 13.0493 13.4399C12.4878 13.1388 11.8978 12.9069 11.2793 12.7441C10.6608 12.5814 10.026 12.5 9.375 12.5C8.65885 12.5 7.96712 12.5936 7.2998 12.7808C6.63249 12.9679 6.00993 13.2284 5.43213 13.562C4.85433 13.8957 4.32943 14.3026 3.85742 14.7827C3.38542 15.2629 2.97852 15.7918 2.63672 16.3696C2.29492 16.9474 2.03044 17.57 1.84326 18.2373C1.65609 18.9046 1.5625 19.5964 1.5625 20.3125H0C0 19.3359 0.142415 18.396 0.427246 17.4927C0.712077 16.5894 1.12305 15.7552 1.66016 14.9902C2.19727 14.2253 2.83203 13.5457 3.56445 12.9517C4.29688 12.3576 5.12695 11.8896 6.05469 11.5479C5.13509 10.9456 4.41895 10.1888 3.90625 9.27734C3.39355 8.36589 3.13314 7.35677 3.125 6.25C3.125 5.38737 3.28776 4.57764 3.61328 3.8208C3.9388 3.06396 4.38232 2.40072 4.94385 1.83105C5.50537 1.26139 6.16862 0.813802 6.93359 0.488281C7.69857 0.16276 8.51237 0 9.375 0C10.2376 0 11.0474 0.16276 11.8042 0.488281C12.561 0.813802 13.2243 1.25732 13.7939 1.81885C14.3636 2.38037 14.8112 3.04362 15.1367 3.80859C15.4622 4.57357 15.625 5.38737 15.625 6.25C15.625 6.78711 15.5599 7.31201 15.4297 7.82471C15.2995 8.3374 15.1042 8.82161 14.8438 9.27734C14.5833 9.73307 14.2741 10.1562 13.916 10.5469C13.5579 10.9375 13.147 11.2712 12.6831 11.5479C13.2528 11.7757 13.7858 12.0443 14.2822 12.3535ZM4.6875 6.25C4.6875 6.90104 4.80957 7.50732 5.05371 8.06885C5.29785 8.63037 5.63151 9.12679 6.05469 9.55811C6.47786 9.98942 6.97428 10.3271 7.54395 10.5713C8.11361 10.8154 8.72396 10.9375 9.375 10.9375C10.0179 10.9375 10.6242 10.8154 11.1938 10.5713C11.7635 10.3271 12.2599 9.99349 12.6831 9.57031C13.1063 9.14714 13.444 8.65072 13.6963 8.08105C13.9486 7.51139 14.0706 6.90104 14.0625 6.25C14.0625 5.6071 13.9404 5.00081 13.6963 4.43115C13.4521 3.86149 13.1185 3.36507 12.6953 2.94189C12.2721 2.51872 11.7716 2.18099 11.1938 1.92871C10.616 1.67643 10.0098 1.55436 9.375 1.5625C8.72396 1.5625 8.11768 1.68457 7.55615 1.92871C6.99463 2.17285 6.49821 2.50651 6.06689 2.92969C5.63558 3.35286 5.29785 3.85335 5.05371 4.43115C4.80957 5.00895 4.6875 5.61523 4.6875 6.25Z' fill='white'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.retraining-card_header>div:nth-child(1)>span {
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    padding: 0 5px 0 15px;
+}
+
+.retraining-card_info {
+    border-bottom: 1px solid var(--color-bg-1);
+    padding: 30px 0px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.retraining-card_info>div:nth-child(1) {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+    color: var(--color-bg-1);
+}
+
+.retraining-card_info>div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+}
+
+.retraining-card_info>div:nth-child(2)>a {
+    background: var(--color-bg-8);
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.5s;
+    padding: 15px 20px 15px 20px;
+    color: var(--color-text2);
+    cursor: pointer;
+    border: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.retraining-card_info>div:nth-child(2).wait>a {
+    background: var(--color-bg-2);
+}
+
+.retraining-card_info>div:nth-child(2).wait>a:hover {
+    background: var(--color-bg-2h);
+}
+
+.retraining-card_info>div:nth-child(2)>a:hover {
+    background: var(--color-bg-8h);
+}
+
+.retraining-card_info>div:nth-child(2)>a::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 17' %3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.1875 8.69124C0.1875 8.45445 0.281563 8.22736 0.448995 8.05993C0.616428 7.8925 0.843515 7.79844 1.0803 7.79844H22.1379L16.5186 2.18094C16.351 2.01329 16.2568 1.78592 16.2568 1.54884C16.2568 1.31175 16.351 1.08438 16.5186 0.916732C16.6862 0.749088 16.9136 0.654907 17.1507 0.654907C17.3878 0.654907 17.6152 0.749088 17.7828 0.916732L24.9252 8.05913C25.0084 8.14207 25.0743 8.24059 25.1193 8.34906C25.1643 8.45752 25.1875 8.5738 25.1875 8.69124C25.1875 8.80867 25.1643 8.92495 25.1193 9.03342C25.0743 9.14188 25.0084 9.2404 24.9252 9.32334L17.7828 16.4657C17.6152 16.6334 17.3878 16.7276 17.1507 16.7276C16.9136 16.7276 16.6862 16.6334 16.5186 16.4657C16.351 16.2981 16.2568 16.0707 16.2568 15.8336C16.2568 15.5966 16.351 15.3692 16.5186 15.2015L22.1379 9.58404H1.0803C0.843515 9.58404 0.616428 9.48997 0.448995 9.32254C0.281563 9.15511 0.1875 8.92802 0.1875 8.69124Z' fill='white'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.retraining-card_progress {
+    border-bottom: 1px solid var(--color-bg-1);
+    padding: 30px 0px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.retraining-card_progress>.progress {
+    width: 90%;
+    border-radius: 0px;
+    height: 20px;
+    flex-direction: row-reverse;
+    background: var(--color-bg-7);
+}
+
+.retraining-card_progress>.progress>.progress-bar.bg-success {
+    background-color: var(--color-bg-8) !important;
+    font-size: 16px;
+}
+
+.retraining-card_progress>div:nth-child(1) {
+    color: var(--color-bg-8);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+    min-width: 110px;
+}
+
+.retraining-card_progress>div:nth-child(1).wait {
+    color: var(--color-bg-2);
+}
+
 /*------Адаптив---------*/
 
 @container lkcontent (max-width: 1200px) {
@@ -1053,6 +1216,41 @@ main.lk-page {
         padding: 10px 30px;
         gap: 30px;
     }
+
+    .retraining-card_header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .retraining-card_header>div:nth-child(2) {
+        width: 100%;
+    }
+
+    .retraining-card_info {
+        gap: 25px;
+        flex-direction: column;
+        padding: 30px 0px 20px 0px;
+    }
+
+    .retraining-card_info>div:nth-child(2) {
+        width: 100%;
+        min-width: 100px;
+    }
+
+    .retraining-card_progress {
+        padding: 30px 0px 20px 0px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .retraining-card_progress>.progress {
+        width: 100%;
+    }
+
+    .retraining-card_info>div:nth-child(2)>a {
+        justify-content: center;
+        gap: 20px;
+    }
 }
 
 @container lkcontent (max-width: 540px) {
@@ -1111,6 +1309,38 @@ main.lk-page {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: flex-start;
+    }
+
+    .retraining-card_header>div:nth-child(2) {
+        min-width: 100px;
+        font-size: 18px;
+        min-height: 50px;
+    }
+
+    .retraining-card_header>div:nth-child(1) {
+        font-size: 18px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .retraining-card_header>div:nth-child(1)>span {
+        font-size: 26px;
+    }
+
+    .retraining-card_header {
+        gap: 0px;
+    }
+
+    .retraining-card_info {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .retraining-card_info>div:nth-child(1) {
+        font-size: 16px;
+    }
+
+    .retraining-card_progress {
+        padding: 15px 0px 15px 0px;
+        gap: 10px;
     }
 }
 
@@ -1222,6 +1452,33 @@ main.lk-page {
         padding: 10px 15px;
     }
 
+    .retraining-card {
+        padding: 15px 20px;
+    }
+
+    .h1-lk-content {
+        font-size: 32px !important;
+        line-height: 32px;
+    }
+
+    .retraining-card_header>div:nth-child(2) {
+        font-size: 16px;
+    }
+
+    .retraining-card_header>div:nth-child(1)>span {
+        font-size: 20px;
+        padding: 0 5px 0 10px;
+    }
+
+    .retraining-card_info>div:nth-child(2)>a {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .retraining-card_info>div:nth-child(1) {
+        font-size: 15px;
+        line-height: 15px;
+    }
 }
 
 @media (max-width: 1200px) {
