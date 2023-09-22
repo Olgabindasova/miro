@@ -1032,13 +1032,21 @@ main.lk-page {
     color: var(--color-bg-2);
 }
 
-/*------Страница Перенаправление на тестирование---------*/
+/*------Шапка контента с кнопкой---------*/
 .modul_header {
     display: flex;
     justify-content: space-between;
-    margin: 50px 0 10px;
+    margin: 40px 0 10px;
+    align-items: flex-end;
 }
 
+.modul_header>div {
+    font-size: 64px;
+    font-weight: 400;
+    color: var(--color-bg-1);
+}
+
+/*------Страница Перенаправление на тестирование---------*/
 .test-modul.modul_header>div {
     font-size: 36px;
     font-weight: 400;
@@ -1059,6 +1067,7 @@ main.lk-page {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row-reverse;
+    height: 50px;
 }
 
 .modul_header>a:hover {
@@ -1235,6 +1244,70 @@ main.lk-page {
 
 .test-modul_footer-button.transit:hover {
     background: var(--color-bg-8h);
+}
+
+/*------Cтраница видео-лекции---------*/
+.section-kurs {
+    gap: 20px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-kurs_item {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+video.video-kurs[poster] {
+    width: 100%;
+    max-height: 600px;
+    background: var(--color-bg-5);
+}
+
+.h2-kurs {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--color-bg-1);
+}
+
+.h3-kurs {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-bg-2);
+}
+
+.description-kurs {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--color-bg-1);
+    text-transform: uppercase;
+}
+
+.description-kurs_dop {
+    font-size: 14px;
+    color: var(--color-bg-1);
+    font-weight: 300;
+}
+
+.content-kurs-title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--color-bg-1);
+    padding-top: 20px;
+}
+
+.text-kurs {
+    font-family: 'Times New Roman Cyr';
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: -0.1px;
+    color: var(--color-text);
+    line-height: 26px;
+    margin: 20px 0;
+    white-space: normal;
 }
 
 /*------Адаптив---------*/
@@ -1569,6 +1642,33 @@ main.lk-page {
 
     .test-modul_info>li>div {
         font-size: 20px;
+    }
+
+    .modul_header {
+        align-items: flex-start;
+    }
+
+    .modul_header>div {
+        font-size: 48px;
+    }
+
+    .h2-kurs {
+        font-size: 32px;
+    }
+
+    .section-kurs {
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .text-kurs {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 10px 0;
+    }
+
+    .content-kurs-title {
+        padding-top: 10px;
     }
 }
 
