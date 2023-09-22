@@ -1310,6 +1310,8 @@ video.video-kurs[poster] {
     white-space: normal;
 }
 
+
+
 /*------Адаптив---------*/
 
 @container lkcontent (max-width: 1200px) {
