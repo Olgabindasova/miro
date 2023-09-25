@@ -1310,7 +1310,37 @@ video.video-kurs[poster] {
     white-space: normal;
 }
 
+.status-not-loaded {
+    color: var(--color-text2);
+    background: var(--color-bg-6);
+    padding: 15px 15px 15px 25px;
+    margin: 20px 0 0 0;
+}
 
+.personal-listener {
+    padding: 30px 0;
+}
+
+.personal-listener>.uk-fieldset>div>label {
+    color: var(--color-bg-1);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 0;
+    letter-spacing: -0.1px;
+}
+
+.personal-listener>.uk-fieldset>div>input.uk-input,
+.personal-listener>.uk-fieldset>div>select.uk-select {
+    border: 1px solid var(--color-bg-6);
+    color: var(--color-bg-6);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background: var(--color-bg-7);
+    height: fit-content;
+    min-height: 45px;
+    padding-left: 25px;
+}
 
 /*------Адаптив---------*/
 
