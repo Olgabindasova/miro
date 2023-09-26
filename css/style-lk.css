@@ -1310,11 +1310,12 @@ video.video-kurs[poster] {
     white-space: normal;
 }
 
+/*------Cтраница данных пользователя---------*/
 .status-not-loaded {
     color: var(--color-text2);
     background: var(--color-bg-6);
     padding: 15px 15px 15px 25px;
-    margin: 20px 0 0 0;
+    margin: 0;
 }
 
 .personal-listener {
@@ -1340,6 +1341,36 @@ video.video-kurs[poster] {
     height: fit-content;
     min-height: 45px;
     padding-left: 25px;
+}
+
+.download-status_block {
+    border: 1px solid var(--color-bg-6);
+    color: var(--color-bg-6);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background: var(--color-bg-7);
+    padding: 5%;
+    margin: 25px 0;
+}
+
+section.accepted-download>div {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--color-bg-6);
+    justify-content: space-between;
+}
+
+section.accepted-download>div>p {
+    width: 50%;
+}
+
+.personal-listener>.uk-fieldset>div>select.uk-select:not([multiple]):not([size]) {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.5 13L6 4H17L11.5 13Z' fill='%2398A1B0'/%3e%3c/svg%3e ");
+    background-position: 99% 50%;
+    background-repeat: no-repeat;
 }
 
 /*------Адаптив---------*/
@@ -1870,6 +1901,17 @@ video.video-kurs[poster] {
     .test-modul_info>li>div>ul>li {
         font-size: 15px;
         padding: 0px 15px 0 0;
+    }
+
+    section.accepted-download>div {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section.accepted-download>div>button {
+        width: 100%;
     }
 }
 
