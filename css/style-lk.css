@@ -1053,7 +1053,8 @@ main.lk-page {
     color: var(--color-bg-1);
 }
 
-.modul_header>a {
+.modul_header>a,
+.modul_header-button {
     background: var(--color-bg-2);
     font-weight: 500;
     font-size: 16px;
@@ -1070,11 +1071,14 @@ main.lk-page {
     height: 50px;
 }
 
-.modul_header>a:hover {
+.modul_header>a:hover,
+.modul_header-button:hover {
     background: var(--color-bg-2h);
+    color: var(--color-text2);
 }
 
-.modul_header>a::after {
+.modul_header>a::after,
+.modul_header-button::after {
     content: '';
     display: block;
     position: relative;
@@ -1371,6 +1375,314 @@ section.accepted-download>div>p {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.5 13L6 4H17L11.5 13Z' fill='%2398A1B0'/%3e%3c/svg%3e ");
     background-position: 99% 50%;
     background-repeat: no-repeat;
+}
+
+/*------Курс переподготовки---------*/
+.modul_header.retraining_course {
+    gap: 25px;
+    border-bottom: 1px solid var(--color-bg-1);
+    padding-bottom: 25px;
+}
+
+.modul_header.retraining_course>div:nth-child(1) {
+    font-size: 48px;
+    font-weight: 400;
+    width: 50%;
+}
+
+.modul_header.retraining_course>div:nth-child(2) {
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.retraining_course-h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--color-bg-1);
+    line-height: 38px;
+    margin-bottom: 50px;
+    letter-spacing: -0.2px;
+    margin-top: 25px;
+}
+
+.retraining-card_progress.retraining_course {
+    border-bottom: 0px;
+    padding: 30px 0px 20px 0px;
+}
+
+.retraining-card_progress_dop {
+    width: 100%;
+    border-bottom: 1px solid var(--color-bg-1);
+    display: flex;
+    padding-bottom: 5px;
+    justify-content: flex-end;
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.pass-exam-button {
+    background: var(--color-bg-2);
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.5s;
+    padding: 15px 30px 15px 30px;
+    color: var(--color-text2);
+    cursor: pointer;
+    border: 0;
+    min-width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 50px;
+}
+
+.pass-exam-button:hover {
+    background: var(--color-bg-2h);
+    color: var(--color-text2);
+}
+
+.pass-exam-button::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 17 17' fill='none'%3E%3Ccircle cx='8.5' cy='8.5' r='7.5' stroke='white'/%3E%3Cpath d='M9.07143 9.76383C8.9329 9.76383 8.80303 9.76233 8.68182 9.75933C8.56349 9.75634 8.4495 9.75034 8.33983 9.74134C8.23304 9.73234 8.11905 9.72185 7.99784 9.70985C7.99784 9.31699 8.06999 8.94962 8.21429 8.60774C8.36147 8.26586 8.58369 7.96146 8.88095 7.69456C9.06277 7.53261 9.20274 7.37067 9.30087 7.20873C9.39899 7.04379 9.44805 6.87584 9.44805 6.7049C9.44805 6.45899 9.37734 6.27006 9.23593 6.1381C9.09452 6.00315 8.89105 5.93567 8.62554 5.93567C8.42063 5.93567 8.24459 5.96566 8.0974 6.02564C7.9531 6.08562 7.83045 6.16659 7.72944 6.26856C7.63131 6.36752 7.54906 6.48148 7.48268 6.61044C7.41919 6.73939 7.36724 6.87284 7.32684 7.0108L6.5 6.53846C6.56349 6.19958 6.69913 5.91618 6.90693 5.68826C7.1176 5.46034 7.37302 5.2894 7.67316 5.17544C7.9733 5.05848 8.29365 5 8.6342 5C9.00072 5 9.32395 5.05848 9.6039 5.17544C9.88672 5.2924 10.1061 5.46934 10.2619 5.70625C10.4206 5.94017 10.5 6.23257 10.5 6.58345C10.5 6.84436 10.4654 7.06928 10.3961 7.25821C10.3268 7.44414 10.2374 7.60609 10.1277 7.74404C10.018 7.88199 9.90404 8.00495 9.78571 8.11291C9.66739 8.21787 9.55339 8.34683 9.44372 8.49978C9.33694 8.64972 9.24892 8.82816 9.17965 9.03509C9.11328 9.24202 9.0772 9.48493 9.07143 9.76383ZM8.62121 11.6667C8.42208 11.6667 8.24892 11.6037 8.10173 11.4777C7.95743 11.3518 7.88528 11.1808 7.88528 10.9649C7.88528 10.839 7.91847 10.7235 7.98485 10.6185C8.05411 10.5136 8.14214 10.4296 8.24892 10.3666C8.35859 10.3036 8.47403 10.2722 8.59524 10.2722C8.81457 10.2722 8.99639 10.3321 9.14069 10.4521C9.28499 10.5691 9.35714 10.7235 9.35714 10.9154C9.35714 11.0534 9.32251 11.1793 9.25325 11.2933C9.18398 11.4073 9.09452 11.4987 8.98485 11.5677C8.87518 11.6337 8.75397 11.6667 8.62121 11.6667Z' fill='white'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.opening-certificate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    border-bottom: 1px solid var(--color-bg-1);
+    padding-bottom: 25px;
+}
+
+.opening-certificate>div:nth-child(1) {
+    color: var(--color-bg-8);
+}
+
+.opening-certificate>div:nth-child(1)>span {
+    color: var(--color-bg-1);
+    padding-left: 10px;
+}
+
+.opening-certificate>div:nth-child(2) {
+    color: var(--color-bg-1);
+}
+
+.opening-certificate>div:nth-child(2)>span {
+    color: var(--color-bg-2);
+    padding-left: 10px;
+}
+
+.tracknumber-pass-exam {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.tracknumber {
+    color: var(--color-bg-1);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+}
+
+.tracknumber>span {
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.pass-exam {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.retraining-programs.lk-kurs>.retraining-programs_list {
+    background-color: var(--color-text4);
+}
+
+.retraining-programs.lk-kurs>.retraining-programs_list>li {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-one>ul>li>a {
+    color: var(--color-bg-1);
+    border-left: 3px solid transparent;
+}
+
+.retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-one>ul>li>a[aria-expanded="true"] {
+    border-left: 3px solid var(--color-bg-2);
+    color: var(--color-bg-2);
+}
+
+.retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-one>ul>li>a:hover {
+    border-left: 3px solid var(--color-bg-1);
+    color: var(--color-bg-1);
+    background-color: var(--color-text2) !important;
+}
+
+
+
+.retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-title {
+    color: var(--color-bg-1);
+    width: 49%;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 0px 0 35px;
+}
+
+.retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-hour {
+    flex-direction: row;
+    justify-content: flex-end;
+    display: inline-flex;
+    color: var(--color-bg-1);
+    width: 49%;
+    padding: 0;
+    align-items: flex-start;
+    position: relative;
+    top: 30px;
+}
+
+.retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-hour>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-hour>div>span {
+    text-align: right;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-hour>div:nth-child(1),
+.retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-hour>div:nth-child(2) {
+    padding: 0 20px;
+    border-right: 1px solid var(--color-bg-1);
+}
+
+.retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-hour>div:nth-child(3) {
+    padding: 0 0 0 20px;
+}
+
+.test-button {
+    background: var(--color-bg-2);
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.5s;
+    padding: 15px 30px 15px 30px;
+    color: var(--color-text2);
+    cursor: pointer;
+    border: 0;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 40px;
+    text-transform: none;
+    gap: 10px;
+}
+
+.test-button:hover {
+    background: var(--color-bg-2h);
+    color: var(--color-text2);
+}
+
+.test-button::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='21' viewBox='0 0 20 21' fill='none'%3E%3Cpath d='M19.5371 4.0882L16.4121 0.9632C16.3396 0.890562 16.2534 0.832938 16.1585 0.793622C16.0637 0.754306 15.962 0.73407 15.8594 0.73407C15.7567 0.73407 15.655 0.754306 15.5602 0.793622C15.4654 0.832938 15.3792 0.890562 15.3066 0.9632L5.93164 10.3382C5.85911 10.4108 5.8016 10.497 5.76239 10.5918C5.72318 10.6867 5.70304 10.7883 5.70312 10.8909V14.0159C5.70312 14.2231 5.78544 14.4218 5.93195 14.5684C6.07846 14.7149 6.27717 14.7972 6.48438 14.7972H9.60938C9.712 14.7973 9.81364 14.7771 9.90848 14.7379C10.0033 14.6987 10.0895 14.6412 10.1621 14.5687L19.5371 5.19367C19.6097 5.12111 19.6674 5.03495 19.7067 4.94011C19.746 4.84526 19.7662 4.7436 19.7662 4.64093C19.7662 4.53827 19.746 4.4366 19.7067 4.34176C19.6674 4.24692 19.6097 4.16076 19.5371 4.0882ZM9.28613 13.2347H7.26562V11.2142L13.5156 4.96418L15.5361 6.98468L9.28613 13.2347ZM16.6406 5.88019L14.6201 3.85968L15.8594 2.62043L17.8799 4.64093L16.6406 5.88019ZM18.9844 10.1097V18.7034C18.9844 19.1178 18.8198 19.5153 18.5267 19.8083C18.2337 20.1013 17.8363 20.2659 17.4219 20.2659H1.79688C1.38247 20.2659 0.985046 20.1013 0.692021 19.8083C0.398995 19.5153 0.234375 19.1178 0.234375 18.7034V3.07843C0.234375 2.66403 0.398995 2.26661 0.692021 1.97358C0.985046 1.68055 1.38247 1.51593 1.79688 1.51593H10.3906C10.5978 1.51593 10.7965 1.59824 10.9431 1.74476C11.0896 1.89127 11.1719 2.08998 11.1719 2.29718C11.1719 2.50438 11.0896 2.7031 10.9431 2.84961C10.7965 2.99612 10.5978 3.07843 10.3906 3.07843H1.79688V18.7034H17.4219V10.1097C17.4219 9.90248 17.5042 9.70377 17.6507 9.55726C17.7972 9.41074 17.9959 9.32843 18.2031 9.32843C18.4103 9.32843 18.609 9.41074 18.7556 9.55726C18.9021 9.70377 18.9844 9.90248 18.9844 10.1097Z' fill='white'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>ul>li>a {
+    padding: 30px;
+}
+
+.retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>ul>li>a::before {
+    top: -30px;
+}
+
+.retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>ul>li>a[aria-expanded="true"]>.retraining-programs_modul-header::after {
+    bottom: -30px;
+    left: 94%;
+}
+
+.retraining-programs_modul-header.lk-kurs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
+
+.retraining-programs_modul-header.lk-kurs>.retraining-programs_modul-header_title {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+
+.retraining-programs_modul-header.lk-kurs>div:nth-child(2) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--color-bg-31);
+    display: flex;
+    flex-direction: row;
+}
+
+.retraining-programs_modul-header.lk-kurs>div:nth-child(2)>.retraining-programs_modul-header_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+    width: 65%;
+}
+
+.retraining-programs_modul-header.lk-kurs>div:nth-child(2)>div:nth-child(2) {
+    display: inline-flex;
+    color: var(--color-bg-2);
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.retraining-programs_modul-header.lk-kurs>div:nth-child(2)>div:nth-child(2)>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 /*------Адаптив---------*/
