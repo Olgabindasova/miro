@@ -1762,12 +1762,90 @@ section.accepted-download>div>p {
 .retraining-programs_list-two-items.lk-kurs>.retraining-programs_list-two_item>div:nth-child(3)>a {
     padding: 10px 10px;
     display: flex;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 18px;
     min-width: 150px;
     justify-content: center;
+    letter-spacing: normal;
+}
+
+.retraining-programs_list-two-items.lk-kurs>.retraining-programs_list-two_item>div:nth-child(2) {
+    width: 70%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.curriculum {
+    margin: 80px 30px;
+}
+
+.curriculum_title {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--color-bg-1);
     letter-spacing: -0.2px;
+}
+
+.curriculum_list {
+    margin: 20px 0 0 0;
+    counter-reset: curriculum;
+}
+
+.curriculum_list>li {
+    color: var(--color-bg-1);
+    padding: 20px 0 20px 20px;
+    border-bottom: 1px solid var(--color-bg-2);
+}
+
+.curriculum_list>li:nth-last-child(1) {
+    border-bottom: 0px;
+}
+
+.curriculum_list>li:nth-last-child(1)>div::before {
+    border-left: 15px solid var(--color-bg-8);
+}
+
+.curriculum_list>li:nth-last-child(1)>div {
+    color: var(--color-bg-8);
+}
+
+.curriculum_list>li::before {
+    content: counter(curriculum) "  ";
+    counter-increment: curriculum;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--color-bg-1);
+    height: 0px;
+    display: block;
+    position: relative;
+    right: 20px;
+    top: 3px;
+}
+
+.curriculum_list>li>div {
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    padding: 0 0 5px 0;
+
+}
+
+.curriculum_list>li>div::before {
+    position: relative;
+    border: 15px solid transparent;
+    border-left: 15px solid var(--color-bg-2);
+    top: 4px;
+    left: -1px;
+    content: '';
+    display: inline-block;
+}
+
+.curriculum_list>li>p {
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 30px;
 }
 
 /*------Адаптив---------*/
