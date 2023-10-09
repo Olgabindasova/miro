@@ -1848,6 +1848,40 @@ section.accepted-download>div>p {
     padding-left: 30px;
 }
 
+.video-check {
+    display: flex;
+    justify-content: flex-start !important;
+}
+
+.video-check>.uk-checkbox {
+    border: 1px solid var(--color-bg-2);
+    color: var(--color-bg-2);
+}
+
+.video-check::after {
+    content: 'Не просмотрено';
+    display: block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    top: -1px;
+    color: var(--color-bg-2);
+}
+
+.video-check>.uk-checkbox:checked {
+    border: 1px solid var(--color-bg-8);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12' fill='none'%3E%3Cmask id='path-1-inside-1_423_3817' fill='white'%3E%3Cpath d='M15.7957 0.900557C15.8604 0.964406 15.9118 1.04026 15.9469 1.12376C15.982 1.20727 16 1.29679 16 1.3872C16 1.47761 15.982 1.56713 15.9469 1.65064C15.9118 1.73414 15.8604 1.80999 15.7957 1.87384L6.05782 11.4967C5.9932 11.5607 5.91645 11.6115 5.83194 11.6461C5.74744 11.6808 5.65685 11.6986 5.56536 11.6986C5.47387 11.6986 5.38328 11.6808 5.29877 11.6461C5.21427 11.6115 5.13751 11.5607 5.0729 11.4967L0.203982 6.68527C0.0733744 6.5562 0 6.38115 0 6.19862C0 6.0161 0.0733744 5.84105 0.203982 5.71198C0.33459 5.58292 0.511732 5.51041 0.696439 5.51041C0.881146 5.51041 1.05829 5.58292 1.1889 5.71198L5.56536 10.0381L14.8107 0.900557C14.8754 0.836547 14.9521 0.785762 15.0366 0.751111C15.1211 0.71646 15.2117 0.698624 15.3032 0.698624C15.3947 0.698624 15.4853 0.71646 15.5698 0.751111C15.6543 0.785762 15.731 0.836547 15.7957 0.900557Z'/%3E%3C/mask%3E%3Cpath d='M15.7957 0.900557C15.8604 0.964406 15.9118 1.04026 15.9469 1.12376C15.982 1.20727 16 1.29679 16 1.3872C16 1.47761 15.982 1.56713 15.9469 1.65064C15.9118 1.73414 15.8604 1.80999 15.7957 1.87384L6.05782 11.4967C5.9932 11.5607 5.91645 11.6115 5.83194 11.6461C5.74744 11.6808 5.65685 11.6986 5.56536 11.6986C5.47387 11.6986 5.38328 11.6808 5.29877 11.6461C5.21427 11.6115 5.13751 11.5607 5.0729 11.4967L0.203982 6.68527C0.0733744 6.5562 0 6.38115 0 6.19862C0 6.0161 0.0733744 5.84105 0.203982 5.71198C0.33459 5.58292 0.511732 5.51041 0.696439 5.51041C0.881146 5.51041 1.05829 5.58292 1.1889 5.71198L5.56536 10.0381L14.8107 0.900557C14.8754 0.836547 14.9521 0.785762 15.0366 0.751111C15.1211 0.71646 15.2117 0.698624 15.3032 0.698624C15.3947 0.698624 15.4853 0.71646 15.5698 0.751111C15.6543 0.785762 15.731 0.836547 15.7957 0.900557Z' fill='%23B3171A'/%3E%3Cpath d='M15.7957 0.900557L13.5963 3.12058L13.6019 3.12613L15.7957 0.900557ZM15.7957 1.87384L13.6019 -0.35173L13.5991 -0.348953L15.7957 1.87384ZM6.05782 11.4967L3.86127 9.2739L3.85846 9.27668L6.05782 11.4967ZM5.0729 11.4967L7.27226 9.27667L7.26945 9.2739L5.0729 11.4967ZM0.203982 6.68527L2.40053 4.46247L2.40053 4.46247L0.203982 6.68527ZM0 6.19862H-3.125H0ZM1.1889 5.71198L3.38579 3.48954L3.38544 3.48919L1.1889 5.71198ZM5.56536 10.0381L3.36846 12.2606L5.56517 14.4321L7.76207 12.2608L5.56536 10.0381ZM14.8107 0.900557L17.0075 3.12319L17.0101 3.12057L14.8107 0.900557ZM15.3032 0.698624V3.82362V0.698624ZM13.6019 3.12613C13.3739 2.90141 13.1911 2.63244 13.0656 2.33365L18.8282 -0.0861263C18.6326 -0.551934 18.3469 -0.9726 17.9894 -1.32501L13.6019 3.12613ZM13.0656 2.33365C12.9401 2.03475 12.875 1.71301 12.875 1.3872H19.125C19.125 0.880565 19.0238 0.379784 18.8282 -0.0861263L13.0656 2.33365ZM12.875 1.3872C12.875 1.06139 12.9401 0.739647 13.0656 0.440749L18.8282 2.86052C19.0238 2.39461 19.125 1.89383 19.125 1.3872H12.875ZM13.0656 0.440749C13.1911 0.141953 13.3739 -0.127014 13.6019 -0.351728L17.9894 4.09941C18.3469 3.747 18.6326 3.32633 18.8282 2.86052L13.0656 0.440749ZM13.5991 -0.348953L3.86127 9.2739L8.25436 13.7195L17.9922 4.09663L13.5991 -0.348953ZM3.85846 9.27668C4.08581 9.05144 4.35387 8.8747 4.64633 8.75478L7.01756 14.5375C7.47903 14.3483 7.9006 14.07 8.25717 13.7167L3.85846 9.27668ZM4.64633 8.75478C4.93874 8.63488 5.25094 8.57362 5.56536 8.57362V14.8236C6.06276 14.8236 6.55614 14.7267 7.01756 14.5375L4.64633 8.75478ZM5.56536 8.57362C5.87978 8.57362 6.19198 8.63488 6.48439 8.75478L4.11316 14.5375C4.57457 14.7267 5.06795 14.8236 5.56536 14.8236V8.57362ZM6.48439 8.75478C6.77684 8.8747 7.0449 9.05144 7.27226 9.27668L2.87355 13.7167C3.23012 14.07 3.6517 14.3483 4.11316 14.5375L6.48439 8.75478ZM7.26945 9.2739L2.40053 4.46247L-1.99256 8.90806L2.87636 13.7195L7.26945 9.2739ZM2.40053 4.46247C2.86001 4.91652 3.125 5.54029 3.125 6.19862H-3.125C-3.125 7.22201 -2.71326 8.19588 -1.99256 8.90806L2.40053 4.46247ZM3.125 6.19862C3.125 6.85696 2.86 7.48073 2.40053 7.93478L-1.99256 3.48919C-2.71326 4.20137 -3.125 5.17524 -3.125 6.19862H3.125ZM2.40053 7.93478C1.94231 8.38758 1.32864 8.63541 0.696439 8.63541V2.38541C-0.305175 2.38541 -1.27313 2.77825 -1.99256 3.48919L2.40053 7.93478ZM0.696439 8.63541C0.0642394 8.63541 -0.549434 8.38758 -1.00765 7.93478L3.38544 3.48919C2.66601 2.77825 1.69805 2.38541 0.696439 2.38541V8.63541ZM-1.008 7.93443L3.36846 12.2606L7.76226 7.8157L3.38579 3.48954L-1.008 7.93443ZM7.76207 12.2608L17.0075 3.12319L12.614 -1.32207L3.36865 7.81551L7.76207 12.2608ZM17.0101 3.12057C16.7827 3.34581 16.5147 3.52255 16.2222 3.64247L13.851 -2.14025C13.3895 -1.95102 12.968 -1.67271 12.6114 -1.31946L17.0101 3.12057ZM16.2222 3.64247C15.9298 3.76237 15.6176 3.82362 15.3032 3.82362V-2.42638C14.8058 -2.42638 14.3124 -2.32945 13.851 -2.14025L16.2222 3.64247ZM15.3032 3.82362C14.9888 3.82362 14.6766 3.76237 14.3842 3.64247L16.7554 -2.14025C16.294 -2.32945 15.8006 -2.42638 15.3032 -2.42638V3.82362ZM14.3842 3.64247C14.0917 3.52255 13.8237 3.34581 13.5963 3.12057L17.995 -1.31946C17.6384 -1.67271 17.2169 -1.95102 16.7554 -2.14025L14.3842 3.64247Z' fill='%2369A697' mask='url(%23path-1-inside-1_423_3817)'/%3E%3C/svg%3E");
+    background-color: var(--color-bg-7);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.video-check:has(.uk-checkbox:checked)::after {
+    content: 'Просмотрено';
+    color: var(--color-bg-8) !important;
+}
+
 /*------Адаптив---------*/
 
 @container lkcontent (max-width: 1200px) {
@@ -2010,6 +2044,129 @@ section.accepted-download>div>p {
         align-items: flex-start;
         flex-direction: column;
         align-content: center;
+    }
+
+    .modul_header.retraining_course>div:nth-child(2) {
+        font-size: 20px;
+        gap: 15px;
+        flex-direction: column-reverse;
+    }
+
+    .tracknumber {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+    }
+
+    .tracknumber>span {
+        padding-left: 0;
+    }
+
+    .opening-certificate {
+        font-size: 18px;
+        padding-bottom: 18px;
+    }
+
+    .retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-title {
+        width: 100%;
+        padding: 0;
+    }
+
+    .retraining-programs_list-two>ul>li>ul.uk-accordion {
+        margin-top: 50px;
+    }
+
+    .retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-hour {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-hour>div {
+        align-items: center;
+    }
+
+    .retraining-programs_modul-header.lk-kurs>div:nth-child(2)>div:nth-child(2)>div {
+        padding: 0 10px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .retraining-programs_modul-header.lk-kurs>div:nth-child(2)>div:nth-child(2) {
+        gap: 15px;
+    }
+
+    .retraining-programs_modul-header.lk-kurs>div:nth-child(2)>div:nth-child(2)>div>.academic-hour {
+        font-size: 25px !important;
+        line-height: 18px;
+    }
+
+    .retraining-programs_modul-header.lk-kurs>div:nth-child(2)>.retraining-programs_modul-header_content {
+        gap: 5px;
+        min-width: 50%;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .retraining-programs_list-two-items.lk-kurs>.retraining-programs_list-two_item>div:nth-child(2) {
+        width: 100%;
+        min-width: 100%;
+        font-size: 16px;
+        text-align: justify;
+        order: 2;
+    }
+
+    .retraining-programs_list-two-items.lk-kurs>.retraining-programs_list-two_item {
+        flex-flow: wrap;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .retraining-programs_list-two-items.lk-kurs>.retraining-programs_list-two_item>div:nth-child(1) {
+        order: 0;
+    }
+
+    .retraining-programs_list-two-items.lk-kurs>.retraining-programs_list-two_item>div:nth-child(3) {
+        order: 1;
+        flex-direction: row;
+        width: 300px;
+        gap: 30px;
+        margin-top: 5px;
+    }
+}
+
+@container lkcontent (max-width: 835px) {
+    .retraining-programs.lk-kurs>.retraining-programs_list {
+        top: 0px;
+        padding: 40px 0 40px;
+        margin-bottom: -30px px;
+    }
+
+    .retraining-programs.lk-kurs>.retraining-programs_list>li>div>.retraining-programs_list-one>ul.uk-nav>li {
+        width: 100%;
+    }
+
+    .retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-one>ul>li>a {
+        color: var(--color-bg-1);
+        border-left: 3px solid var(--color-bg-1);
+        background-color: var(--color-text2) !important;
+        min-height: 100px;
+    }
+
+    .retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-one>ul>li>a[aria-expanded="true"] {
+        border-left: 3px solid var(--color-bg-2) !important;
+        color: var(--color-bg-2) !important;
+    }
+
+    .curriculum_list>li>div {
+        font-size: 22px;
+    }
+
+    .curriculum_title {
+        font-size: 32px;
+    }
+
+    .curriculum_list>li>p {
+        font-size: 16px;
     }
 }
 
@@ -2208,6 +2365,52 @@ section.accepted-download>div>p {
     .content-kurs-title {
         padding-top: 10px;
     }
+
+    .retraining_course-h1 {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    .modul_header.retraining_course>div:nth-child(1) {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .tracknumber-pass-exam {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .pass-exam {
+        align-items: flex-start;
+    }
+
+    .opening-certificate {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-hour>div {
+        align-items: center;
+        width: 25% !important;
+    }
+
+    .retraining-programs_modul-header.lk-kurs>div:nth-child(2) {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .retraining-programs_modul-header.lk-kurs>div:nth-child(2)>.retraining-programs_modul-header_content {
+        width: 100%;
+    }
+
+    .retraining-programs_list-two-items.lk-kurs>.retraining-programs_list-two_item>div:nth-child(3) {
+        width: 280px;
+        gap: 20px;
+    }
 }
 
 @container lkcontent (max-width: 540px) {
@@ -2386,6 +2589,52 @@ section.accepted-download>div>p {
     }
 
     section.accepted-download>div>button {
+        width: 100%;
+    }
+
+    .retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-hour>div:nth-child(1),
+    .retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-hour>div:nth-child(2) {
+        padding: 0 5px;
+    }
+
+    .retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-hour>div:nth-child(3) {
+        padding: 0 0 0 0px;
+    }
+
+    .retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-hour>div>.academic-hour {
+        font-size: 28px !important;
+        line-height: 22px;
+        font-weight: 400 !important;
+    }
+
+    .retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-hour>div>span {
+        text-align: left;
+        font-size: 12px;
+        line-height: 10px;
+    }
+
+    .retraining-programs.lk-kurs>.retraining-programs_list>li>div>div.retraining-programs_list-two>ul>li>div.retraining-programs_modul-hour>div {
+        align-items: flex-start;
+    }
+
+    .test-button {
+        font-size: 14px;
+        letter-spacing: -0.2px;
+        padding: 15px 10px 15px 10px;
+        min-width: 100%;
+    }
+
+    .pass-exam-button {
+        font-size: 14px;
+        letter-spacing: -0.2px;
+        padding: 15px 10px 15px 10px;
+        min-width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .pass-exam {
         width: 100%;
     }
 }
