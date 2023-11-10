@@ -208,7 +208,8 @@ body {
     min-width: 375px;
 }
 
-.header-top-content_lk>.header-top-buttons>a {
+.header-top-content_lk>.header-top-buttons>a,
+.header-top-content_lk>.header-top-buttons>button {
     width: 100%;
 }
 
