@@ -1515,6 +1515,13 @@ section.accepted-download>div>p {
     gap: 10px;
 }
 
+.mdk-title {
+    color: var(--color-bg-1);
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 400;
+    letter-spacing: -0.2px;
+}
+
 .retraining-programs.lk-kurs>.retraining-programs_list {
     background-color: var(--color-text4);
 }
