@@ -1892,6 +1892,20 @@ section.accepted-download>div>p {
     color: var(--color-bg-8) !important;
 }
 
+.retraining-programs_buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.retraining-programs_buttons>.test-button {
+    height: 50px;
+}
+
+.retraining-programs_buttons>a {
+    width: 100% !important;
+}
+
 /*------Адаптив---------*/
 
 @container lkcontent (max-width: 1200px) {
@@ -2421,7 +2435,11 @@ section.accepted-download>div>p {
         width: 280px;
         gap: 20px;
     }
+
+
 }
+
+
 
 @container lkcontent (max-width: 540px) {
     .lk-basket-metod>.uk-fieldset {
