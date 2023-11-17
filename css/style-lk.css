@@ -1670,6 +1670,8 @@ section.accepted-download>div>p {
     color: var(--color-bg-31);
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .retraining-programs_modul-header.lk-kurs>div:nth-child(2)>.retraining-programs_modul-header_content {
