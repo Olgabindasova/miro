@@ -2032,6 +2032,71 @@ section.accepted-download>div>p {
     color: var(--color-bg-2);
 }
 
+.personal-listener_test {
+    padding: 30px 0;
+}
+
+.personal-listener_test>fieldset>.uk-form-label {
+    padding: 10px 30px;
+    color: var(--color-bg-1);
+    font-size: clamp(20px, 2.4vw, 26px);
+    font-weight: 400;
+    letter-spacing: -0.1px;
+}
+
+.personal-listener_test>fieldset>.uk-form-label>span {
+    color: var(--color-bg-2);
+    font-size: clamp(20px, 2.4vw, 26px);
+    font-weight: 500;
+    padding: 15px 10px 0 0;
+    letter-spacing: -0.1px;
+}
+
+.personal-listener_test>fieldset>.uk-form-controls {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.personal-listener_test>fieldset>.uk-form-controls>div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.personal-listener_test>fieldset>.uk-form-controls>div>.uk-radio {
+    margin-top: 0;
+    height: 20px;
+    width: 20px;
+    border: 2px solid var(--color-bg-1);
+}
+
+.personal-listener_test>fieldset>.uk-form-controls>div>.uk-radio:checked {
+    background-color: var(--color-bg-2);
+    border: 2px solid var(--color-bg-2);
+}
+
+.personal-listener_test>fieldset>.uk-form-controls>div>.uk-radio:checked+label {
+    color: var(--color-bg-2);
+}
+
+.personal-listener_test>fieldset>.uk-form-controls>div>label {
+    color: var(--color-bg-1);
+    font-size: clamp(18px, 2.4vw, 24px);
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+.personal-listener_time {
+    color: var(--color-bg-1);
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 500;
+    letter-spacing: 0px;
+    background: var(--color-bg-7);
+    padding: 15px 30px;
+}
+
 /*------Адаптив---------*/
 @container lkcontent (max-width: 1250px) {
     .retraining-programs_modul-title_buttons>div:nth-child(1) {
