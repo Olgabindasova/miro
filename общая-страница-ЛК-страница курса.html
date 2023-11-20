@@ -262,18 +262,32 @@
                             Количество попыток неограниченно</div>
                     </div>
                     <!---->
-                    <h3 class="h3-pages">Группа 1</h3>
-                    <div class="retraining_group">
-                        <a href=""><span uk-icon="calendar"
-                                class="uk-icon-button uk-margin-small-right"></span>Посмотреть
-                            расписание</a>
-                        <a href=""><span uk-icon="file-edit" class="uk-icon-button uk-margin-small-right"></span>Открыть
-                            зачетную книжку</a>
-                        <a href=""><span uk-icon="pull" class="uk-icon-button uk-margin-small-right"></span>Скачать
-                            приказ о зачислении</a>
-                        <a href=""><span uk-icon="download" class="uk-icon-button uk-margin-small-right"></span>Скачать
-                            файл расписания</a>
-                    </div>
+                    <ul uk-accordion="multiple: true" class="retraining_group-block">
+                        <li>
+                            <a class="uk-accordion-title retraining_group-title" href="#">
+                                <h3 class="h3-pages">Информация по обучению</h3>
+                            </a>
+                            <div class="uk-accordion-content">
+                                <div class="retraining_group">
+                                    <a href=""><span uk-icon="calendar"
+                                            class="uk-icon-button uk-margin-small-right"></span>Посмотреть
+                                        расписание</a>
+                                    <a href=""><span uk-icon="file-edit"
+                                            class="uk-icon-button uk-margin-small-right"></span>Открыть
+                                        зачетную книжку</a>
+                                    <a href=""><span uk-icon="pull"
+                                            class="uk-icon-button uk-margin-small-right"></span>Скачать
+                                        приказ о зачислении</a>
+                                    <a href=""><span uk-icon="download"
+                                            class="uk-icon-button uk-margin-small-right"></span>Скачать
+                                        файл расписания</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+
 
                     <!---->
 
@@ -303,7 +317,19 @@
                                         <ul id="component-nav1" class="uk-switcher"
                                             style="touch-action: pan-y pinch-zoom;">
                                             <li class="uk-active">
-                                                <div class="retraining-programs_modul-title">
+                                                <div class="retraining-programs_modul-title_buttons">
+                                                    <div>Дисциплина 1. ОСНОВЫ ЛОГОПЕДИИ</div>
+
+                                                    <div class="retraining-programs_buttons">
+                                                        <a href="" class="button-two">Скачать
+                                                            материалы</a>
+                                                        <a class="test-button">
+                                                            Пройти тестирование по дисциалине
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <!--      <div class="retraining-programs_modul-title">
                                                     Дисциплина 1. ОСНОВЫ ЛОГОПЕДИИ
 
                                                     <div class="retraining-programs_buttons">
@@ -333,7 +359,7 @@
                                                         </div>
                                                         <span>Самостоятельная работа</span>
                                                     </div>
-                                                </div>
+                                                </div>-->
                                                 <ul uk-accordion="multiple: true" class="uk-accordion">
                                                     <!-- Родительский контейнер -->
                                                     <li class="lk-kurs-subject">

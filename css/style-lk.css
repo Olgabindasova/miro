@@ -1927,7 +1927,81 @@ section.accepted-download>div>p {
     color: var(--color-bg-1);
 }
 
+.retraining_group-title::before {
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    border: 25px solid transparent;
+    border-top: 25px solid var(--color-bg-2);
+    top: 75px;
+    left: 0;
+    background-image: none;
+    content: '';
+}
+
+.uk-open>.retraining_group-title::before {
+    background-image: none;
+}
+
+.retraining_group-block {
+    margin-bottom: 50px;
+}
+
+.retraining-programs_modul-title_buttons {
+    width: 100%;
+    display: inline-flex;
+    gap: 10px;
+    padding: 0px 0 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.retraining-programs_modul-title_buttons>div:nth-child(1) {
+    color: var(--color-bg-1);
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    max-width: 50%;
+}
+
+.retraining-programs_modul-title_buttons>.retraining-programs_buttons>a {
+    height: 50%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 20px 15px 20px;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.retraining-programs_modul-title_buttons>.retraining-programs_buttons>a {
+    width: 45% !important;
+}
+
+.retraining-programs_modul-title_buttons>.retraining-programs_buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+}
+
 /*------Адаптив---------*/
+@container lkcontent (max-width: 1250px) {
+    .retraining-programs_modul-title_buttons>div:nth-child(1) {
+        color: var(--color-bg-1);
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .retraining-programs_modul-title_buttons>.retraining-programs_buttons {
+        justify-content: flex-start;
+    }
+}
 
 @container lkcontent (max-width: 1200px) {
     .lk-basket-page_metod {
@@ -1993,6 +2067,11 @@ section.accepted-download>div>p {
 }
 
 @container lkcontent (max-width: 960px) {
+
+    .retraining-programs_modul-title_buttons {
+        margin-bottom: -50px;
+    }
+
     .lk-basket-page {
         flex-direction: column;
     }
@@ -2460,7 +2539,22 @@ section.accepted-download>div>p {
 
 }
 
+@container lkcontent (max-width: 612px) {
 
+    .retraining-programs_modul-title_buttons>.retraining-programs_buttons>a {
+        width: 100% !important;
+    }
+
+    .retraining-programs_modul-title_buttons>.retraining-programs_buttons {
+        gap: 0px;
+    }
+
+    .retraining-programs_modul-title_buttons>.retraining-programs_buttons>a {
+        height: 40%;
+        min-height: 40px;
+        font-size: 14px;
+    }
+}
 
 @container lkcontent (max-width: 540px) {
     .lk-basket-metod>.uk-fieldset {
@@ -2688,6 +2782,14 @@ section.accepted-download>div>p {
     }
 }
 
+@container lkcontent (max-width: 460px) {
+    .retraining_group-title::before {
+        top: 35px;
+        border: 20px solid transparent;
+        border-top: 20px solid var(--color-bg-2);
+    }
+}
+
 @container lkcontent (max-width: 375px) {
     .container-lk-block {
         padding: 20px;
@@ -2894,6 +2996,8 @@ section.accepted-download>div>p {
     }
 
 }
+
+
 
 @media (max-width: 1200px) {
     .header-top-content_lk>.header-top-buttons {
