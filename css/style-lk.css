@@ -1987,6 +1987,51 @@ section.accepted-download>div>p {
     align-items: center;
 }
 
+.retraining_course-internship {
+    background-color: var(--color-text4);
+    padding: 0px 40px 40px 26%;
+}
+
+.retraining_course-internship_title {
+    color: var(--color-bg-1);
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    padding: 15px 30px;
+    background: var(--color-text2);
+    border-bottom: 1px solid;
+}
+
+.retraining_course-internship>section.section-kurs {
+    gap: 10px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+    background: var(--color-text2);
+}
+
+.retraining_course-internship>section.section-kurs>.section-kurs_item {
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.retraining_course-internship>section.section-kurs>.section-kurs_item>.description-kurs {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-bg-1);
+    text-transform: uppercase;
+}
+
+.retraining_course-internship>section.section-kurs>.section-kurs_item>.h3-kurs {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+    color: var(--color-bg-2);
+}
+
 /*------Адаптив---------*/
 @container lkcontent (max-width: 1250px) {
     .retraining-programs_modul-title_buttons>div:nth-child(1) {
@@ -2063,6 +2108,12 @@ section.accepted-download>div>p {
 
     .lk-basket-page_operation-backet-card {
         gap: 15px;
+    }
+}
+
+@container lkcontent (max-width: 1075px) {
+    .retraining_course-internship {
+        padding: 0px 30px 40px 26%;
     }
 }
 
@@ -2262,7 +2313,7 @@ section.accepted-download>div>p {
     .retraining-programs.lk-kurs>.retraining-programs_list {
         top: 0px;
         padding: 40px 0 40px;
-        margin-bottom: -30px px;
+        margin-bottom: -15px;
     }
 
     .retraining-programs.lk-kurs>.retraining-programs_list>li>div>.retraining-programs_list-one>ul.uk-nav>li {
@@ -2291,6 +2342,14 @@ section.accepted-download>div>p {
 
     .curriculum_list>li>p {
         font-size: 16px;
+    }
+
+    .retraining_course-internship_title {
+        padding: 30px 30px 15px;
+    }
+
+    .retraining_course-internship {
+        padding: 0px 30px 40px 30px;
     }
 }
 
@@ -2535,6 +2594,11 @@ section.accepted-download>div>p {
         width: 280px;
         gap: 20px;
     }
+
+    .retraining_course-internship_title {
+        padding: 30px 30px 15px;
+    }
+
 
 
 }
@@ -2787,6 +2851,20 @@ section.accepted-download>div>p {
         top: 35px;
         border: 20px solid transparent;
         border-top: 20px solid var(--color-bg-2);
+    }
+
+    .retraining_course-internship>section.section-kurs>.section-kurs_item {
+        gap: 0px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .retraining_course-internship>section.section-kurs>.section-kurs_item>.h3-kurs {
+        font-size: 16px;
+    }
+
+    .retraining_course-internship>section.section-kurs>.section-kurs_item>.description-kurs {
+        font-size: 16px;
     }
 }
 
