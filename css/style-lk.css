@@ -2136,6 +2136,41 @@ section.accepted-download>div>p {
     background: var(--color-bg-2);
 }
 
+.personal-listener_schedule {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.personal-listener_schedule>li {
+    padding: 0px 30px 10px;
+    border-bottom: 1px solid var(--color-bg-1);
+    font-size: clamp(14px, 2vw, 18px);
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: var(--color-bg-1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.personal-listener_schedule>li.personal-listener_schedule-title {
+    background: var(--color-bg-1);
+    color: var(--color-text2);
+    padding: 10px 30px 10px;
+}
+
+.personal-listener_schedule>li.personal-listener_schedule-test {
+    color: var(--color-bg-2);
+}
+
+.personal-listener_schedule>li.personal-listener_schedule-title>span {
+    text-align: end;
+}
+
+
 /*------Адаптив---------*/
 @container lkcontent (max-width: 1250px) {
     .retraining-programs_modul-title_buttons>div:nth-child(1) {
