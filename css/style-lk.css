@@ -2097,6 +2097,12 @@ section.accepted-download>div>p {
     padding: 15px 30px;
 }
 
+.h1-lk-test {
+    color: var(--color-bg-1);
+    font-size: clamp(36px, 5vw, 48px);
+    font-weight: 400;
+}
+
 /*------Адаптив---------*/
 @container lkcontent (max-width: 1250px) {
     .retraining-programs_modul-title_buttons>div:nth-child(1) {
