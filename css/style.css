@@ -374,6 +374,8 @@ a:hover {
 
 .header-top-social {
     padding: 10px 0;
+    display: flex;
+    align-items: center;
 }
 
 .header-top-social>.uk-icon {
@@ -387,17 +389,24 @@ a:hover {
 }
 
 .as-icon-whatsapp:hover {
-    background: #3EE25B
+    background: #3EE25B;
 }
 
 .as-icon-vk:hover {
-    background: #5181B8
+    background: #5181B8;
 }
 
 .as-icon-telegram:hover {
-    background: #24A1DE
+    background: #24A1DE;
 }
-
+.as-icon-glas {
+    margin-left: 55px;
+    padding: 0 7px;
+    width: 45px !important;
+}
+.as-icon-glas:hover {
+    background: var(--color-bg-1);
+}
 .as-icon-telephone {
     border: 1.85px solid var(--color-text2);
     border-radius: 50%;
@@ -416,7 +425,7 @@ a:hover {
 .as-icon-menu {
     color: var(--color-text2);
     transition: all 0.5s;
-    background: var(--color-bg-2)
+    background: var(--color-bg-2);
 }
 
 .as-icon-telephone:hover,
@@ -974,7 +983,7 @@ a:hover {
 /*------Блок 3------*/
 .main_block3 {
     padding: 180px 0px;
-    background-image: linear-gradient(90deg, rgba(69, 86, 112, 0.80) 0%, rgba(69, 86, 112, 0.70) 50%, rgba(0, 0, 0, 0.00) 100%), url('https://cdn.anomiro.ru/images/переподготовка.jpg');
+    background-image: linear-gradient(90deg, rgba(69, 86, 112, 0.80) 0%, rgba(69, 86, 112, 0.70) 50%, rgba(0, 0, 0, 0.00) 100%), url('https://cdn.anomiro.ru/images/переподготовка2.jpg');
     background-size: 100% 100%, cover;
     background-repeat: repeat, no-repeat;
     background-position: 100% 100%, 100% 100%;
@@ -998,7 +1007,7 @@ a:hover {
 
 .main_block3_nav>nav.uk-navbar-container:not(.uk-navbar-transparent) {
     background: var(--color-bg-1);
-    width: 24%;
+    width: 32%;
 }
 
 .main_block3_nav>nav.uk-navbar-container>div>.uk-navbar-nav>li,
@@ -4053,7 +4062,17 @@ a:hover .tooltip {
         background: none;
         margin-right: 2px;
     }
-
+    .header-mobile_logo-glas {
+        display: flex;
+        align-items: center;
+    }
+    .header-mobile_logo-glas>.as-icon-glas{
+        background: transparent;
+        color: var(--color-text2);
+    }
+    .header-mobile_logo-glas>.as-icon-glas:hover{
+        background: var(--color-bg-1);
+    }
     .logo768 {
         max-width: 65px;
         padding-top: 5px;
