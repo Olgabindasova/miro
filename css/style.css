@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Times New Roman';
-    src: url('https://cdn.anomiro.ru/fonts/TimesNewRomanPS-ItalicMT.woff2') format('woff2'),
-        url('https://cdn.anomiro.ru/fonts/TimesNewRomanPS-ItalicMT.woff') format('woff');
+    src: url('https://cdn.defprof.ru/fonts/TimesNewRomanPS-ItalicMT.woff2') format('woff2'),
+        url('https://cdn.defprof.ru/fonts/TimesNewRomanPS-ItalicMT.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Times New Roman Cyr';
-    src: url('https://cdn.anomiro.ru/fonts/TimesNRCyrMT-Bold.woff2') format('woff2'),
-        url('https://cdn.anomiro.ru/fonts/TimesNRCyrMT-Bold.woff') format('woff');
+    src: url('https://cdn.defprof.ru/fonts/TimesNRCyrMT-Bold.woff2') format('woff2'),
+        url('https://cdn.defprof.ru/fonts/TimesNRCyrMT-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Times New Roman Cyr';
-    src: url('https://cdn.anomiro.ru/fonts/TimesNRCyrMT.woff2') format('woff2'),
-        url('https://cdn.anomiro.ru/fonts/TimesNRCyrMT.woff') format('woff');
+    src: url('https://cdn.defprof.ru/fonts/TimesNRCyrMT.woff2') format('woff2'),
+        url('https://cdn.defprof.ru/fonts/TimesNRCyrMT.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'Times';
-    src: url('https://cdn.anomiro.ru/fonts/Times-BoldItalic.woff2') format('woff2'),
-        url('https://cdn.anomiro.ru/fonts/Times-BoldItalic.woff') format('woff');
+    src: url('https://cdn.defprof.ru/fonts/Times-BoldItalic.woff2') format('woff2'),
+        url('https://cdn.defprof.ru/fonts/Times-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: 'Gotham XNarrow';
-    src: url('https://cdn.anomiro.ru/fonts/GothamCond-Book.woff2') format('woff2'),
-        url('https://cdn.anomiro.ru/fonts/GothamCond-Book.woff') format('woff');
+    src: url('https://cdn.defprof.ru/fonts/GothamCond-Book.woff2') format('woff2'),
+        url('https://cdn.defprof.ru/fonts/GothamCond-Book.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: fallback;
@@ -45,8 +45,8 @@
 
 @font-face {
     font-family: 'Gotham XNarrow';
-    src: url('https://cdn.anomiro.ru/fonts/GothamXNarrow-Light.woff2') format('woff2'),
-        url('https://cdn.anomiro.ru/fonts/GothamXNarrow-Light.woff') format('woff');
+    src: url('https://cdn.defprof.ru/fonts/GothamXNarrow-Light.woff2') format('woff2'),
+        url('https://cdn.defprof.ru/fonts/GothamXNarrow-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: fallback;
@@ -54,8 +54,8 @@
 
 @font-face {
     font-family: 'Gotham XNarrow';
-    src: url('https://cdn.anomiro.ru/fonts/GothamXNarrow-Medium.woff2') format('woff2'),
-        url('https://cdn.anomiro.ru/fonts/GothamXNarrow-Medium.woff') format('woff');
+    src: url('https://cdn.defprof.ru/fonts/GothamXNarrow-Medium.woff2') format('woff2'),
+        url('https://cdn.defprof.ru/fonts/GothamXNarrow-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: fallback;
@@ -63,8 +63,8 @@
 
 @font-face {
     font-family: 'Gotham XNarrow';
-    src: url('https://cdn.anomiro.ru/fonts/GothamXNarrow-Bold.woff2') format('woff2'),
-        url('https://cdn.anomiro.ru/fonts/GothamXNarrow-Bold.woff') format('woff');
+    src: url('https://cdn.defprof.ru/fonts/GothamXNarrow-Bold.woff2') format('woff2'),
+        url('https://cdn.defprof.ru/fonts/GothamXNarrow-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: fallback;
@@ -392,6 +392,10 @@ a:hover {
     background: #3EE25B;
 }
 
+.as-icon-max:hover {
+    background: linear-gradient(45deg, rgba(68, 188, 251, 1) 0%, rgba(41, 75, 249, 1) 50%, rgba(50, 6, 117, 0) 100%);
+}
+
 .as-icon-vk:hover {
     background: #5181B8;
 }
@@ -399,14 +403,17 @@ a:hover {
 .as-icon-telegram:hover {
     background: #24A1DE;
 }
+
 .as-icon-glas {
     margin-left: 55px;
     padding: 0 7px;
     width: 45px !important;
 }
+
 .as-icon-glas:hover {
     background: var(--color-bg-1);
 }
+
 .as-icon-telephone {
     border: 1.85px solid var(--color-text2);
     border-radius: 50%;
@@ -464,7 +471,9 @@ a:hover {
 .header-bottom-logo {
     padding: 30px 0;
 }
-
+.header-bottom-logo  img.logo {
+    max-width: 360px;
+}
 .logo1024 {
     display: none;
 }
@@ -531,7 +540,7 @@ a:hover {
     left: -400px;
     width: 1320px;
     padding: 25px 60px;
-    background-image: linear-gradient(123deg, #F2F2F2 72%, rgba(242, 242, 242, 0.47) 98.94%), url('https://cdn.anomiro.ru/images/fonmenu.png');
+    background-image: linear-gradient(123deg, #F2F2F2 72%, rgba(242, 242, 242, 0.47) 98.94%), url('https://cdn.defprof.ru/images/fonmenu.png');
     background-size: 100% 100%, contain;
     background-repeat: repeat, no-repeat;
     background-position: 100% 100%, 100% 100%;
@@ -807,11 +816,11 @@ a:hover {
 }
 
 .slide-img1 {
-    background-image: linear-gradient(90deg, rgba(42, 66, 102, 0.80) 0%, rgba(42, 66, 102, 0.7) 50%, rgba(79, 99, 130, 0.00) 100%), url('https://cdn.anomiro.ru/images/slide-img/slide-img1.jpg');
+    background-image: linear-gradient(90deg, rgba(42, 66, 102, 0.80) 0%, rgba(42, 66, 102, 0.7) 50%, rgba(79, 99, 130, 0.00) 100%), url('https://cdn.defprof.ru/images/slide-img/slide-img1.jpg');
 }
 
 .slide-img2 {
-    background-image: linear-gradient(90deg, rgba(42, 66, 102, 0.80) 0%, rgba(42, 66, 102, 0.7) 50%, rgba(79, 99, 130, 0.00) 100%), url('https://cdn.anomiro.ru/images/slide-img/slide-img2.jpg');
+    background-image: linear-gradient(90deg, rgba(42, 66, 102, 0.80) 0%, rgba(42, 66, 102, 0.7) 50%, rgba(79, 99, 130, 0.00) 100%), url('https://cdn.defprof.ru/images/slide-img/slide-img2.jpg');
 }
 
 .main_block1>div>ul>li>div.uk-position-center {
@@ -983,7 +992,7 @@ a:hover {
 /*------Блок 3------*/
 .main_block3 {
     padding: 180px 0px;
-    background-image: linear-gradient(90deg, rgba(69, 86, 112, 0.80) 0%, rgba(69, 86, 112, 0.70) 50%, rgba(0, 0, 0, 0.00) 100%), url('https://cdn.anomiro.ru/images/переподготовка2.jpg');
+    background-image: linear-gradient(90deg, rgba(69, 86, 112, 0.80) 0%, rgba(69, 86, 112, 0.70) 50%, rgba(0, 0, 0, 0.00) 100%), url('https://cdn.defprof.ru/images/переподготовка2.jpg');
     background-size: 100% 100%, cover;
     background-repeat: repeat, no-repeat;
     background-position: 100% 100%, 100% 100%;
@@ -1977,19 +1986,19 @@ details[open] summary~* {
 }
 
 .list1>li>div::before {
-    content: url("https://cdn.anomiro.ru/icons/list1.svg");
+    content: url("https://cdn.defprof.ru/icons/list1.svg");
 }
 
 .list1>li>div:hover::before {
-    content: url("https://cdn.anomiro.ru/icons/list1h.svg");
+    content: url("https://cdn.defprof.ru/icons/list1h.svg");
 }
 
 .list2>li>div::before {
-    content: url("https://cdn.anomiro.ru/icons/list2.svg");
+    content: url("https://cdn.defprof.ru/icons/list2.svg");
 }
 
 .list2>li>div:hover::before {
-    content: url("https://cdn.anomiro.ru/icons/list2h.svg");
+    content: url("https://cdn.defprof.ru/icons/list2h.svg");
 }
 
 
@@ -2104,7 +2113,7 @@ a:hover .tooltip {
 }
 
 .free-period::before {
-    content: url('https://cdn.anomiro.ru/icons/time.svg');
+    content: url('https://cdn.defprof.ru/icons/time.svg');
     display: block;
     position: relative;
     top: 3px;
@@ -2359,7 +2368,7 @@ a:hover .tooltip {
 }
 
 .retraining-programs_list-two_item>div:nth-child(1)::before {
-    content: url('https://cdn.anomiro.ru/icons/lekzii.svg');
+    content: url('https://cdn.defprof.ru/icons/lekzii.svg');
     display: inline-block;
     position: relative;
     top: 2px;
@@ -2405,19 +2414,19 @@ a:hover .tooltip {
     width: 17px;
     height: 20px;
     display: block;
-    background-image: url('https://cdn.anomiro.ru/icons/access.svg');
+    background-image: url('https://cdn.defprof.ru/icons/access.svg');
     background-position: center;
     background-size: cover;
 }
 
 .retraining-programs-access.none {
-    background-image: url('https://cdn.anomiro.ru/icons/access.none.svg');
+    background-image: url('https://cdn.defprof.ru/icons/access.none.svg');
     width: 15px;
     height: 20px
 }
 
 .retraining-programs-time {
-    background-image: url('https://cdn.anomiro.ru/icons/time.svg');
+    background-image: url('https://cdn.defprof.ru/icons/time.svg');
     width: 20px;
     height: 20px;
     display: block;
@@ -2939,7 +2948,7 @@ a:hover .tooltip {
 }
 
 .educator-card-programm-item>div>div>div:nth-child(1)::before {
-    content: url('https://cdn.anomiro.ru/icons/lekzii.svg');
+    content: url('https://cdn.defprof.ru/icons/lekzii.svg');
     display: inline-block;
     position: relative;
     top: 2px;
@@ -3369,7 +3378,7 @@ a:hover .tooltip {
         top: 95px !important;
         left: -100px !important;
         width: 113%;
-        background-image: linear-gradient(123deg, #F2F2F2 68%, rgba(242, 242, 242, 0.47) 98.94%), url("https://cdn.anomiro.ru/images/fonmenu.png");
+        background-image: linear-gradient(123deg, #F2F2F2 68%, rgba(242, 242, 242, 0.47) 98.94%), url("https://cdn.defprof.ru/images/fonmenu.png");
     }
 
     .header-bottom-menu_one>div>div {
@@ -3718,7 +3727,7 @@ a:hover .tooltip {
     }
 
     .free-period::before {
-        content: url('https://cdn.anomiro.ru/icons/time3.svg');
+        content: url('https://cdn.defprof.ru/icons/time3.svg');
         left: -20px;
     }
 
@@ -4062,19 +4071,23 @@ a:hover .tooltip {
         background: none;
         margin-right: 2px;
     }
+
     .header-mobile_logo-glas {
         display: flex;
         align-items: center;
     }
-    .header-mobile_logo-glas>.as-icon-glas{
+
+    .header-mobile_logo-glas>.as-icon-glas {
         background: transparent;
         color: var(--color-text2);
     }
-    .header-mobile_logo-glas>.as-icon-glas:hover{
+
+    .header-mobile_logo-glas>.as-icon-glas:hover {
         background: var(--color-bg-1);
     }
+
     .logo768 {
-        max-width: 65px;
+        max-width: 110px;
         padding-top: 5px;
     }
 
@@ -4420,7 +4433,7 @@ a:hover .tooltip {
     }
 
     .free-period::before {
-        content: url('https://cdn.anomiro.ru/icons/time4.svg');
+        content: url('https://cdn.defprof.ru/icons/time4.svg');
         left: 0;
         width: 20px;
         top: 2px;
