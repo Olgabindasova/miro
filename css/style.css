@@ -1621,6 +1621,11 @@ details[open] summary~* {
     justify-content: center;
 }
 
+.retrainings.retrainings_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 /*------Боковая колонка, меню, десктоп ------*/
 
 .content-block-nav>ul.uk-nav.uk-nav-default>li>a {
@@ -3431,6 +3436,12 @@ a:hover .tooltip {
     .educator-card-video {
         width: 31%;
     }
+
+    .retrainings.retrainings_3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px
+    }
 }
 
 @media (max-width: 1060px) {
@@ -4629,9 +4640,12 @@ a:hover .tooltip {
     .retraining-item.retraining-item_one .retraining-content {
         padding: 45px 10% 30px 10%;
     }
-    .retrainings.retrainings_2 {
-    grid-template-columns: 1fr;
-}
+
+    .retrainings.retrainings_2,
+    .retrainings.retrainings_3 {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 @media (max-width: 640px) {
