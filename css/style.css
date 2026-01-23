@@ -1612,6 +1612,15 @@ details[open] summary~* {
     color: var(--color-bg-1h) !important;
 }
 
+.retrainings.retrainings_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.retrainings.retrainings_2 .uk-slider-items:not(.uk-grid) {
+    justify-content: center;
+}
+
 /*------Боковая колонка, меню, десктоп ------*/
 
 .content-block-nav>ul.uk-nav.uk-nav-default>li>a {
@@ -4620,6 +4629,9 @@ a:hover .tooltip {
     .retraining-item.retraining-item_one .retraining-content {
         padding: 45px 10% 30px 10%;
     }
+    .retrainings.retrainings_2 {
+    grid-template-columns: 1fr;
+}
 }
 
 @media (max-width: 640px) {
