@@ -523,7 +523,15 @@ body {
 }
 
 .lk-aside_menu.active>ul>li>a>svg {
-    display: none;
+    display: block;
+    height: 25px;
+    width: 25px;
+}
+
+.lk-aside_menu.active>ul>li>a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .lk-aside_menu>ul>li>a>svg {
@@ -531,6 +539,7 @@ body {
     fill: var(--color-text2);
     min-width: 35px;
     height: 35px;
+    width: 35px;
 }
 
 .lk-aside_menu>ul>li>a[aria-expanded="true"]>svg {
@@ -1755,7 +1764,7 @@ section.accepted-download>div>p {
 }
 
 .retraining-programs_list-two-items.lk-kurs>.retraining-programs_list-two_item>div:nth-child(1)::before {
-    content: url('https://cdn.anomiro.ru/icons/video-kurs.svg');
+    content: url('https://cdn.defprof.ru/icons/video-kurs.svg');
     display: inline-block;
     position: relative;
     top: 2px;
