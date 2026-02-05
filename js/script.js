@@ -34,7 +34,7 @@
     $("#index").mask("999999");
   });
 
-  // добавляет класс active
+  // добавляет класс active 
 
 document.querySelector('.menu_one').addEventListener('click', () => {
   document.querySelector('.logo_lk').classList.add('active');
@@ -47,6 +47,11 @@ document.querySelector('.menu_one').addEventListener('click', () => {
   document.querySelector('.button-one_lk-header_text').classList.add('active');
 })
 
+document.querySelector('.lk-aside_menu>ul>li').addEventListener('mouseenter', () => {
+  document.querySelector('.lk-aside_menu>ul>li').classList.add('active');
+})
+
+
 // удаляет  класс  active
 
 document.querySelector('.close-menu').addEventListener('click', () => {
@@ -58,4 +63,8 @@ document.querySelector('.close-menu').addEventListener('click', () => {
   document.querySelector('.lk-aside_menu').classList.remove('active');
   document.querySelector('.close-menu').classList.remove('close-menu-active');
   document.querySelector('.button-one_lk-header_text').classList.remove('active');
+})
+
+document.querySelector('.lk-aside_menu>ul>li').addEventListener('mouseleave', () => {
+  document.querySelector('.lk-aside_menu>ul>li').classList.remove('active');
 })
