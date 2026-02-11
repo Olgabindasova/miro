@@ -2190,12 +2190,63 @@ a:hover .tooltip {
     font-size: 14px;
     font-weight: 400;
     top: 7px;
-
 }
 
 .retraining-programs_nav>li>a:hover,
 .retraining-programs_nav>li.uk-active>a {
     background: var(--color-bg-2) !important;
+}
+
+.retraining-programs_nav.retraining-programs_nav_2 {
+    gap: 10px;
+}
+
+.retraining-programs_nav.retraining-programs_nav_2>.retraining-programs_nav-button {
+    min-width: 100%;
+    margin-top: 10px;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.retraining-programs_nav.retraining-programs_nav_2>li {
+    margin: 0;
+}
+
+.retraining-programs_nav.retraining-programs_nav_2>li>a {
+    padding: 10px 15px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.retraining-programs_nav.retraining-programs_nav_2>li>a>span:nth-child(1) {
+    font-size: 14px !important;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+}
+
+.retraining-programs_nav.retraining-programs_nav_2>li>a>span:nth-child(2)::after {
+    content: "ч.";
+    display: block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    top: 10px;
+}
+
+.retraining-programs_nav.retraining-programs_nav_2>li>a>span:nth-child(2) {
+    font-size: 26px;
+    font-weight: 500;
+    display: flex;
+    gap: 5px;
+}
+
+.retraining-programs_nav.retraining-programs_nav_2>li>a::after {
+    display: none;
+}
+
+.retraining-programs_nav_2.retraining-programs_nav-button {
+    min-width: 50%;
 }
 
 .free-period {
@@ -3810,6 +3861,15 @@ a:hover .tooltip {
         justify-content: space-around;
     }
 
+    .retraining-programs_nav.retraining-programs_nav_2 {
+        justify-content: flex-start;
+    }
+
+    .retraining-programs_nav.retraining-programs_nav_2>.retraining-programs_nav-button {
+
+        justify-content: space-around;
+    }
+
     .retraining-programs_modul-header>img {
         width: 170px;
     }
@@ -5184,6 +5244,11 @@ a:hover .tooltip {
     .retraining-programs_nav>li>a {
         padding: 12px 15px !important;
         font-size: 22px !important;
+    }
+
+    .retraining-programs_nav.retraining-programs_nav_2>li {
+
+        width: 100%;
     }
 
     .h3-retraining {
