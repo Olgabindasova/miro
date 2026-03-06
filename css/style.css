@@ -636,6 +636,7 @@ a:hover {
 /*------Футер------*/
 .footer {
     color: var(--color-text2);
+    position: relative;
     z-index: 1;
 }
 
@@ -759,7 +760,7 @@ a:hover {
     height: 700px;
     display: block;
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 
 .main_block1>div>ul>li>div>img,
