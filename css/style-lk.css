@@ -1366,7 +1366,8 @@ video.video-kurs[poster] {
     padding: 30px 0;
 }
 
-.personal-listener>.uk-fieldset>div>label {
+.personal-listener>.uk-fieldset>div>label,
+.personal-listener>.uk-fieldset>div>div>label {
     color: var(--color-bg-1);
     font-size: 20px;
     font-weight: 500;
@@ -1375,8 +1376,10 @@ video.video-kurs[poster] {
 }
 
 .personal-listener>.uk-fieldset>div>input.uk-input,
-.personal-listener>.uk-fieldset>div>select.uk-select {
-    border: 1px solid var(--color-bg-6);
+.personal-listener>.uk-fieldset>div>select.uk-select,
+.personal-listener>.uk-fieldset>div>div>input.uk-input,
+.personal-listener>.uk-fieldset>div>div>select.uk-select {
+    border: 1px solid var(--color-bg-6) !important;
     color: var(--color-bg-6);
     font-size: 18px;
     font-weight: 400;
@@ -1385,6 +1388,13 @@ video.video-kurs[poster] {
     height: fit-content;
     min-height: 45px;
     padding-left: 25px;
+}
+
+.personal-listener>.uk-fieldset>div>div>.uk-select:not([multiple]):not([size]) {
+    padding-right: 20px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.5 13L6 4H17L11.5 13Z' fill='%2398A1B0'/%3e%3c/svg%3e ") !important;
+    background-repeat: no-repeat;
+    background-position: 100% 55% !important;
 }
 
 .download-status_block {
@@ -1412,9 +1422,157 @@ section.accepted-download>div>p {
 }
 
 .personal-listener>.uk-fieldset>div>select.uk-select:not([multiple]):not([size]) {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.5 13L6 4H17L11.5 13Z' fill='%2398A1B0'/%3e%3c/svg%3e ");
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.5 13L6 4H17L11.5 13Z' fill='%2398A1B0'/%3e%3c/svg%3e ") !important;
     background-position: 99% 50%;
     background-repeat: no-repeat;
+}
+
+.download_doc {
+    margin: 0 0 35px;
+}
+
+.download_doc::before {
+    border-bottom: 0px;
+}
+
+.download_doc li {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+.download_doc a {
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(18px, 2.8vw, 24px);
+    line-height: clamp(18px, 2.8vw, 24px);
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: var(--color-bg-1) !important;
+    border-color: var(--color-bg-1) !important;
+}
+
+.download_doc a.active {
+    color: var(--color-bg-8h) !important;
+    border-color: var(--color-bg-8h) !important;
+}
+
+.download_doc a>div {
+    display: flex;
+    align-items: flex-start;
+}
+
+.download_doc a>div::before {
+    content: "";
+    display: flex;
+    position: relative;
+    background: var(--color-text2);
+    font-size: 13px;
+    font-weight: 600;
+    left: -10px;
+    height: clamp(18px, 2.8vw, 24px);
+    width: clamp(18px, 2.8vw, 24px);
+    padding: 5px;
+    min-width: clamp(18px, 2.8vw, 24px);
+    top: 0;
+    border: 2px solid var(--color-bg-1);
+}
+
+.download_doc a.active>div::before {
+    content: "";
+    background: var(--color-bg-8);
+    background-image: url("https://cdn.defprof.ru/icons/check2.svg");
+    background-position: center;
+    background-size: cover;
+    border: 2px solid var(--color-bg-8);
+}
+
+.download_doc a>div::after {
+    content: "*";
+    display: inline-block;
+    position: relative;
+    color: var(--color-bg-2);
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 5px;
+    top: -3px;
+}
+
+.download_doc a.active>div::after {
+    content: "";
+}
+
+.download_doc .uk-drop {
+    width: 100%;
+    border: 1px solid var(--color-bg-6);
+
+}
+
+.download_doc .download-status_block {
+    background: var(--color-bg-7);
+    margin: 0;
+    padding: 3%;
+}
+
+.download_doc section.accepted-download>div {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.download_doc .accepted-download .h3-pages {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 15px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.download_doc .accepted-download .h3-pages.active {
+    color: var(--color-bg-8h);
+}
+
+.download_doc .accepted-download .h3-pages.active::after {
+    background: var(--color-bg-8h);
+}
+
+.download_doc .accepted-download .h3-pages::after {
+    top: 0;
+}
+
+.download_doc .accepted-download button {
+    padding: 10px 35px;
+}
+
+.download_doc a[aria-expanded="true"] {
+    color: var(--color-bg-2) !important;
+    border-color: var(--color-bg-2) !important;
+}
+
+.download_doc a[aria-expanded="true"]>div::before {
+    background: var(--color-text2) !important;
+    border: 2px solid var(--color-bg-2);
+}
+
+.download_doc a.active[aria-expanded="true"] {
+    color: var(--color-bg-8h) !important;
+    border-color: var(--color-bg-8h) !important;
+}
+
+.download_doc a.active[aria-expanded="true"]>div::before {
+    background: var(--color-bg-8) !important;
+    border-color: var(--color-bg-8) !important;
+    background-image: url("https://cdn.defprof.ru/icons/check2.svg") !important;
+    background-position: center  !important;
+    background-size: cover  !important;
+}
+
+.download_doc section.accepted-download>div>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
 }
 
 /*------Курс переподготовки---------*/
@@ -2817,7 +2975,17 @@ section.accepted-download>div>p {
         padding: 30px 30px 15px;
     }
 
+    .download_doc section.accepted-download>div>div {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+    }
 
+    .download_doc section.accepted-download>div {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+    }
 
 }
 
