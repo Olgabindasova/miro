@@ -1473,7 +1473,7 @@ section.accepted-download>div>p {
     display: flex;
 }
 
-.download_doc a>div>span::before {
+.download_doc a>div>span:before {
     content: "";
     display: flex;
     position: relative;
@@ -1481,13 +1481,15 @@ section.accepted-download>div>p {
     font-size: 13px;
     font-weight: 600;
     left: -10px;
-    height: clamp(18px, 2.8vw, 24px);
-    width: clamp(18px, 2.8vw, 24px);
+    height: clamp(18px,2.8vw,24px);
+    width: clamp(18px,2.8vw,24px);
     padding: 5px;
-    max-width: clamp(18px, 2.8vw, 24px) !important;
-    max-height: clamp(18px, 2.8vw, 24px) !important;
+    max-width: clamp(18px,2.8vw,24px)!important;
+    max-height: clamp(18px,2.8vw,24px)!important;
     top: 0;
     border: 2px solid var(--color-bg-1);
+    min-width: clamp(18px, 2.8vw, 24px) !important;
+    box-sizing: border-box;
 }
 
 .download_doc a.active>div>span::before {
