@@ -1459,12 +1459,21 @@ section.accepted-download>div>p {
     border-color: var(--color-bg-8h) !important;
 }
 
+.download_doc a>span.uk-icon {
+    min-width: 20px !important;
+}
 .download_doc a>div {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.download_doc a>div::before {
+.download_doc a>div>span {
+    display: flex;
+}
+
+.download_doc a>div>span::before {
     content: "";
     display: flex;
     position: relative;
@@ -1475,12 +1484,13 @@ section.accepted-download>div>p {
     height: clamp(18px, 2.8vw, 24px);
     width: clamp(18px, 2.8vw, 24px);
     padding: 5px;
-    min-width: clamp(18px, 2.8vw, 24px);
+    max-width: clamp(18px, 2.8vw, 24px) !important;
+    max-height: clamp(18px, 2.8vw, 24px) !important;
     top: 0;
     border: 2px solid var(--color-bg-1);
 }
 
-.download_doc a.active>div::before {
+.download_doc a.active>div>span::before {
     content: "";
     background: var(--color-bg-8);
     background-image: url("https://cdn.defprof.ru/icons/check2.svg");
@@ -1489,7 +1499,7 @@ section.accepted-download>div>p {
     border: 2px solid var(--color-bg-8);
 }
 
-.download_doc a>div::after {
+.download_doc a>div>span::after {
     content: "*";
     display: inline-block;
     position: relative;
@@ -1500,7 +1510,7 @@ section.accepted-download>div>p {
     top: -3px;
 }
 
-.download_doc a.active>div::after {
+.download_doc a.active>div>span::after {
     content: "";
 }
 
@@ -1565,14 +1575,37 @@ section.accepted-download>div>p {
     background: var(--color-bg-8) !important;
     border-color: var(--color-bg-8) !important;
     background-image: url("https://cdn.defprof.ru/icons/check2.svg") !important;
-    background-position: center  !important;
-    background-size: cover  !important;
+    background-position: center !important;
+    background-size: cover !important;
 }
 
 .download_doc section.accepted-download>div>div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5em;
+}
+
+.download_doc ol {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    right: -45px;
+    padding-right: 45px;
+}
+
+.download_doc ol li {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+    text-transform: math-auto;
+    letter-spacing: 1.3px;
+    list-style-type: lower-alpha;
+}
+
+.download_doc ol li::marker {
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 /*------Курс переподготовки---------*/

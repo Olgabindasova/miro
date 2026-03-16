@@ -256,6 +256,13 @@ a:hover {
     color: var(--color-text2);
 }
 
+.button-one:disabled, .button-two:disabled {
+     background: var(--color-bg-4);
+     cursor: not-allowed;
+     box-shadow: none !important;
+     border: 1px solid var(--color-bg-6);
+     color: var(--color-bg-6);
+}
 /*------Управление слайдером кнопки------*/
 .slide-nav {
     background: var(--color-bg-2);
