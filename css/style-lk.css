@@ -1378,6 +1378,7 @@ video.video-kurs[poster] {
 .personal-listener>.uk-fieldset>div>input.uk-input,
 .personal-listener>.uk-fieldset>div>select.uk-select,
 .personal-listener>.uk-fieldset>div>div>input.uk-input,
+.personal-listener>.uk-fieldset>div>textarea.uk-textarea,
 .personal-listener>.uk-fieldset>div>div>select.uk-select {
     border: 1px solid var(--color-bg-6) !important;
     color: var(--color-bg-6);
@@ -1388,6 +1389,17 @@ video.video-kurs[poster] {
     height: fit-content;
     min-height: 45px;
     padding-left: 25px;
+}
+
+.personal-listener>.uk-fieldset>div>textarea.uk-textarea {
+    padding: 25px;
+}
+
+.personal-listener>.uk-fieldset>div>textarea.uk-textarea::placeholder {
+    color: var(--color-bg-6);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .personal-listener>.uk-fieldset>div>div>.uk-select:not([multiple]):not([size]) {
@@ -1462,6 +1474,7 @@ section.accepted-download>div>p {
 .download_doc a>span.uk-icon {
     min-width: 20px !important;
 }
+
 .download_doc a>div {
     display: flex;
     align-items: flex-start;
@@ -1481,11 +1494,11 @@ section.accepted-download>div>p {
     font-size: 13px;
     font-weight: 600;
     left: -10px;
-    height: clamp(18px,2.8vw,24px);
-    width: clamp(18px,2.8vw,24px);
+    height: clamp(18px, 2.8vw, 24px);
+    width: clamp(18px, 2.8vw, 24px);
     padding: 5px;
-    max-width: clamp(18px,2.8vw,24px)!important;
-    max-height: clamp(18px,2.8vw,24px)!important;
+    max-width: clamp(18px, 2.8vw, 24px) !important;
+    max-height: clamp(18px, 2.8vw, 24px) !important;
     top: 0;
     border: 2px solid var(--color-bg-1);
     min-width: clamp(18px, 2.8vw, 24px) !important;
