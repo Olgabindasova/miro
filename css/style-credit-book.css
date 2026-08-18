@@ -1,0 +1,127 @@
+.credit-book {
+    width: 100%;
+    margin: 20px 0;
+}
+
+table.credit-book>thead {
+    background: var(--color-bg-1);
+    color: var(--color-text2);
+    font-size: clamp(14px, 2vw, 18px);
+    font-weight: 500;
+    text-align: left;
+}
+
+table.credit-book>tbody>tr {
+    border-bottom: 1px solid var(--color-bg-1);
+    font-size: clamp(14px, 2vw, 18px);
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: var(--color-bg-1);
+    text-align: left;
+}
+
+table.credit-book>thead>tr>th,
+table.credit-book>tbody>tr>td {
+    padding: 15px;
+}
+
+table.credit-book>tbody>tr:nth-child(2n) {
+    background: var(--color-bg-4);
+}
+
+table.credit-book>tbody>tr:hover {
+    background: var(--color-bg-5);
+}
+
+table.credit-book>thead>tr>th:nth-child(3),
+table.credit-book>thead>tr>th:nth-child(4),
+table.credit-book>tbody>tr>td:nth-child(3),
+table.credit-book>tbody>tr>td:nth-child(4) {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 760px),
+(min-device-width: 760px) and (max-device-width: 1024px) {
+
+    table.credit-book,
+    table.credit-book>thead,
+    table.credit-book>tbody,
+    table.credit-book>thead tr th,
+    table.credit-book>tbody tr td,
+    table.credit-book>thead tr,
+    table.credit-book>tbody tr {
+        display: block;
+    }
+
+    table.credit-book>thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    table.credit-book>thead tr,
+    table.credit-book>tbody tr {
+        border: 1px solid var(--color-bg-1);
+        padding: 5px 0 0 0;
+        margin-bottom: 15px;
+    }
+
+    table.credit-book>tbody tr td {
+        border: none;
+        position: relative;
+        padding-left: 45% !important;
+        padding: 5px 15px;
+    }
+
+    table.credit-book>tbody tr td:before {
+        position: absolute;
+        top: 5px;
+        left: 15px;
+        width: 30%;
+        white-space: nowrap;
+        font-weight: 400;
+    }
+
+    table.credit-book>tbody>tr:nth-child(2n) {
+        background: var(--color-text2);
+    }
+
+    table.credit-book>tbody>tr:hover {
+        background: var(--color-bg-5);
+    }
+
+    table.credit-book>thead>tr>th:nth-child(3),
+    table.credit-book>thead>tr>th:nth-child(4),
+    table.credit-book>tbody>tr>td:nth-child(3),
+    table.credit-book>tbody>tr>td:nth-child(4) {
+        text-align: start;
+    }
+
+    table.credit-book>tbody>tr>td:nth-child(4) {
+        padding-bottom: 10px;
+    }
+
+    table.credit-book>tbody>tr>td:nth-child(2),
+    table.credit-book>tbody>tr>td:nth-child(4) {
+        background: var(--color-bg-4);
+    }
+
+    table.credit-book>tbody tr td:nth-of-type(1):before {
+        content: "№";
+    }
+
+    table.credit-book>tbody tr td:nth-of-type(2):before {
+        content: "Дисциплина";
+    }
+
+    table.credit-book>tbody tr td:nth-of-type(3):before {
+        content: "Дата сдачи";
+    }
+
+    table.credit-book>tbody tr td:nth-of-type(4):before {
+        content: "Оценка";
+    }
+
+
+}
