@@ -444,7 +444,7 @@ body {
     cursor: pointer;
 }
 
-.close-menu-active::after {
+.close-menu-active::after, .close-menu-active:after {
     content: "Свернуть панель";
     color: var(--color-text2);
     position: relative;
@@ -456,7 +456,7 @@ body {
     font-weight: 300;
 }
 
-.close-menu-active::before {
+.close-menu-active::before, .close-menu-active:before  {
     content: "←";
     transform: rotate(180deg);
     font-size: 30px;
